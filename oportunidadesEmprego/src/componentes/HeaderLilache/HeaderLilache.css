@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+.HeaderLilache{
+    padding: 27px;
+    padding-top: 23px;
+    overflow: hidden;
+    
+
+}
+#Logotipo{
+    width: 136px;
+    height: 24px;
+}
+
+
+#MenuBurguer{
+    width: 21px;
+    height: 21px;
+    background-image: url('../../assets/MenuBurguer.png');
+    position: absolute;
+    right: 15vw;
+    margin-top: -25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#MenuBurguer:hover{
+    cursor: pointer;
+}
+
+#Fechar{
+    width: 21px;
+    height: 21px;
+    background-image: url('../../assets/Fechar.png');
+    position: absolute;
+    right: 20vw;
+    margin-top: -25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#Fechar:hover{
+    cursor: pointer;
+}
+
+.MenuVisivelResponsivo{
+    display: none;
+}
+.MenuVisivel{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    z-index: 190;
+    height: max-content;
+    position: absolute;
+    width:100%; 
+    margin-left: -35px;  
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+   
+    padding-bottom: 50px;
+    
+    
+}
+.MenuVisivel>li{
+    margin-left: 35px;
+}
+.LinksUteisLilache{
+    text-decoration: none;
+    color: black;
+    
+
+}
+.LinksUteisLilache:Hover{
+    color: #6e32c9;
+}
+#LinkEntrarLilache{
+    width: max-content;
+    border: 1px solid #6e32c9;
+    padding: 10px;
+    border-radius: 5px;
+    color: #6e32c9;
+}
+
+#LinkEntrarLilache:hover{
+    background-color: #6e32c9;
+    color: white ;
+    transition: background-color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out;
+}
+#LinkAjudaImgLilache{
+    width: 38px;
+    height: 37px;
+    background-color: #6e32c9;
+    color: white; 
+    border-radius: 20px;  
+}
+#LinkAjudaImgLilache>p{
+    width: max-content;
+    margin: auto;
+    padding-top: 9px;
+    font-weight: 600;
+}
+#LinkAjudaLilache{
+    text-decoration: none;
+}
+#LinkAjudaImgLilache:hover{
+    background-color: #732be0;
+}
+
+@media (min-width:700px) {
+    .HeaderLilache{
+        display: flex
+    }
+    #MenuBurguer, #Fechar{
+        display: none;
+    }
+    .MenuVisivelResponsivo{
+    
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        background-color: white;
+        z-index: 190;
+        font-family: 'Montserrat', sans-serif;
+        position: absolute;
+        right: 10vw;
+        font-size: 13px;
+        
+          
+    }
+    .LinksUteisLilache{
+        color: #858585;
+        font-weight: 500;
+       }
+    #LinkEntrarLilache{
+        margin-top: -10px;
+    }
+    #LinkAjudaImgLilache{
+        margin-top: -10px; 
+    }
+
+    
+}
+
+
+
+
+@media (min-width:1024px) {
+    #Logotipo{
+       
+        width: 172px;
+        height: 28px;
+        margin-left: 40px;
+      
+    }
+     .MenuVisivelResponsivo{
+        margin-top: 5px;
+        font-weight: 400;
+        font-size: 14px;
+        right: 5vw;
+     
+     }
+     #LinkEntrarLilache{
+        padding: 10px 20px;
+        margin-left: 70px;
+        margin-right: 30px;
+    }
+    .LinksUteisLilache{
+        color: #858585;
+        font-weight: 500;
+       }
+    li>a{
+        padding-right: 20px;
+        
+        
+    }
+
+    li{
+        height: 37px;
+       }
+    #LinkAjudaLilache{
+        border: none;
+    }
+    
+    
+     
+}

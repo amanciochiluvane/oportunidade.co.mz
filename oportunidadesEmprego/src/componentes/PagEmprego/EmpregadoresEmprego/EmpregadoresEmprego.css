@@ -1,0 +1,182 @@
+.EmpregadoresEmprego{
+    background-color: #f6f7f9;
+    color: white;
+    padding: 50px;
+}
+
+.TalentoEmpregadores{
+    background-color: #6e32c9;
+    padding: 
+    40px;
+    border-radius: 10px;
+    
+}
+
+
+.TalentoEmpregadoresTexto>h3{
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.TalentoEmpregadoresTexto>h2{
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+.TalentoEmpregadoresTexto>p{
+   font-size: 14px;
+   margin-bottom: 20px;
+}
+.TalentoEmpregadoresTexto>a{
+    background-color: white;
+    color: #00237d;
+    text-decoration: none;
+    display: flex;
+    font-weight: 700;
+    width: max-content;
+    gap: 20px;
+    padding:  7px 10px;
+    border-radius: 7px;
+}
+.TalentoEmpregadoresTexto>a:hover{
+    background-color: #171727;
+color: white;
+transition: background-color 0.4s;
+    
+}
+.TalentoEmpregadoresTexto>a>img{
+    width: 25px;
+    
+}
+.TalentoEmpregadoresImg{
+    display: none;
+}
+.DicasCarreiraEmprego{
+    color: black;
+  
+}
+.DicasCarreiraEmprego>h2{
+    font-size: 16px;
+    margin-top: 80px;
+    text-align: center;
+}
+.DicasCarreiraEmprego>a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.DicasCarreiraEmprego>a:hover{
+    color: #6e32c9;
+    font-weight: 700;
+}
+.DicasCarreiraEmprego>a>img{
+    width: 25px;
+  
+}
+.DicasDivsEmprego{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.DicasDivsEmprego>a{
+    background-color: white;
+    width: 230px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 3px rgb(209, 209, 209);
+    height: 293.3px;
+    text-decoration: none;
+}
+.DicasDivsEmprego>a:hover{
+    box-shadow: 1px 1px 5px 3px rgb(161, 161, 161);
+}
+.DicasDivsEmprego>a>img{
+    width: 230px;
+    border-radius: 10px;
+    height: 154px;
+}
+.DicasDivsEmprego>a>h2{
+    font-size: 13px;
+    margin-top: 20px;
+    background-color: #0f835c;
+    width: max-content;
+    color: white;
+    padding: 1px 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.DicasDivsEmprego>a>p{
+margin-bottom: 30px;
+font-size: 15px;
+color: rgb(116, 116, 116);
+font-weight: 500;
+}
+.DicasDivsEmprego>a>p:hover{
+    color:black;
+    font-weight: 700;
+}
+#Azul{
+    background-color: #25c2b5;
+}
+#Amarelo{
+    background-color: #f8d40a;
+}
+#Violeta{
+    background-color: #6e32c9;
+}
+#Vermelho{
+    background-color: #ff5741;
+}
+@media (min-width:700px) {
+    .DicasDivsEmprego{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+
+@media (min-width:1024px) {
+    .EmpregadoresEmprego{
+        padding: 90px;
+    }
+    .TalentoEmpregadores{
+        
+        display: flex;
+        gap: 40px;
+        position: relative;
+    }
+    .TalentoEmpregadoresTexto>p{
+        font-size: 15px;
+    }
+    .TalentoEmpregadoresImg{
+        display: block;
+        position: absolute;
+        right: 50px;
+        margin-top: -15px;
+       
+    }
+    .TalentoEmpregadoresImg>img{
+        width: 250px;
+       
+    }
+    .DicasDivsEmprego{
+        display: grid;
+        grid-template-columns: auto auto auto ;
+    }
+    .DicasCarreiraEmprego>h2{
+        font-size: 17px;
+    }
+    
+}
+@media (min-width:1200px) {
+    .DicasDivsEmprego{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+}

@@ -1,0 +1,130 @@
+.PaymentMethodPopup{
+    background-color: white;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 40px;
+    border-radius: 5px;
+    
+}
+.PaymentMethodPopup {
+    animation: fadeInScale 0.5s ease forwards;
+    opacity: 0;
+    transform: scale(0.9);
+    /* Outros estilos do popup */
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.PaymentMethodPopup>h2{
+    font-size: 18px;
+    color: rgb(116, 114, 114);
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.PaymentMethodPopup>img{
+    width: 450px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.PaymentMethodPopup>section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.PaymentMethodPopup>section>article{
+    display: flex;
+    position: relative;
+    border: 1px solid rgb(145, 145, 145);
+    border-radius: 10px;
+    padding: 5px 10px;
+    
+}
+.PaymentMethodPopup>section>article>h2{
+    position: absolute;
+    right: 20px;
+    font-size: 17px;
+    margin-top: 7px;
+    
+}
+.PaymentMethodPopup>section>article>h2>span{
+    color: rgb(107, 107, 107);
+}
+.PaymentMethodPopup>section>article>article{
+    display: flex;
+    gap: 10px;
+}
+.PaymentMethodPopup>section>article>article>img{
+    width: 60px;
+}
+.PaymentMethodPopup>section>article>article>div{
+    margin-top: 7px;
+}
+.PaymentMethodPopup>section>article>article>div>h2{
+    font-size: 17px;
+    margin-bottom: 3px;
+}
+.PaymentMethodPopup>section>article>article>div>p{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(116, 114, 114);
+}
+.PaymentMethodPopup>section>article:hover{
+   
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgb(180, 180, 180);}
+
+@media (min-width:800px) {
+    .PaymentMethodPopup{
+     
+       padding: 60px;
+       padding-bottom: 70px;
+        
+    }
+    .PaymentMethodPopup>img{
+        width: 550px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .PaymentMethodPopup>h2{
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 22px;
+    }
+
+    .PaymentMethodPopup>section>article>article>img{
+        width: 80px;
+    }
+    .PaymentMethodPopup>section>article>article>div{
+        margin-top: 14px;
+    }
+    .PaymentMethodPopup>section>article>article>div>h2{
+        font-size: 19px;
+        margin-bottom: 3px;
+    }
+    .PaymentMethodPopup>section>article>article>div>p{
+        font-size: 15px;
+        font-weight: 400;
+        color: rgb(116, 114, 114);
+    }
+    .PaymentMethodPopup>section>article>h2{
+        font-size: 19px;
+        margin-top: 14px;
+        
+    }
+    
+}

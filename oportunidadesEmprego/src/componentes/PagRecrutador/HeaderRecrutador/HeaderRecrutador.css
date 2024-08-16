@@ -1,0 +1,64 @@
+.HeaderRecrutador{
+    background-color: white;
+    display: flex;
+   position: relative;
+    gap: 20px;
+    padding-bottom:10px;
+    border-bottom: 1px solid rgb(233, 233, 233);
+}
+.HeaderRecrutador>a>img{
+    width: 150px;
+    padding-top: 20px;
+    margin-left: 20px;
+    
+   
+}
+.HeaderRecrutador>div{
+   position: absolute;
+   right: 20px;
+    
+}
+.HeaderRecrutador>div>p{
+    display: none;
+}
+.HeaderRecrutador>div>a>img{
+    width: 45px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 50%;
+    border: 1px solid rgba(197, 197, 197, 0.726);
+}
+
+@media (min-width:600px) {
+    .HeaderRecrutador>div{
+        display: flex;
+        gap: 20px;
+     }
+     .HeaderRecrutador>div>p{
+        display: block;
+        margin-top: 22px;
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(133, 133, 133);
+    }
+}
+@media (min-width:1024px) {
+    
+    .HeaderRecrutador{
+    position: fixed;
+    z-index: 123456;
+    width: 100%;
+    }
+    .HeaderRecrutador>a>img{
+        width: 170px;
+        margin-left: 50px;
+        
+        
+       
+    }
+    .HeaderRecrutador>div{
+        
+        right: 50px;
+    
+     }
+}

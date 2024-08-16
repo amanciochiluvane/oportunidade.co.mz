@@ -1,0 +1,257 @@
+.SobreNos{
+    font-family: 'Montserrat';
+}
+
+.IntroAbout{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 300px;
+    background-image: url(../../assets/IntroAbout.jpg);
+    background-size: cover;
+    position: relative;
+    font-family: 'Barlow';
+
+}
+.SombraIntroAbout{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    
+    height: 300px;
+    
+    
+    background-color: rgba(0, 0, 0, 0.753);
+    z-index: 1212;
+}
+.TextoIntroAbout>p{
+    position: absolute;
+    color:white;
+    z-index:1234512;
+    bottom: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 700;
+    font-size: 22px;
+}
+.AboutUsArticles{
+    
+    background-color: #111827;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.LinksAboutUsArticles{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.LinksAboutUsArticles>h1{
+    font-size: 17px;
+    color: white;
+}
+.LinksAboutUsArticles>h1:hover{
+    cursor: pointer;
+}
+.AboutUsText>h2{
+    font-size: 20px;
+    text-align: center;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.AboutUsText>h2>span{
+    border-bottom: 5px solid #523483;
+    padding-bottom: 10px;
+    color: #000000;
+}
+.AboutUsArticles>section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ArticleTextAbout{
+    background-color: white;
+    width: 300px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 15px;
+}
+.ArticleTextAbout>div>p{
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+.ArticleTextAbout>div>h2{
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.activeLinkArticle{
+    background-color: #523483;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+#ServicosSobreNos{
+    background-color: #e9e9e9;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 100px;
+}
+#ServicosSobreNos>h2{
+    text-align: center;
+    font-size: 20px;
+}
+
+#ServicosSobreNos>section>article{
+    background-color: white;
+    display: block;
+    width: calc(100% - 20px) !important;
+    padding: 20px;
+    border-radius: 10px;
+    border:  1px solid rgb(192, 192, 192);
+}
+#ServicosSobreNos>section>article>h2{
+    text-align: center;
+    background-color: #111827;
+    width: max-content;
+    margin: auto;
+    font-size: 20px;
+    padding: 5px 15px;
+    border-radius: 15px;
+    color: white;
+    margin-bottom: 10px;
+}
+#ServicosSobreNos>section>article>h3{
+    font-size: 15px;
+}
+#ServicosSobreNos>section>article>p{
+    font-size: 14px;
+    font-weight: 500;
+}
+#ServicosSobreNos>section>article>a{
+    display: block;
+    margin-top: 10px;
+    color: #111827;
+    font-weight: 600;
+    font-size: 14px;
+    width: max-content;
+    padding: 6px 25px;
+    border: 1px solid #111827;
+    border-radius: 10px;
+}
+#ServicosSobreNos>section>article>a:hover{
+    background-color: #111827;
+    color: white;
+    transition: background-color 0.2s ease-in;
+}
+#ServicosSobreNos>section{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+  
+
+}
+@media (min-width:700px) {
+    .AboutUsArticles{
+        flex-direction: row;
+    }
+    .AboutUsArticles{
+        justify-content: center;
+        align-items: center;
+    }
+    .ArticleTextAbout{
+        margin: 0;
+    }
+    #ServicosSobreNos>section{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    #ServicosSobreNos>section>article{
+        width: 320px !important;
+
+    }
+}
+
+@media (min-width:1024px) {
+    
+    #ServicosSobreNos>section>article>a{
+        margin-top: 10px;
+    }
+    #ServicosSobreNos>section>article{
+        width: 350px !important;
+
+    }
+   
+    .AboutUsText>h2{
+        font-size: 26px;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+        .AboutUsArticles{
+        
+        margin: auto;
+        gap: 100px;
+    }
+    .IntroAbout{
+        margin-left: 5vw;
+        margin-right: 5vw;
+        height: 450px;
+        background-position: 50%;
+    }
+    .SombraIntroAbout{
+        height: 450px;
+    }
+    .TextoIntroAbout>p{
+        font-size: 32px;
+        bottom: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: max-content;   
+    }
+    .ArticleTextAbout{
+        width: 400px;
+        padding: 15px;
+        padding-bottom: 40px;
+    }
+    .ArticleTextAbout>div>h2{
+       
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    .ArticleTextAbout>div>p{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    #ServicosSobreNos>h2{
+        margin-bottom: 40px;
+        font-size: 25px;
+    }
+    #ServicosSobreNos{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+@media(min-width:1100px){
+    #ServicosSobreNos>section{
+        grid-template-columns: auto auto auto ;
+    }
+    #ServicosSobreNos>section>article{
+        height: 230px;
+    }
+}

@@ -1,0 +1,189 @@
+.Salario{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.IntroSalario{
+    background-color: #2B2929;
+    height:calc(100vh - 84.52px) ;
+    font-family: 'Barlow', sans-serif;
+   
+}
+.IntroSalario>img{
+    width: 300px;
+    bottom: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.IntroSalario>section{
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 123;
+}
+.IntroSalario>section>h2{
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+}
+.IntroSalario>section>p{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(230, 230, 230);
+    font-weight: 500;
+}
+.IntroSalario>section>form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.IntroSalario>section>form>div{
+    width: max-content;
+}
+.IntroSalario>section>form>div>select{
+    padding-left: 40px;
+    width: 250px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 13px;  
+    padding-top: 10px;
+    padding-bottom: 10px;
+    outline: none;
+}
+
+.IntroSalario>section>form>div>input::placeholder{
+    color: #999999;
+    font-weight: 400;
+}
+.IntroSalario>section>form>div>label>img{
+    width: 25px;
+    margin-top: 7px;
+    position: absolute;
+    margin-left: 7px;
+}
+.PesquisarSalarioSubmeter{
+    background-color: #6e46ae;
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 13px;
+    font-family: 'Barlow', sans-serif;
+    border-radius: 5px;
+
+}
+.PesquisarSalarioSubmeter:hover{
+    background-color: #34067e;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.5s ease;
+}
+.DadosSetor{
+    background-color: #2b2929c4;
+    width: 300px;
+    height: calc( 100vh - 84.52px);
+    
+}
+.DadosSetor>ul{
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+.DadosSetor>ul>li>strong{
+    color: #bda1eb;
+}
+
+@media (min-width:700px) {
+    .IntroSalario{
+        
+        height:calc(100vh - 114.52px) ;
+        
+       
+    }
+    .IntroSalario>section>h2{
+        font-size: 30px;
+        width: max-content;
+        margin: auto;
+    }
+    .IntroSalario>section>p{
+        font-size: 16px;
+        width: max-content;
+        margin: auto;
+        margin-top: 10px;
+        color: rgb(230, 230, 230);
+        font-weight: 500;
+    }
+    .DadosSetor{
+        width: 100%;
+        height: calc(100vh - 114.52px);
+        
+    }
+    .DadosSetor>p{
+        width:600px !important;
+        font-size: 17px !important;
+       
+    }
+    .DadosSetor>ul{
+        font-size: 16px;
+    }
+    .IntroSalario>section>form>div>select{
+        width: 400px;
+    }
+    
+}
+@media (min-width:800px) {
+    .IntroSalario>section>article{
+       flex-direction: row;
+    }
+    .IntroSalario>img{ 
+        left: 80%;
+        transform: translateX(-80%);
+    }
+}
+@media (min-width:1024px) {
+    .IntroSalario{
+    
+        height: calc(100vh - 121.41px);
+       
+    }
+    .DadosSetor{
+        height: calc(100vh - 121.41px);
+    }
+    .IntroSalario>section>article{
+        flex-direction: row;
+     }
+     .IntroSalario>img{ 
+        width: 350px;
+         left: 80%;
+         transform: translateX(-80%);
+         bottom: 0;
+     }
+     .IntroSalario>section>h2{
+        font-size: 38px;
+        padding-top: 120px;
+    }
+    .IntroSalario>section>form{
+        margin-top: 40px;
+     }
+     .IntroSalario>section>form>div>select{
+        padding-left: 50px;
+        width: 400px;
+        
+     
+    }
+    .IntroSalario>section>form>div>select>option{
+        padding-right: 50px;
+    }
+    .IntroSalario>section>form>div>label>img{
+      
+        margin-left: 17px;
+    }
+ 
+}

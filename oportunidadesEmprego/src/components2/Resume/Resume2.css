@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.ResumoCv2{
+
+
+border-radius: 5px;
+box-shadow: 0px 0px 5px rgb(192, 192, 192);
+display: flex;
+flex-direction: column;
+font-family: "Raleway";
+height: max-content !important;
+position: relative;
+overflow-y: auto;
+
+
+}
+.ResumoCV2MAE{
+    width: 55%;
+    position: relative;
+    transform: scale(0.6);
+    margin-top: -165px;
+    height: 100%;
+}
+
+@media (max-width:1023px) {
+    .ResumoCV2MAE{
+        width: 80%;
+        position: relative;
+        transform: scale(0.0);
+    
+    }
+}
+
+.ResumoCV2Parte1{
+    width: 100%;
+    background-color: rgb(233, 233, 233);
+    position: relative;
+    color: rgb(0, 0, 0);
+    padding-left: 40px;
+    gap: 20px;
+    padding-right: 10px;
+    display:flex;
+    padding-bottom: 60px;
+   
+    
+}
+
+
+.HeaderResumo2{
+    margin-top: 90px;
+   
+    padding-top: 25px;
+    margin-left: -20px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+
+}
+.NomeResumo2{
+    font-weight: 800;
+    font-size: 32px;
+    width: 300px;
+    height: max-content;
+    word-wrap: break-word; 
+}
+.ProfissaoResumo2{
+    font-size: 19px;
+    width: 300px;
+    height: max-content;
+    word-wrap: break-word; 
+}
+.ResumoCV2Parte1>article{
+    border-left: 1px solid rgb(141, 141, 141);
+    margin-left: 30px;
+    padding-left: 10px;
+}
+.TituloContacto2{
+   margin-top: 10px;
+    font-size: 25px;
+    font-weight: 800;
+    margin-left: -12px;
+    border-radius: 2px;
+    padding-left: 10px;
+    color: rgb(255, 255, 255);
+
+}
+
+.ResumoCV2Parte22{
+    padding-top: 60px;
+    background-color: rgb(39, 39, 39);
+    width: 30%;
+    padding-left: 20px;
+    height: 100vh;
+
+}
+
+.Triangulo{
+    width:calc(100% + 20px) ;
+    margin-left: -10px;
+    
+    
+}
+.ContactoLinks2{
+    color: rgb(179, 179, 179);
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+.ContactoLinks2SubTitle{
+    width: 120px;
+    height: max-content;
+    word-wrap: break-word; /* Alternativa: word-break: break-all; */
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    font-weight: 600;
+
+   
+    
+}
+.TextoProjectoResumoCV2{
+    font-size: 15px;
+    color: rgb(179, 179, 179);
+    width: 150px;
+    height: max-content;
+    word-wrap: break-word; 
+}
+.ContactoLinksDiv2Link{
+    font-size: 15px;
+    display: flex;
+    gap:5px;
+    margin-top:10px;
+    color: rgb(179, 179, 179);
+    
+
+}
+.ContactoLinksDiv2Link>svg{
+    width:15px;
+}
+.ContactoLinksDiv2Link > p {
+    width: 100px;
+    height: max-content;
+    word-wrap: break-word; /* Alternativa: word-break: break-all; */
+}
+
+.ResumoCV2Parte2{
+    width: 100%;
+    padding-left: 40px;
+    display: flex;
+    background-color: white;
+}
+.ResumoCV2Parte21{
+    width: 70%;
+}
+
+.parte2ResumoCv2Divs{
+    margin-top: 70px;
+}
+.Title2parteResumoCV2{
+    font-size: 27px;
+    color: rgb(39, 39, 39);
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-weight: 800;
+    width: max-content;
+    padding-bottom: 7px;
+}
+.Paragrafo2parteResumoCV2{
+    width: 300px;
+    height: max-content;
+    word-wrap: break-word; /* Alternativa: word-break: break-all; */
+    color: rgb(85, 85, 85);
+    font-size: 16px;
+
+}
+.Positionparte2ResumoCV2{
+    font-weight: 700;
+    font-size: 21px;
+    width: 200px;
+    word-wrap: break-word;
+  
+}
+.Companyparte2ResumoCV2{
+    color: rgb(54, 54, 54);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.IntroExperienciaParte2ResuoCV2{
+    display:  flex;
+    gap: 60px;
+}

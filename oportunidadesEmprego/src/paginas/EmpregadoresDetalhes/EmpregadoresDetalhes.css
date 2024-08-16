@@ -1,0 +1,128 @@
+.EmpregadoresDetalhes{
+    font-family: 'Montserrat';
+}
+.Lilache{
+    width: 100%;
+    height: 100px;
+    background-color: #6e46ae;
+}
+.EmpregadoresLogoEmpresa{
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 20px;
+    width: 100px;
+}
+.OverwiewTextEmpregadores{
+    margin-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.OverwiewTextEmpregadores>h2{
+    margin-bottom: 10px;
+}
+.OverwiewTextEmpregadores>p{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(53, 53, 53);
+}
+.TitVagasEmpregadores{
+    margin-left: 10px;
+    margin-top: 30px;
+    font-size: 16px;
+    margin-bottom: 20px;
+   
+}
+.VagasAbertasEmpregadores{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.VagasAbertasEmpregadores>article{
+    display: flex;
+    width: calc(100% - 20px);
+   
+    gap: 10px;
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(214, 214, 214);
+    margin-left: 10px;
+
+   
+    
+}
+.VagasAbertasEmpregadores>article>img{
+    width: 50px;
+    
+}
+.VagasAbertasEmpregadores>article>div>h2{
+    font-size: 14px;
+    margin-top: 5px;
+}
+.VagasAbertasEmpregadores>article>div>p{
+    font-size: 13px;
+}
+.VagaExpirada{
+    height: max-content;
+    padding: 9px 11px;
+    margin-top: 5px;
+    position: absolute;
+    right: 0;
+    background-color: #EAEAEA;
+    border: none;
+    color: #4D4D4D;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    border-radius: 5px;
+
+}
+.VagaDisponivel{
+    height: max-content;
+    padding: 9px 11px;
+    margin-top: 5px;
+    position: absolute;
+    right: 0;
+    background-color: #6e46ae;
+    color: white;
+    border: none;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    border-radius: 5px;
+
+}
+.VagasAbertasEmpregadores{
+    margin-bottom: 70px;
+}
+
+@media (min-width:1024px) {
+    .Lilache{
+    
+        height: 160px;
+        
+    }
+    .EmpregadoresLogoEmpresa{
+        margin-left: 5vw;
+        width: 150px;
+        margin-top: -90px;
+        
+    }
+    .OverwiewTextEmpregadores{
+        margin-top: 70px;
+        padding-left: 5vw;
+       
+    }
+    .OverwiewTextEmpregadores>p{
+        width: 800px;
+    }
+    .TitVagasEmpregadores{
+        margin-left: 5vw;
+    }
+    .VagasAbertasEmpregadores>article{
+ 
+        width: calc(100% - 10vw);    
+        margin-left: 5vw;
+
+    }
+    .VagasAbertasEmpregadores{
+        margin-bottom: 150px;
+    }
+}

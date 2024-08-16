@@ -1,0 +1,51 @@
+.TrabalheConnosco{
+    font-family: 'Montserrat';
+}
+.TrabalheConnosco>section{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 40px;
+}
+.TextoTrabalheConnosco>h2{
+    margin-bottom: 20px;
+
+}
+.TextoTrabalheConnosco>h2>span{
+    background-color:#6e46ae ;
+    color: white;
+    padding: 3px 5px;
+    border-radius: 5px;
+
+}
+.TextoTrabalheConnosco>p{
+    font-size: 15px;
+
+}
+.TextoTrabalheConnosco>p>span{
+    color: #6e46ae;
+    font-weight: 600;
+}
+
+.ImagemTrabalheConnosco{
+    margin-top: 30px;
+    width: 100%;
+    height: 300px;
+    background-image: url(../../assets/TrabalheConnosco.jpg);
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+@media (min-width:1024px) {
+    .TrabalheConnosco>section{
+        display: flex;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        gap: 50px;
+        margin-bottom: 50px;
+
+    }
+    
+    .TextoTrabalheConnosco>h2{
+        margin-top: 40px;
+    }
+}

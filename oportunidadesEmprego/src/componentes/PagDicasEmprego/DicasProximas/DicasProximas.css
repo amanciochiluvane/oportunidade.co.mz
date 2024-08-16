@@ -1,0 +1,105 @@
+.DicasProximas{
+    margin-bottom: 20px;
+
+}
+.DicasProximas>h2{
+    font-size: 18px;
+    margin-left: 5%;
+    border-left: 5px solid #6E46AE ;
+    padding-left: 5px;
+    margin-bottom: 20px;
+}
+.SectionDicasProximas{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+.SectionDicasProximasLink{
+    display: block;
+    width:230px !important;
+    height: 270px !important;
+    margin: auto;
+    position: relative;
+    text-align: left;
+    
+}
+.SectionDicasProximasLinkIMGDICA{
+    border-radius: 10px;
+    width: 230px;
+    height: 270px;
+    background-size: cover;
+}
+.SectionDicasProximasLink>article{
+    background-image: linear-gradient(to top,black,rgba(0, 0, 0, 0));
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    border-radius: 10px;
+}
+.SectionDicasProximasLink>article:hover{
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.692),rgba(0, 0, 0, 0));
+    box-shadow: 0px 0px 10px rgb(94, 94, 94);
+    
+    transition: box-shadow 0.2s ease;
+   
+}
+.SectionDicasProximasLink>article>h2{
+    color: white;
+    position: absolute;
+    bottom: 10%;
+    left: 10px;
+    font-size: 17px;
+    right: 10px;
+    width: 200px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    
+    
+}
+.SectionDicasProximas>.slick-slider>.slick-prev{
+    position: absolute !important;
+    left: 90%;
+    top: -30px;
+}
+.SectionDicasProximas>.slick-slider>.slick-next{
+    position: absolute !important;
+    right: 0;
+    top: -30px;
+}
+
+.SectionDicasProximas>.slick-slider>.slick-dots>.slick-active>button::before{
+    color: #6E46AE;
+    
+}
+.SectionDicasProximas>.slick-slider>.slick-next::before{
+    display: none;
+}
+.SectionDicasProximas>.slick-slider>.slick-prev::before{
+    display: none;
+}
+
+@media (min-width:1024px) {
+    .SectionDicasProximas{
+        margin-top: 50px;
+    }
+    .DicasProximas>h2{
+        font-size: 20px;
+        margin-left: 5%;
+        border-left: 5px solid #6E46AE ;
+        padding-left: 10px;
+        margin-bottom: 20px;
+    }
+    .SectionDicasProximas>.slick-slider>.slick-prev{
+        left: 94%;
+        top: -60px;
+    }
+    .SectionDicasProximas>.slick-slider>.slick-next{
+        position: absolute !important;
+        right: 0;
+        top: -60px;
+    }
+}
+

@@ -1,0 +1,137 @@
+.ConfigTit{
+    display: block;
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 30px;
+    font-size: 18px;
+}
+.FotoPerfil{
+    width: max-content;
+    margin-left: 5%;
+}
+.FotoPerfil>p{
+    margin-top: 20px;
+    text-align: left;
+
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: rgb(109, 108, 108);
+    font-weight: 500;
+    width: max-content;
+}
+.FotoPerfil>input{
+    margin: 0 !important;
+
+}
+.FotoPerfil>div{
+    border-radius: 5px;
+    border: 2px dashed rgb(196, 196, 196);
+    width: 150px;
+    margin-left: 5%;
+    
+}
+.FotoPerfil>div>p{
+    font-size: 12px;
+    padding: 30px 5px;
+    padding-bottom: 10px;
+
+}
+.InputButton{
+    font-size: 10px;
+    padding: 5px 10px;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 500;
+    margin-bottom: 30px;
+
+
+   
+    
+}
+.TextosConfig{
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    text-align: left;
+    border-top: 1px solid rgb(196, 196, 196);
+    padding-top: 20px;
+}
+.TextosConfig{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+.TextosConfig>div>p{
+    font-size: 14px;
+    color: rgb(109, 108, 108);
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.TextosConfig>div>input{
+    width: calc(100% - 10px);
+    padding-top: 9.5px;
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(165, 165, 165);
+    border-radius: 5px;
+    padding-bottom: 9.5px;
+    outline-color: rgb(139, 24, 247);
+    font-weight: 500;
+    font-family: 'Montserrat', 'sans-serif';
+    padding-left: 10px;
+}
+.DecisaoConfig{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+.DecisaoConfig>button{
+    font-size: 15px;
+    padding: 8px 20px;
+    
+}
+.ActualizarConfig{
+    background-color: #652ebe;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    padding: 10px 20px;
+    font-family: 'Montserrat';
+}
+.ActualizarConfig:hover{
+    background-color: #762dec;
+    cursor: pointer;
+}
+.ApagarConfig:hover{
+    background-color: rgb(235, 234, 234);
+    cursor: pointer;
+}
+.ApagarConfig{
+    background-color: white;
+    border: 2px solid #652ebe ;
+    color: #652ebe;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+@media (min-width:700px) {
+    .TextosConfig>div>input{
+        width: 300px;
+    }
+    .TextosConfig{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+@media (min-width:1025px) {
+    .TextosConfig>div>input{
+        width: 400px;
+    }
+    .ConfigTit{
+        margin-top: 60px;
+    }
+    .TextosConfig{
+        padding-top: 30px;
+    }
+}

@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&display=swap');
+
+.CarreiraEmprego{
+    
+    font-family: 'Barlow', sans-serif;
+    margin-top: 70px;
+    background-color: #111827;
+   
+    padding-bottom: 60px;
+}
+.InfoCarreiraEmprego>h2{
+    color: white;
+    font-size: 19px;
+    padding-top: 30px;
+    padding-left: 30px;
+    font-weight: 600;
+    width: 300px;
+
+}
+.InfoCarreiraEmprego>p{
+    color: rgb(190, 190, 190);
+    margin-top: 10px;
+    margin-left: 30px;
+    font-weight: 500;
+    width: 300px;
+}
+.SaberMaisCarreiraEmpregoEntrar{
+    text-decoration: none;
+    color: white;
+    background-color: #6e46ae;
+    padding: 5px 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    margin-left: 30px;
+    
+}
+.SaberMaisCarreiraEmpregoEntrar:hover{
+    background-color: #5011b4;
+    transition: background-color 0.3s ease;
+}
+.SaberMaisCarreiraEmpregoLink{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    margin-left: 30px;
+}
+.SaberMaisCarreiraEmpregoLink:hover{
+    color: #6e46ae;
+    transition: color 0.4s ease;
+}
+.SaberMaisCarreiraEmprego{
+    margin-top: 30px;
+}
+.SaberMaisCarreiraEmprego>img{
+  margin-left: 20px;
+  position: absolute;
+}
+.MarketingCarreiraEmprego{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.MarketingCarreiraEmprego>div{
+    width: 250px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    
+}
+.MarketingCarreiraEmprego>div>img{
+    width: 50px;
+    background-color: white;
+    border-radius: 7px;
+    
+}
+.MarketingCarreiraEmprego>div>h2{
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+.MarketingCarreiraEmprego>div>p{
+    color: rgb(151, 150, 150);
+    font-size: 14px;
+    font-weight: 500;
+}
+.imgCarreiraEmprego{
+    display: none;
+}
+
+@media (min-width:700px) {
+    .CarreiraEmprego>div{
+        display: flex;
+        gap:30px;
+        width: 600px;
+        margin: auto;
+    }
+    .imgCarreiraEmprego{
+        display: block;
+        
+    }
+    .imgCarreiraEmprego>img{
+        width: 250px;
+        border-radius: 5px;
+        position: absolute;
+    }
+    .IMGMulherComputador{
+        margin-top: 150px;
+        z-index: 12;
+    }
+    .IMGAnimacao{
+        margin-top: 70px;
+    }
+}
+@media (min-width:1024px) {
+    .IMGAnimacao{
+        margin-left: 170px;
+        width: 290px !important;
+    }
+    .CarreiraEmprego>div{
+        width: 90%;
+        gap: 50px;
+
+    }
+    .InfoCarreiraEmprego>h2{
+        font-size: 25px;
+        padding-top: 80px;
+        padding-left: 0;
+        
+    }
+    .InfoCarreiraEmprego>p{
+        margin-left: 0;
+    }
+    .MarketingCarreiraEmprego{
+        flex-direction: row;
+    }
+    .MarketingCarreiraEmprego>div{
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+        width: 310px;
+    }
+
+}
+@media (min-width:1200px) {
+    .CarreiraEmprego>div{
+      width: 1100px;
+    }
+    .imgCarreiraEmprego>img{
+        width: 350px;
+        border-radius: 5px;
+        position: absolute;
+    }
+    .SaberMaisCarreiraEmpregoEntrar{
+        margin-left: 0;
+    }
+}

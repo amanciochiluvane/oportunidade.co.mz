@@ -1,0 +1,163 @@
+.DicasGrande{
+
+width: 90%;
+margin: auto;
+position: relative;
+margin-bottom: 60px;
+height: 300px;
+
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+
+.DicasGrande>button{
+    position: absolute;
+    top: 30px;
+    z-index: 12120;
+    margin-left: 20px;
+    font-size: 12px;
+    padding: 5px 13px;
+    background-color: blueviolet;
+    border: none;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    border-radius: 10px;
+}
+.LermaisDicaGrande{
+    display: flex;
+    text-decoration: none;
+    color: white;
+   position: absolute;
+   bottom: 35%;
+    margin-left: 20px;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    background-color: rgba(151, 151, 151, 0.068);
+    width: max-content;
+    padding: 7px 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(61, 61, 61) ;
+
+}
+.LermaisDicaGrande:hover{
+    background-color:rgba(151, 151, 151) ;
+    transition: background-color 0.2s ease;
+    border: none;
+}
+.LermaisDicaGrande>p{
+    margin-top: 2px;
+}
+
+.DicasGrande>div{
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(27, 27, 27), rgba(2, 2, 2, 0)), linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+.DicasGrande>div>h2{
+    font-size: 17px;
+    width: 70%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    color: white;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: absolute;
+    bottom: 10%;
+    
+}
+.DicasGrande>div>article{
+    display: none;
+    
+}
+
+@media (min-width:700px) {
+    .DicasGrande{
+        height: 400px;
+        }
+        .LermaisDicaGrande{
+            
+           bottom: 65%;
+           
+        }
+
+    .DicasGrande>div>h2{
+       font-size: 20px;
+        bottom: 35%;
+        width: 50%;
+        
+    }
+    .DicasGrande>div>article{
+        display: flex;
+        position: absolute;
+        bottom: 10%;
+        gap: 10px;
+        width: 90%;
+        margin-left:20px ;
+        
+    }
+    .DicasGrande>div>article>a{
+        text-decoration: none;
+        font-size: 12px;
+        color: rgb(248, 248, 248);
+        border: 1px solid rgb(85, 85, 85) ;
+        padding: 10px 12px;
+        border-radius: 10px;
+        background-color: rgba(100, 100, 100, 0.651);
+        font-weight: 500;
+        
+    }
+    .DicasGrande>div>article>a:hover{
+        transition: background-color 0.2s ease-in;
+        background-color: rgba(36, 36, 36, 0.651);
+    }
+    .DicasGrande>div>article>a>p{
+        overflow-y: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+}
+@media (min-width:1024px) {
+    .DicasGrande{
+        height: 500px;
+    }
+    .DicasGrande>div>h2{
+        font-size: 30px;
+             bottom: 45%;
+             width: 50%;
+       
+     }
+     .DicasGrande>div>article{
+        width: 80%;
+        
+    }
+    .DicasGrande>div>article>a>p{
+        
+        -webkit-line-clamp: 2;
+    }
+     
+    .DicasGrande>div>article>a{
+        font-size: 14px;
+        padding: 18px 20px;
+        font-weight: 500;    
+    }
+
+    .LermaisDicaGrande{
+
+        width: max-content;
+        padding: 7px 35px;
+        font-size: 13px;
+        bottom: 30%;
+    
+        
+        
+    }
+}

@@ -1,0 +1,178 @@
+.Dica{
+    font-family: 'Montserrat';
+   
+
+
+}
+.Dica>h2{
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+.ImgArtigo{
+    
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    background-size: cover;
+    height: 250px;
+}
+.InfoArtigo{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+.InfoArtigo1{
+    display:flex;
+    gap: 20px;
+
+}
+
+.InfoArtigo>div>div{
+    display: flex;
+    gap: 5px;
+}
+.InfoArtigo>div>div>img{
+    width: 22px;
+    height: max-content;
+}
+.InfoArtigo>div>div>p{
+    margin-top: 2px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.InfoArtigo1>p{
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 2px;
+}
+.InfoArtigo1>p>span{
+    font-weight: 500;
+    color: rgb(104, 104, 104);
+}
+.InfoArtigo2{
+    margin-top: 20px;
+}
+.InfoArtigo2>p{
+    font-weight: 600;
+    font-size: 14px;
+}
+.InfoArtigo2>div{
+    margin-left: 0 !important;
+   gap: 10px !important;
+}
+.ContentArtigo{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.ContentArtigo>h2{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.ContentArtigo>p{
+    font-size: 14px;
+    color: rgb(54, 54, 54);
+    font-weight: 500;
+}
+.ARTICLEARtigoRelacionado{
+    width: 300px;
+    height: 230px;
+    background-size: cover;
+}
+.DicaArtigosRelacionados>section>a>div{
+    background-color: white;
+    position: absolute;
+    margin-top: -80px;
+    width: 250px;
+    margin-left: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+.DicaArtigosRelacionados>section>a>div>p{
+    color: black;
+    font-size: 13px;
+    font-weight: 600;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.DicaArtigosRelacionados>h2{
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.DicaArtigosRelacionados>section{
+    display: grid;
+    grid-template-columns: auto;
+    margin: auto;
+    width: max-content;
+    margin-bottom: 60px;
+    
+    
+}
+.DicaArtigosRelacionados>section{
+    width: max-content;
+    text-decoration: none;
+}
+.ARTICLEARtigoRelacionado:hover{
+    box-shadow: 0px 0px 2px black;
+}
+
+@media (min-width:700px) {
+    .Dica>section{
+        width: 700px;
+        margin: auto;
+    }
+    .Dica>h2{
+        margin-left: 50px;
+    }
+    .DicaArtigosRelacionados>section{
+       
+        grid-template-columns: auto auto;
+        gap: 10px;
+       
+        
+    }
+}
+@media (min-width:1024px) {
+    .Dica>h2{
+        margin-top: 30px;
+    }
+    .Dica>section{
+        display:flex;
+       width: calc(100vw - 120px);
+       margin-top: 20px;
+    }
+    .Dica>section>article{
+        width: 50%;
+    }
+    .ContentArtigo>h2{
+        font-size: 26px;
+  
+    }
+    .ImgArtigo{
+        height: 600px;
+        background-position: 50%;
+    }
+    .DicaArtigosRelacionados{
+        margin-top: 50px;
+    }
+    .DicaArtigosRelacionados>section{
+       
+        grid-template-columns: auto auto auto auto ;
+        gap: 20px;
+       
+        
+    }
+    .DicaArtigosRelacionados>h2{
+        font-size: 23px;
+       
+    }
+}

@@ -1,0 +1,290 @@
+.IntroCv{
+    font-family: "Barlow";
+   
+    
+}
+.as{
+    color:#6E46AE;
+}
+.IntroCvDescricao{
+    background-color:  #F9FAFB;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px ;
+    padding-bottom: 40px;
+}
+.IntroCvDescricao>h2{
+    margin-bottom: 10px;
+}
+.IntroCvDescricao>article{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #747474;
+    
+}
+.IntroCvDescricao>article>a{
+    color: white;
+    background-color: #6E46AE;
+    width: max-content;
+    font-weight: 600;
+    padding: 6px 20px;
+    font-size: 17px;
+    border-radius: 8px;
+}
+.IntroCvDescricao>article>a:hover{
+    background-color: #4a3074;
+    cursor: pointer;
+}
+.LinkCriarCVIntroCV:hover{
+    background-color: #4a3074;
+    cursor: pointer;
+}
+.IntroCvDescricao2{
+    position: relative;
+    background-color: #111827;
+    height: 180px;
+    padding-left: 10px;
+    padding-top: 50px;
+
+}
+.IntroCvDescricao2>h2{
+    color: white;
+    font-size: 20px;
+    width: 250px;
+    position: absolute;
+    z-index: 1212;
+}
+.IntroCvDescricao2>h2>span{
+    background-color: #6E46AE;
+    padding: 2px 4px;
+    border-radius: 5px;
+}
+.IntroCvDescricao2>img{
+    width: 400px;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+}
+.IMGPassosCV{
+text-align: center;
+margin-top: 60px;
+}
+.IMGPassosCV>img{
+ 
+    width: 250px;
+   
+    
+}
+
+.TextPassosCV{
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.TextPassosCV>h3{
+    color: #6E46AE;
+    font-weight: 600;
+    font-size: 17px;
+}
+.TextPassosCV>h2{
+    font-size: 34px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color:#2D2C2C;
+}
+.TextPassosCV>div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #585858;
+}
+.PassosCards{
+    display: flex;
+    width: calc(100%- 20px);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-right: 10px;
+    gap: 20px;
+    margin-left: 10px;
+    overflow-x: auto !important;
+   
+}
+
+.PassosCards>article{
+    background-color: #F5F5F5;
+    flex: 0 0 270px;
+    padding: 10px 15px;
+    border-radius: 7px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    
+
+}
+.PassosCards>article>h2{
+    background-color: black;
+    width: max-content;
+    padding: 5px 13px;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.PassosCards>article>div>h2{
+    color: #2F2F2F;
+    font-size: 17px;
+}
+.ModelosCv{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.ModelosCv>h2{
+    text-align: center;
+}
+.ModelosCv>section{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+.ModelosCv>section>a>img{
+    width: 220px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(226, 226, 226);
+}
+.ModelosCv>section>a>img:hover{
+    box-shadow: 0px 0px 9px rgb(204, 204, 204);
+}
+
+@media (min-width:700px) {
+    .PassosCV{
+        display: flex;
+        gap: 30px;
+    }
+    .TextPassosCV{
+        margin-top: 70px;
+    }
+
+
+    .IntroCvDescricao{
+        display: flex;
+        gap: 10px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .IntroCvDescricao>h2{
+        font-size: 28px;
+        width:340px !important;
+        
+    }
+    .IntroCvDescricao>article{
+        width: calc(100% - 390px);
+    }
+    .IntroCvDescricao2>h2{
+           width: 300px;
+           font-size: 25px; 
+    }
+    .ModelosCv>section{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 50px;
+        margin-top: 40px;
+    }
+
+}
+
+@media (min-width:1024px) {
+    .IntroCvDescricao{
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+    .IntroCvDescricao>h2{
+        font-size: 48px;
+        width: 580px !important;
+    }
+    .IntroCvDescricao>article{
+        width: calc(90% - 500px);
+        margin-top: 15px;
+        font-size: 20px;
+        
+    }
+    .IntroCvDescricao2{
+        padding-left: 5vw;
+        height: 230px;
+        padding-top: 90px;
+    }
+    .IntroCvDescricao2>h2{
+        width: max-content;
+    }
+    .IntroCvDescricao2>img{
+        width: 470px;
+        right: 10vw;
+    }
+    .PassosCV{
+    padding-left: 5vw;
+    padding-right: 5vw;
+    gap: 50px;
+
+
+}    .IMGPassosCV>img{
+ 
+        width: 350px;
+       
+        
+    }
+    .TextPassosCV>h2{
+        font-size: 50px;
+    }
+    .TextPassosCV>div>p{
+        font-size: 18px;
+    }
+    .PassosCards{
+        justify-content: center;
+        align-items: center;
+    }
+    .PassosCards>article{
+        height: 240px;
+        flex: 0 0 350px;
+    }
+    .ModelosCv>h2{
+        font-size: 30px;
+        margin-top: 90px;
+    }
+    .ModelosCv>section{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 50px;
+        margin-top: 60px;
+        margin-bottom: 90px;
+    }
+    
+}
+@media(min-width:1200px){
+    .IntroCvDescricao2>img{
+        width: 570px;
+        
+    }
+    .IMGPassosCV>img{
+        width: 450px;
+    }
+    .TextPassosCV{
+        margin-top: 120px;
+    }
+    .ModelosCv>section>a>img{
+        width: 250px;
+    }
+    .ModelosCv>section{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 50px;
+        margin-top: 40px;
+        
+    }
+   
+
+}

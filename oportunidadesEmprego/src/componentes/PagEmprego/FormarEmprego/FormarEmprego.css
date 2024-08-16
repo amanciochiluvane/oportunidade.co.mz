@@ -1,0 +1,87 @@
+.FormarEmprego{
+    background-color: #f2f2f2;
+    padding-bottom: 40px;
+}
+.FormarEmpregoImg>img{
+    width: 250px;
+    padding-top: 50px;
+    display: block;
+    margin: auto;
+    
+}
+.FormarEmpregoTexto{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-self: center;
+    align-items: center;
+}
+.FormarEmpregoTexto>h2{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 30px;
+
+}
+.FormarEmpregoTexto>a{
+    display: flex;
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+    font-weight: 600;
+    gap: 30px;
+    border: 1px solid rgb(70, 69, 69);
+    padding: 10px;
+    border-radius: 8px;
+}
+.FormarEmpregoTexto>a>p{
+    width: 250px;
+   
+}
+.FormarEmpregoTexto>a>img{
+    width: 20px;
+    height: 20px;
+}
+@media (min-width:700px) {
+    .FormarEmprego{
+        display: flex;
+        gap: 80px;
+        justify-content: center;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .FormarEmpregoImg>img{
+        width: 350px;
+        margin-top: -10px;
+    }
+    .FormarEmpregoTexto{
+        gap: 5px;
+    }
+    .FormarEmpregoTexto>h2{
+        margin-bottom: 20px;
+    }
+    
+}
+@media(min-width:1024px){
+    .FormarEmpregoImg>img{
+        width: 550px;
+        margin-top: -40px;
+      
+    }
+    .FormarEmpregoTexto>h2{
+        font-size: 20px;
+        margin-top: 60px;
+    
+    }
+    .FormarEmpregoTexto>a{
+        padding: 15px;
+    }
+    .FormarEmpregoTexto>a>p{
+        font-size: 14px;
+        width: 270px;
+    }
+    .FormarEmpregoTexto>a:hover{
+        background-color: #111827;
+        color: white;
+        transition: background-color 0.45s ease;
+    }
+}

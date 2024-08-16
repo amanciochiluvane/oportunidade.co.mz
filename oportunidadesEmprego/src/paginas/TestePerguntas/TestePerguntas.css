@@ -1,0 +1,206 @@
+.TestePerguntas{
+    font-family: "Barlow";
+}
+.questionVocacional{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 30px;
+}
+.questionVocacional>h2{
+    font-size: 24px;
+    color: rgb(43, 43, 43);
+}
+.questionVocacional>p{
+    margin-top: 5px;
+    color: rgb(143, 142, 142);
+    font-weight: 500;
+}
+.RespostasVocacional{
+    margin-top: 10px;
+    border: 2px solid rgb(185, 185, 185);
+    padding: 10px 10px;
+    padding-left: 15px;
+    border-radius: 10px;
+    
+}
+.RespostasVocacional>label:hover{
+    cursor: pointer;
+}
+
+.RespostasVocacional:hover{
+    border: 2px solid #6e46ae00;
+    cursor: pointer;
+    background-color:#6E46AE ;
+    color: white;
+    font-weight: 700;
+    transition: background-color 0.3s ease-in-out;
+ 
+ 
+}
+.RespostasVocacional.selected{
+    border: 2px solid #6E46AE;
+}
+.BotoesVocacional{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+
+.BotoesVoltar{
+    padding: 8px 18px;
+    border-radius: 10px;
+    font-weight: 600;
+    border: 1px solid #6E46AE;
+    background-color: white;
+    color: #6E46AE;
+    font-family: "Barlow";
+   
+}
+.BotoesVoltar:hover{
+    cursor: pointer;
+    background-color: #f0f0f0;
+}
+.BotoesSubmeter{
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius: 10px;
+    font-weight: 600;
+    border: 1px solid #6E46AE;
+    background-color: #6E46AE;
+    color: #ffffff;
+    font-family: "Barlow";
+}
+.BotoesSubmeter:hover{
+    background-color: #441d85;
+    cursor: pointer;
+}
+.ResultadoVocacional{
+    
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.ResultadoVocacional>h2{
+    font-size: 30px;
+    color: rgb(66, 66, 66);
+
+}
+.ResultadoVocacional>p{
+    font-size: 20px;
+    color: rgb(105, 104, 104);
+    font-weight: 600;
+
+}
+.ResultadoVocacional>div{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 15px;
+}
+.VoltarIncial{
+    display: block;
+    margin-top: 20px;
+    background-color: #6E46AE;
+    color: white;
+    font-weight: 600;
+    width: max-content;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+.VoltarIncial:hover{
+    background-color:#441d85;
+}
+.ProgressBarContainer {
+    width: 90%;
+    background-color: #e0e0df;
+    border-radius: 5px !important;
+    margin: 20px 0;
+  }
+  
+  .ProgressBar {
+    height: 12px;
+    background-color: #6E46AE;;
+    border-radius: 5px;
+    transition: width 0.3s ease-in-out;
+  }
+  
+
+@media (min-width:700px) {
+    .questionVocacional{
+        width: 400px;
+        margin: auto;
+        margin-top: 60px;
+        text-align: center;
+       
+    }
+    .BotoesVocacional{
+       justify-content: center;
+       align-items: center;
+       margin-bottom: 60px;
+    }
+    .BotoesSubmeter{
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .ResultadoVocacional{
+        width: 700px;
+        margin: auto;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .ResultadoVocacional>p{
+        font-size: 30px;
+    }
+    .VoltarIncial{
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+@media(min-width:1024px){
+    .questionVocacional>h2{
+        font-size: 33px;
+        margin-bottom: 10px;
+        margin-top: 90px;
+    }
+    .questionVocacional>p{
+        margin-bottom: 10px;
+    }
+    .questionVocacional{
+        width: 650px;
+    }
+    .BotoesVocacional{
+        margin-bottom: 30px;
+    }
+    .RespostasSectionVocacional{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+    .RespostasVocacional{
+        width: 230px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .RespostasVocacional>label{
+        font-size: 19px;
+    }
+    .ResultadoVocacional{
+        width: 900px;
+        margin-top: 70px;
+
+    }
+    .ResultadoVocacional>p{
+        font-size: 35px;
+    }
+    .ResultadoVocacional>div{
+        font-size: 17px;
+    }
+    .ProgressBarContainer{
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}

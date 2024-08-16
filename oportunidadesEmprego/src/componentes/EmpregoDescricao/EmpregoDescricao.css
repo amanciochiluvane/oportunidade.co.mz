@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+.EmpregoDescricao{
+    font-family: 'Montserrat', sans-serif;
+    width: max-content;
+    height: max-content;
+   position: fixed;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+   
+}
+
+.VagaExplicacao2{
+    width: 300px;
+    margin: auto;
+    
+    position: relative;
+  
+    background-color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    padding: 60px 20px;
+    overflow-y: auto;
+   height: 360px;
+   border-radius: 10px;
+
+    
+  
+}
+
+.VagaExplicacao2::-webkit-scrollbar{
+    width: 3px !important;
+  
+}.VagaExplicacao2::-webkit-scrollbar-track{
+    background-color:white;
+
+}
+.VagaExplicacao2::-webkit-scrollbar-thumb{
+    background-color: #c0c0c0;
+
+}
+
+
+.IntroVaga2{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+.IntroVaga2>img{
+    width: 50px;
+    height: 50px;
+}
+.IntroVaga2>div>h2{
+    font-size: 16px;
+}
+.IntroVaga2>div>p{
+    font-size: 13px;
+    color: #A9A9A9;
+    font-weight: 600;
+}
+
+
+.DescricaoVaga2>h2{
+    margin-top: 20px;
+    font-size: 14px;
+}
+.DescricaoVaga2>p{
+    font-size: 13px;
+    margin-top: 3px;
+    color:#4E4E4E ;
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding-top: 20px;
+}
+.DescricaoVaga2>ul>li{
+    font-size: 13px;
+    margin-top: 3px;
+    color:#4E4E4E ;
+    font-weight: 500;
+
+    padding-top: 20px;
+ 
+}
+.DescricaoVaga2>ul{
+    padding-left: 20px;
+}
+.DetalhesVaga2{
+    margin-bottom: 20px;
+}
+.DetalhesVaga2>button{
+    border: none;
+    font-weight: 700;
+    padding: 4px 10px;
+    margin-right: 5px;
+    margin-top: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+}
+.DetalhesVermelho2{
+    background-color: #FFE9E2;
+    color: #FF4206;
+}
+.DetalhesAzulEscuro2{
+    background-color: #E0EBFF;
+    color: #0A4CCB;
+}
+.DetalhesVerde2{
+    background-color: #B0FFCB;
+    color: #0CBB47;
+}
+.DetalhesAzulClaro2{
+    background-color: #ADF5FF;
+    color: #0DC4DD;
+}
+.OverwiewVaga22{
+ display: flex;
+ gap: 10px;    
+ justify-content: center;
+}
+.OverwiewVaga2>a>button{
+    padding: 9px 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+}
+.CandidatarVaga2>button{
+    background-color: #6E46AE;
+    border: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 11px 8px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+.CandidatarVaga2>button:hover{
+    background-color: #7e3fe4;
+    cursor: pointer;
+}
+
+.LinksDetalhesDescricao{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #d8d8d8;
+    
+}
+.LinksDetalhesDescricao>a{
+    text-decoration: none;
+    color: rgb(90, 90, 90);
+    font-size: 13px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+.LinksDetalhesDescricao>a:hover{
+    border-bottom: 2px solid #6E46AE;
+    color:black;
+    
+}
+.VoltarEmprego{
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 14px;
+    width: max-content;
+    margin: auto;
+    margin-top: 40px;
+}
+.VoltarEmprego>img{
+    height: 15px;
+}
+.VoltarEmprego>p{
+    margin-top: -2px;
+}
+
+@media(min-width:700px){
+    .EmpregoDescricao{
+        padding: 40px;
+    }
+    .VagaExplicacao2{
+        width: 500px;
+   
+        border-radius: 5px;
+
+    }
+
+}
+@media (min-width:1024px) {
+   
+    .VagaExplicacao2{
+        width: 800px;
+        padding-left: 60px;
+        padding-right: 60px;
+        height: 460px;
+    }
+    .DetalhesVaga2>button{
+        padding: 4px 20px;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+    .IntroVaga2>img{
+        width: 75px;
+        height: 70px;
+    }
+    .IntroVaga2>div>h2{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+}

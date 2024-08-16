@@ -1,0 +1,84 @@
+.LinksCategDicas>section{
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+    overflow-x: auto;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+.LinksCategDicas>section::-webkit-scrollbar{
+    display: none;
+}
+.LinksCategDicas>section>a>button{
+    text-decoration: none;
+   width: max-content;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border:none ;
+    font-family: 'Montserrat','sans-serif';
+    font-size: 13px;
+    font-weight: 500;
+    background-color: #6E46AE;
+    
+    color: white;
+    font-weight: 600;
+   
+}
+.LinksCategDicas>section>a>button:hover{
+    background-color: #330a75;
+    cursor: pointer;
+    
+}
+.LinksCategDicasEspecial{
+    background-color: black !important;
+    color: white;
+    font-weight: 700 !important;
+}
+.LinksCategDicasEspecial:hover{
+    background-color: black !important;
+    cursor: auto  !important;
+    box-shadow: none !important;
+}
+@media (min-width:1024px) {
+    .LinksCategDicas{
+        text-align: center;
+    }
+    .LinksCategDicas>section{
+    justify-content: center;
+    align-items: center;
+       gap: 0px;
+        margin-top: 50px;
+        
+    }
+    .LinksCategDicas>section>a>button{
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    .LinksCategDicas>section::-webkit-scrollbar{
+        
+        display: block;
+        height: 7px !important;
+        
+        background-color: rgb(189, 189, 189);
+        
+    }
+    .LinksCategDicas>section::-webkit-scrollbar-thumb{
+        background-color: rgb(90, 90, 90);
+        border-radius: 10px !important;
+       
+    }
+    
+    .LinksCategDicas>section::-webkit-scrollbar-track-piece{
+        width: 100px !important;
+    }
+    
+    
+    .LinksCategDicas>section>a>button{
+       
+        padding: 10px 15px;
+        
+    }
+    
+}

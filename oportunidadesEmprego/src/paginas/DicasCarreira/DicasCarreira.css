@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .card123{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .card123 .dots span{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background: #6E46AE;
+    border-radius: 50%;
+    transform: rotate(calc(var(--i) * (360deg / 15))) translateY(35px);
+    animation: animate 1.5s linear infinite;
+    animation-delay: calc(var(--i) * 0.1s);
+    opacity: 0;
+  }
+  @keyframes animate {
+   0%{
+     opacity: 1;
+   }
+   100%{
+     opacity: 0;
+   }
+  }
+
+
+.DicasCarreira{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.IntroDicasCarreira{
+    background-color: #f6f6f6be;
+    padding-left: 20px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    font-family: 'Barlow', sans-serif;
+    margin-bottom: 50px;
+   
+}
+.IntroDicasCarreira>div>h2{
+    font-size: 21px;
+    padding-top: 25px;
+    margin-bottom: 20px;
+}
+.IntroDicasCarreira>div>h2>span{
+    color: white;
+    background-color:#6E46AE ;
+    padding: 2px 7px;
+    border-radius: 5px;
+}
+.IntroDicasCarreira>div>p{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.PesquisarDica{
+    width: 100%;
+    width: calc(100% - 20px);
+    background-color: white;
+    position: relative;
+    padding: 7px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(172, 172, 172);
+}
+.PesquisarDica>input{
+    border: none;
+    font-family: 'Barlow', sans-serif;
+    width: 80%;
+    outline-color: white;
+    color: black;
+    font-size: 13px;
+}
+.PesquisarDica>button{
+    position: absolute;
+    right: 10px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 12px;
+    padding: 6px 8px;
+    margin-top: -4px;
+    border-radius: 5px;
+    border: none;
+    background-color: #6E46AE;
+    color: white;
+    font-weight: 600;
+}
+.PesquisarDica>button:hover{
+    background-color: #2b036b;
+    cursor: pointer;
+}
+.DicasCarreiraMaisPesquisadas>a>button{
+    background-color: black;
+    border: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.DicasCarreiraMaisPesquisadas>a>button:hover{
+    background-color: rgb(32, 32, 32);
+    cursor: pointer;
+}
+.IntroDicasCarreiraIMG{
+    display: none;
+}
+
+@media(min-width: 700px){
+    .IntroDicasCarreira>div{
+        width: 50%;
+        padding-top: 40px;
+    }
+    .IntroDicasCarreiraIMG{
+        display: block;
+        width: 300px;
+        position: absolute;
+        margin-top: -430px;
+        right: 10px;
+    }
+    .PesquisarDica{
+        padding: 12px 20px;
+    } 
+
+}
+@media (min-width:1054px) {
+    .IntroDicasCarreira>div>h2>span{
+        border-radius:9px;
+        padding: 1px 7px 3px 7px;
+  
+    }
+    .PesquisarDica>button{
+       
+        padding: 12px 29px;
+        margin-top: -12px;
+        right: 0px;
+        height: 100%;
+        border-radius: 5px;
+       
+       
+    }
+    .IntroDicasCarreira{
+        padding-bottom: 40px;
+    }
+    .IntroDicasCarreira>div{
+        width: 512px;
+        margin-left: 10%;
+    }
+    .IntroDicasCarreira>div>h2{
+        font-size: 32px;
+        margin-bottom: 30px;
+        
+    }
+    .IntroDicasCarreiraIMG{
+        display: block;
+        width: 300px;
+        margin-top: -410px;
+        right: 15%;
+        
+    }
+}

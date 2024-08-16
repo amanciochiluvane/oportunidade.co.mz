@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+.FooterCrowdfunding{
+    padding-top: 20px;
+    
+    background-color:#f1f1f1 ;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.LinksPaginas2{
+    display: grid;
+    grid-template-columns: auto auto;
+   width: max-content;
+   gap: 10px;
+    margin: auto;
+    margin-top: 30px;
+    
+}
+.LinksPaginas2>div{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 30px;
+}
+.LinksPaginas2>div>h2{
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: rgb(3, 2, 2);
+}
+.LinksPaginas2>div>a {
+    font-size: 13px;
+    text-decoration: none;
+    color: rgb(138, 138, 138);
+    width: 150px !important;
+    font-weight: 400;
+}
+.LinksPaginas2>div>a:hover{
+    color: rgb(218, 59, 2);
+    font-weight: 700;
+    transition: color 0.4s ;
+}
+
+section>article>h2{
+    font-size: 14px;
+}
+
+.SocialMedia2{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.SocialMedia2>a>img:hover{
+    transition: filter 0.7s ease; 
+    filter: brightness(0.1);
+}
+.Direitos>p{
+    font-size: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+.PagamentoFormas{
+    width: 50px;
+    
+}
+.PagamentoConfiavel{
+    width: 190px;
+}
+.OverviewFooter>article>div{
+    display: flex;
+    gap: 10px;justify-content: center;
+    margin-top: 10px;
+}
+.OverviewFooter>article>h2{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.FooterLogotipo{
+
+    width: 150px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+@media (min-width:700px) {
+    .FooterCrowdfunding{
+        padding: 30px;
+    }
+    .LinksPaginas2{
+        grid-template-columns: auto auto auto;
+        margin: auto;
+        margin-top: 20px;
+       
+    }
+    .Empresa{
+        display: flex;
+    }
+   
+    .Direitos>p{
+        font-size: 12px;
+        text-align: center;
+    }
+    
+}
+
+@media(min-width:1055px){
+    .LinksPaginas2{ 
+        padding-top: 50px;
+        width: max-content;  
+        grid-template-columns: auto auto auto auto auto;
+        column-gap: 60px;
+        margin-bottom: 50px;
+        
+       
+       
+    }
+    .LinksPaginas2>div>h2{
+        font-size: 14px;
+        margin-bottom: 30px;}
+    .Empresa>ul{
+       margin-left: 5vw;
+    }
+    .OverviewFooter{
+        padding-top: 20px;
+        border-top: 2px solid #bdbdbd;
+        display: flex;
+        width: 990px;
+        position: relative;margin: auto;
+    }
+    .OverviewFooter>article>h2{
+        text-align: left;
+    }
+    .SocialMedia3{
+        position: absolute;
+        right: 0;
+      
+    }
+    .SocialMedia3>h2{
+        width: max-content;
+        margin-left: 34px;
+       
+    }
+    .FooterLogotipo{
+        position: absolute;
+        right: 0;
+        margin-top: -100px;
+    }
+   
+    
+}
+
+
+

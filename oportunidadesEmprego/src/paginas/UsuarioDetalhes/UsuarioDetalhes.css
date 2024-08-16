@@ -1,0 +1,207 @@
+.UsuarioDetalhes{
+    font-family: 'Montserrat';
+    padding-bottom: 60px;
+    
+}
+.UsuarioDetalhes>section{
+    background-color: rgba(248, 248, 248, 0.445);
+    padding-top: 30px;
+}
+.BasicInfo>article>p>a{
+    background-color: #6e46ae;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 10px;
+    margin-top: 60px !important;
+    width: 120px;
+}
+.BasicInfo>article>p>a:hover{
+    background-color: #362453;
+}
+#LinkCV{
+    margin-top: 20px;
+}
+.IntroUser{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.FundoUserProfile{
+
+    width: calc(100% - 20px);
+    height: 170px;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    background-image: url(../../assets/Fundo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.IntroUser>img{
+    width: 170px;
+    border-radius: 80%;
+    height: 160px;
+    border: 3px solid white;
+    position: absolute;
+    top: 190px;
+       
+}
+.IntroUser>div{
+    
+    text-align: center;
+    color: rgb(53, 53, 53);
+}
+.IntroUser>div>h2{
+    font-size: 22px;
+    padding-top: 80px;
+}
+.IntroUser>div>h3{
+    font-size: 16px;
+    font-weight: 600;
+}
+.IntroUser>div>div{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    color: #6e46ae;
+    font-weight: 600;
+}
+.IntroUser>div>div>img{
+    width: 20px;
+
+}
+.BasicInfo>h2{
+    font-size: 17px;
+    margin-left: 10px;
+    color: rgb(49, 49, 49);
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(218, 218, 218);
+    padding-bottom: 8px;
+    margin-right: 10px;
+}
+.BasicInfo>article{
+    margin-left: 10px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.BasicInfo>article>p{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.BasicInfo>article>p>span{
+    font-weight: 600;
+}
+.BasicInfo>p{
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: 500;
+    color: rgb(75, 75, 75);
+    margin-right: 10px;
+}
+
+
+@media (min-width:700px){
+    .IntroUser{
+    
+       flex-direction: row;
+       gap: 20px;
+       justify-content: flex-start;
+       margin-left: 10px;
+        
+    }
+
+}
+
+@media (min-width:700px){
+    .IntroUser{
+       
+       margin-left: 5vw;
+        padding-bottom: 30px;
+    }
+    .IntroUser>div{
+        margin-top: -10px;
+        text-align: left;
+        
+    }
+    .IntroUser>div>div{
+        justify-content: flex-start;
+
+        
+    }
+    .BasicInfo>h2{
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .BasicInfo>p{
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .BasicInfo>article{
+        margin-left: 5vw;
+       
+    }
+    
+    
+}
+@media (min-width:1024px) {
+    .BasicInfo>article{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+       
+    }
+    .FundoUserProfile{
+
+        width: calc(100% - 10vw);
+        height: 200px;
+        display: block;
+        margin: auto;
+        border-radius: 10px;
+       
+    }
+    .BasicInfo>article>p>a{
+        position: absolute;
+        top: 350px;
+        right: 10vw;
+    }
+    .IntroUser>img{
+        margin-left: 50px;
+        top: 240px;
+        width: 185px;
+        height: 180px;
+           
+    }
+    .IntroUser>div{
+        margin-left: 270px;
+        margin-top: -50px;
+        
+    }
+    .IntroUser>div>h2{
+        font-size: 27px;
+    }
+    .BasicInfo{
+        text-align: center;
+    }
+    .BasicInfo>p{
+        
+        width: 900px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .BasicInfo>article{
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.ResumoCv4{
+
+border-radius: 5px;
+box-shadow: 0px 0px 5px rgb(192, 192, 192);
+display: flex;
+
+font-family: "Barlow";
+height: max-content !important;
+position: relative;
+
+
+
+}
+.ResumoCV4MAE{
+    width: 55%;
+    position: relative;
+    transform: scale(0.6);
+    margin-top: -165px;
+    height: 100%;
+}
+
+@media (max-width:1023px) {
+    .ResumoCV4MAE{
+        width: 80%;
+        position: relative;
+        transform: scale(0.0);
+    
+    }
+}
+
+.ResumoCV4Parte1{
+    width: 40%;
+    background-color: rgb(247, 140, 0);
+    position: relative;
+    color: rgb(0, 0, 0);
+    padding-left: 25px;
+    gap: 20px;
+    padding-right: 10px;
+    display:flex;
+    flex-direction: column;
+    padding-top: 190px;  
+    height: calc(100%); 
+   
+    
+}
+
+
+
+.HeaderResumo4{
+    margin-top: 70px;
+   
+    margin-left: -20px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+
+}
+.NomeResumo4{
+    font-weight: 800;
+    font-size: 37px;
+    width: 250px;
+    height: max-content;
+    word-wrap: break-word; 
+    color: rgb(0, 0, 0);
+   
+}
+.ProfissaoResumo4{
+    
+    font-size: 19px;
+    width: 200px;
+    padding: 1px 1px;
+    height: max-content;
+    word-wrap: break-word; 
+    
+    color: rgb(255, 255, 255);
+    background-color:rgb(247, 140, 0) ;
+    border-radius: 5px;
+    padding-left: 20px;
+   
+}
+.ResumoCV4Parte11{
+    
+    width: calc(100% + 50px) !important;
+    margin-left: -40px;
+    padding-left: 20px;
+    padding-bottom: 120px;
+    border-radius: 0px 0px 160px 160px ;
+   
+}
+.ResumoCV4Parte1>article{
+    border-left: 1px solid rgb(141, 141, 141);
+    margin-left: 30px;
+    padding-left: 10px;
+}
+.TituloContacto4{
+   margin-top: 10px;
+    font-size: 25px;
+    font-weight: 800;
+    margin-left: -12px;
+    border-radius: 2px;
+    padding-left: 10px;
+    color: rgb(255, 255, 255);
+
+}
+
+.ResumoCV4Parte22{
+    padding-top: 60px;
+    background-color: rgb(39, 39, 39);
+    width: 30%;
+    padding-left: 20px;
+    height: 100vh;
+
+}
+
+.Triangulo{
+    width:calc(100% + 20px) ;
+    margin-left: -10px;
+    
+    
+}
+.ContactoLinks4{
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    margin-top: -30px;
+    
+}
+.ContactoLinks4SubTitle{
+    width: 160px;
+    height: max-content;
+    word-wrap: break-word; /* Alternativa: word-break: break-all; */
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    margin-top: 50px;
+    font-weight: 600;
+
+   
+    
+}
+.TextoProjectoResumoCV4{
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    width: 200px;
+    height: max-content;
+    word-wrap: break-word; 
+    margin-top: 5px;
+
+    
+}
+.ContactoLinksDiv4Link{
+    font-size: 16px;
+    display: flex;
+    gap:5px;
+    margin-top:10px;
+    color: rgb(255, 255, 255);
+    
+}
+.ContactoLinksDiv41Link{
+    font-size: 16px;
+    display: flex;
+    gap:5px;
+    margin-top:10px;
+    color: rgb(146, 146, 146);
+}
+.ResumoCV4Parte12{
+    
+    margin-left: -40px;
+    padding-left: 40px;
+
+
+    
+    padding-bottom: 60px;
+    
+    
+}
+.ContactoLinksDiv4Link>svg{
+    width:15px;
+}
+.ContactoLinksDiv4Link > p {
+    width: 150px;
+    height: max-content;
+    word-wrap: break-word; /* Alternativa: word-break: break-all; */
+}
+.ContactoLinksDiv41Link > p {
+    width: 150px;
+    height: max-content;
+    word-wrap: break-word; /* Alternativa: word-break: break-all; */
+}
+
+.ResumoCV4Parte2{
+    
+    width: 100%;
+    padding-left: 40px;
+   
+    background-color: white;
+}
+.ResumoCV4Parte21{
+    width: 70%;
+}
+
+.parte4ResumoCv4Divs{
+    margin-top: 70px;
+}
+.Title4parteResumoCV4{
+    font-size: 27px;
+    color: rgb(39, 39, 39);
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-weight: 800;
+    width: max-content;
+    padding-bottom: 7px;
+    border-bottom: 2px solid rgb(247, 140, 0);
+    
+}
+.Title4parteResumoCV4::before{
+    content: "";
+    
+}
+
+.Paragrafo4parteResumoCV4{
+    width: 300px;
+    height: max-content;
+    word-wrap: break-word; /* Alternativa: word-break: break-all; */
+    color: rgb(85, 85, 85);
+    font-size: 16px;
+
+}
+.Positionparte4ResumoCV4{
+    font-weight: 700;
+    font-size: 19px;
+    width: 190px;
+    word-wrap: break-word;
+  
+}
+.Companyparte4ResumoCV4{
+    color: rgb(54, 54, 54);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.IntroExperienciaParte4ResuoCV4{
+    display:  flex;
+    gap: 30px;
+}

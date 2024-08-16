@@ -1,0 +1,49 @@
+.InscritoSucesso{
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    box-shadow: 0px 0px 12px 2px rgb(75, 75, 75);
+    
+}
+.SucessoDiv{
+    width: 300px;
+    padding: 60px 1px;
+
+}
+.SucessoDiv>img{
+    display: block;
+    margin: auto;
+    width: 90px;
+   
+    
+}
+.DescrSuccesso1{
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    width: max-content;
+    margin: auto;
+}
+.DescrSuccesso2{
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+    color: rgb(51, 51, 51);
+    margin-top: 5px;
+    font-weight: 600;
+    
+}
+
+
+
+@media (min-width:1024px) {
+    .SucessoDiv{
+        width: 650px;
+        padding: 90px 1px;
+    
+    }
+}

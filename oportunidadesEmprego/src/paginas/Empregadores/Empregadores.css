@@ -1,0 +1,66 @@
+.Empregadores{
+    font-family: 'Montserrat';
+    margin-bottom: 30px;
+}
+.Empregadores>h2{
+    font-size: 19px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.Empregadores>h2>span{
+    color: white;
+    background-color: #6e46ae;
+    padding: 4px 10px;
+    border-radius: 5px;
+}
+#ArticleNivies22{
+    display: grid !important;
+    grid-template-columns: auto;
+    gap: 20px;
+}
+@media (min-width:500px) {
+    #ArticleNivies22{
+        width: max-content;
+        margin: auto;
+        margin-top: 30px;
+        grid-template-columns: auto auto;
+        column-gap: 20px;
+        
+        
+    } 
+    #ArticleNivies22>div{
+        margin: 0 !important;
+    }
+}
+@media (min-width:700px) {
+    #ArticleNivies22{
+        
+        grid-template-columns: auto auto auto;
+        column-gap: 20px;
+        
+        
+    } 
+
+}
+@media (min-width:1024px) {
+    #ArticleNivies22{
+        
+        grid-template-columns: auto auto auto auto;
+        column-gap: 20px;
+        
+        
+    } 
+    .Empregadores>h2{
+        margin-left: 5vw;
+    }
+
+}
+@media (min-width:1200px) {
+    #ArticleNivies22{
+        
+        grid-template-columns: auto auto auto auto auto;
+       
+        
+        
+    } 
+}

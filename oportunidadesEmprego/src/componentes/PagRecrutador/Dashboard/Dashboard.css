@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+.Dashboard{
+   text-align: center;
+   width: calc(100% - 30px);
+   background-color: rgb(255, 255, 255);
+   
+}
+.Filtrodata{
+    display: flex;
+    
+    position: relative;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+}
+.Filtrodata>h1{
+    font-size: 19px;   
+}
+
+.IntroDashboard>div{
+    width: 90%;
+    text-align: left;
+    margin: auto;
+    margin-top: 20px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+.IntroDashboard>div>h2{
+    font-size: 14px;
+    padding-top: 15px;
+    padding-left: 15px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+.IntroDashboard>div>h3{
+    font-size: 27px;
+    padding-left: 15px;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.IntroDashboard>div>p{
+    padding-left: 15px;
+    padding-bottom: 15px;
+    font-size: 14px;
+    font-weight: 600;
+   
+}
+
+.DivisaoRecrutador{
+    display: flex;
+}
+.IntroDashboard>div:nth-child(1){
+    background-color: rgb(240, 240, 240);
+}
+.IntroDashboard>div:nth-child(2){
+    background-color: rgb(240, 240, 240);
+}
+.IntroDashboard>div:nth-child(3){
+    background-color: rgb(240, 240, 240);
+}
+.IntroDashboard>div:nth-child(1)>p{
+    color: rgb(63, 158, 161);
+}
+.IntroDashboard>div:nth-child(2)>p{
+    color: rgb(63, 158, 161);
+}
+.IntroDashboard>div:nth-child(3)>p{
+    color: rgb(63, 158, 161);
+}
+.DetalhesDashboard{
+    margin-bottom: 20px;
+}
+.DetalhesDashboard>div{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    border: 2px solid rgb(228, 228, 228);
+    border-radius: 10px;
+    gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.DetalhesDashboard>div>div{
+    text-align: left;
+}
+.DetalhesDashboard>div>div>h2{
+    font-size: 14px;
+    padding-top: 15px;
+    padding-left: 15px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+.DetalhesDashboard>div>div>h3{
+    font-size: 27px;
+    padding-left: 15px;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.DetalhesDashboard>div>div>p{
+    padding-left: 15px;
+    padding-bottom: 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.SubDetalhesDashboard2{
+    margin-top: 20px;
+}
+.SubDetalhesDashboard2>h2{
+    font-size: 32px !important;
+}
+.SubDetalhesDashboard1>p{
+    padding-bottom: 0px !important;
+    font-weight: 500 !important;
+    color: rgb(119, 119, 119);
+}
+.SubDetalhesDashboard2>p{
+    padding-left: 0px !important;
+   
+    font-weight: 500 !important;
+    color: rgb(151, 151, 151);
+    border-radius: 5px;
+    padding: 5px 10px !important;
+    font-size: 13px !important;
+    
+}
+#positivoValor{
+    color: rgb(18, 190, 110);
+    font-weight: 700;
+}
+#negativoValor{
+    color: rgb(214, 77, 14);
+    font-weight: 700;
+}
+.VagasAbertas{
+    border: 2px solid rgb(228, 228, 228);
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+
+    margin-bottom:30px;
+    padding-bottom: 20px !important;
+}
+.VagasAbertas>h1{
+    font-size: 16px;
+    margin-top: 30px;
+    text-align: left;
+    margin-left:15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.VagasAbertas>div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.VagasAbertas>div>p{
+    background-color: rgb(240, 240, 240);
+    text-align: left;
+    padding-left: 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid rgb(211, 211, 211);
+}
+.VagasAbertas>div>p>p{
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.VagasAbertas>div>p>span{
+    font-size: 12px;
+    color: rgb(119, 119, 119);
+}
+.VerVagasAbertas{
+    color: #652ebe;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+
+}
+.ActividadesRecentes{
+    border: 2px solid rgb(228, 228, 228);
+    border-radius: 10px;
+    width:90%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.ActividadesRecentes>h2{
+    font-weight: 600;
+    padding-top: 20px;
+    font-size: 15px;
+    text-align: left;
+    margin-left: 20px;
+}
+.ActividadesRecentes>div{
+    margin-top: 15px;
+    border-top: 2px solid rgb(233, 233, 233);
+    padding-bottom: 10px;
+}
+.ActividadesRecentes>div>div{
+    display: flex;
+    padding-top: 20px;
+    gap: 15px;
+    
+}
+.ActividadesRecentes>div>div>img{
+    width: 45px;
+    margin-left: 20px;
+}
+.ActividadesRecentes>div>div>div>h2{
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: left;
+    
+}
+.ActividadesRecentes>div>div>div>p{
+    font-size: 13px;
+    color: rgb(139, 139, 139);
+}
+@media (min-width:700px) {
+    .Dashboard1Part{
+        width: 90%;
+        margin: auto;
+    }
+    .IntroDashboard{
+        display: flex;
+        gap: 0px;
+        width: 100%;
+        margin: auto;
+        gap: 5%;
+        margin-top: 20px;
+    }
+    .IntroDashboard>div{
+        width: 30%;
+        margin: 0;
+    }
+    .DetalhesDashboard{
+        width: 100%;
+        display: flex;
+        gap: 2%;
+    }
+    .DetalhesDashboard>div{
+        width: 49%;
+        gap: 10%;    }
+        .VagasAbertas{
+            width: 100%;
+        }
+}
+@media (min-width:1024px) {
+    .Filtrodata{
+        
+        margin-top: 60px;
+    }
+    .Dashboard{
+     width:calc(100% - 250px) ;
+     margin-left: 250px;
+     margin-top: 50px;
+
+    }
+  
+}
+@media (min-width:1200px) {
+    .DivisaoDashboard{
+        width: 90%;
+        display: flex;
+        margin: auto;
+    }
+    .Dashboard1Part{
+        width: 70%;
+
+    }
+    .Dashboard2Part{
+        width: 30%;
+        margin-top: 20px;
+        
+    }
+    .VagasAbertas>h1{
+        margin-left: 5%;
+    }
+}

@@ -1,0 +1,144 @@
+.BarraMenu{
+    background-color:  rgb(31, 31, 31);
+}
+.BarraMenuBurguer{
+    background-color:  rgb(31, 31, 31);
+    height: 100%;
+    width: 30px;
+    position: relative;
+    
+}
+.EspecialItemLogOut{
+    position: absolute;
+    bottom: 30px;
+}
+.BarraMenu>aside>img{
+    width: 20px;
+    position: fixed;
+    top: 50%;
+    margin-left: 4px;
+    transform: translateY(-50%);
+}
+.Menu2.invisivel2>img{
+ display: none;
+}
+.Menu2.invisivel2>a{
+    display: none;
+   }
+.Menu2{
+    width: 0px;
+    transition: width 0.80s;
+}
+.Menu2.visivel2{
+   
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 20px;
+ 
+    width: 250px;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    z-index: 1001212;
+}
+.Menu2.visivel2>img{
+    position: absolute;
+    top: 40px;
+    margin-left: 195px !important;
+   
+}
+.Menu2.visivel2>a{
+    text-decoration: none;
+    color: rgb(212, 212, 212);
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    gap: 10px;
+    padding-left: 20px;
+    margin-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    width: 200px;
+    
+}
+.Menu2.visivel2>a:hover{
+    background-color: #333333   ;
+    color: #ffffff;
+    border-radius: 5px;
+    background-color: #652ebe;
+    transition: background-color 0.2s ease-in;
+
+}
+.LinkEspecialDashboard{
+   margin-top: 60px;
+}
+.Menu2.visivel2>a>img{
+    width: 24px;
+    filter: grayscale(0.8);
+}
+.Menu2.visivel2>a:hover img{
+    filter: grayscale(0.0);
+    filter: brightness(10);
+}
+.Menu2.visivel2>a>p{
+    margin-top: 5px;
+}
+
+@media (min-width:1024px) {
+    .BarraMenuBurguer{
+        display: none;
+    }
+    .Menu2.invisivel2{
+        
+        background-color: rgb(31, 31, 31);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+     
+        width: 250px;
+        position: fixed;
+       
+        height: calc(100vh - 62.78px) ;
+        margin-top: 62.78px;
+    }
+    .Menu2.invisivel2>a{
+        text-decoration: none;
+        color: rgb(212, 212, 212);
+        font-size: 13px;
+        font-weight: 600;
+        display: flex;
+        gap: 10px;
+        margin-left: 20px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 10px;
+        width: 200px;
+        
+    }
+    .Menu2.invisivel2>a:hover{
+        background-color: #333333   ;
+        color: #ffffff;
+        border-radius: 5px;
+        background-color: #652ebe;
+        transition: background-color 0.2s ease-in;
+   
+    }
+
+    .LinkEspecialDashboard{
+        margin-top: 40px;
+     }
+    .Menu2.invisivel2>a>img{
+        width: 24px;
+        filter: grayscale(0.8);
+    }
+    .Menu2.invisivel2>a:hover img{
+        filter: grayscale(0.0);
+        filter: brightness(10);
+    }
+    .Menu2.invisivel2>a>p{
+        margin-top: 5px;
+    }
+}

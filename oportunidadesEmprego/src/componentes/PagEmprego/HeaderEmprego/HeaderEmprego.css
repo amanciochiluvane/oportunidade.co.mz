@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+.HeaderEmprego{
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+
+.HeaderEmpregoLogotipo{
+    padding: 20px 10px 10px 10px;
+}
+
+.HeaderEmpregoLogotipo>a>img{
+    width: 150px;
+    
+}
+.Candidato{
+    position: absolute;
+    right: 10px;
+}
+
+
+.HeaderEmpregoLogotipo>a>button{
+    padding: 7px 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #6e46ae;
+}
+.ContaDetalhesVagEmprego{
+    position: absolute;
+    right: 10px;
+    margin-top: -30px;
+    display: flex;
+    gap: 20px;
+}
+.HeaderEmpregoLogotipo>div>a>button{
+    padding: 7px 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #6e46ae;
+}
+.SignVagaEmprego>button{
+    background-color: white !important;
+    color: #6e46ae !important;
+    border: 1px solid #A1A1A1 !important;
+}
+.LoginVagaEmprego>button:hover{
+    background-color: #40236e !important;
+  
+    cursor: pointer;
+    transition: background-color 0.8s ease-in-out;
+    transition: color 0.8s ease;
+}
+
+.SignVagaEmprego>button:hover{
+    background-color: #eeeeee !important;
+  
+    cursor: pointer !important;
+    
+    transition: color 0.8s ease;
+    
+}
+.HeaderEmpregoLinks{
+    background-color: #f2f2f2;
+    
+    text-align: center;
+}
+.HeaderEmpregoLinksResponsivo.visivel>#LinkSetaHeaderEmprego{
+    display: flex; 
+    gap: 10px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.HeaderEmpregoLinksResponsivo.invisivel>a{
+    
+    display: none;
+   
+}
+
+.HeaderEmpregoLinksResponsivo{
+    height: 0px;
+   
+    transition: height 1.00s;
+    
+    background-color: #f2f2f2;
+    gap: 10px;
+   
+   
+}
+
+.HeaderEmpregoLinksResponsivo.visivel{
+height: 200px;
+position: absolute;
+z-index: 1212;
+width: 100%;
+padding: 5px;
+margin-top: 83px;
+
+    
+}
+
+.HeaderEmpregoLinksResponsivo.visivel>a{
+    text-decoration: none;
+    color: #414141;
+    font-size: 13px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+   
+    
+   
+    
+}
+
+#LinkSetaHeaderEmprego>img{
+    width: 20px;
+}
+
+.HeaderEmpregoLinksResponsivo.visivel>a,
+.HeaderEmpregoLinksResponsivo.invisivel>a {
+    position: relative;
+}
+
+.HeaderEmpregoLinksResponsivo.visivel>a:hover,
+.HeaderEmpregoLinksResponsivo.invisivel>a:hover{
+    color: #6e46ae;
+
+}
+
+.HeaderEmpregoLinksResponsivo.visivel>a::before,
+.HeaderEmpregoLinksResponsivo.invisivel>a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px; /* Altura da borda */
+    background-color: #6e46ae;
+    transition: width 0.89s ease; /* Ajuste a duração da transição conforme necessário */
+    color: #6e46ae;
+}
+
+.HeaderEmpregoLinksResponsivo.visivel>a:hover::before,
+.HeaderEmpregoLinksResponsivo.invisivel>a:hover::before {
+    width: 100%;
+   
+}
+
+.LoginDadosUsuario>p{
+    display: none;
+}
+.LoginDadosUsuario>a>img{
+    width: 45px;
+    height: 45px;
+    margin-top: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px black;
+    
+}
+.LoginDadosUsuario>a>img:hover{
+    box-shadow: 0px 0px 3px black;
+}
+.LoginDadosUsuario{
+    position: absolute;
+   right: 20px;
+   top: 0px;
+}
+.HoverDadosCandidato{
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px rgb(10, 10, 10);
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transição suave de cor */
+  }
+  
+  .menu-trigger img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #fff;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 59px;
+    right: 5px;
+    background-color: #fff;
+    border-radius: 10px;
+    border:  1px solid rgb(221, 220, 220);
+    padding: 10px 20px;
+    width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Adiciona transição suave */
+  }
+  
+  .dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: 20px;
+    height: 20px;
+    width: 20px;
+    background: var(--secondary-bg);
+    transform: rotate(45deg);
+  }
+  
+  .dropdown-menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    z-index: 12131212;
+    padding-bottom: 40px;
+  }
+  
+  .dropdown-menu.inactive {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+  }
+  
+  .h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+    padding: 20px 0;
+    font-weight: 600;
+    color: var(--primary-text-color);
+    line-height: 1.2rem;
+    
+  }
+  
+  .h3 span {
+    font-size: 14px;
+    color: rgb(90, 89, 89);
+    font-weight: 500;
+  }
+  
+  .dropdown-menu ul li {
+    padding: 10px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  
+  .dropdown-menu ul li:hover a {
+    color: #6e46ae;
+    cursor: pointer;
+    
+  }
+  
+  .dropdown-menu ul li:hover img {
+    opacity: 1;
+    cursor: pointer;
+  }
+  
+  .dropdownItem {
+    display: flex;
+    margin: 10px auto;
+    
+  }
+ 
+  
+  .dropdownItem img {
+    max-width: 20px;
+    margin-right: 10px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease; /* Transição suave de opacidade */
+  }
+  
+  .dropdownItem a {
+    max-width: 100px;
+    margin-left: 10px;
+    transition: color 0.3s ease; /* Transição suave de cor */
+    font-size: 14px;
+    font-weight: 500;
+    color: #6e6e6e;
+  }
+  
+
+@media (min-width:700px) {
+    .LoginDadosUsuario{
+        display: flex;
+        gap: 20px;
+     }
+     .LoginDadosUsuario>p{
+        display: block;
+        margin-top: 22px;
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(133, 133, 133);
+    }
+    .HeaderEmpregoLinks{
+        display: none;
+    }
+    .HeaderEmpregoLinksResponsivo{
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 10px;
+       
+   
+    }
+    .HeaderEmpregoLinksResponsivo.visivel, .HeaderEmpregoLinksResponsivo.invisivel{
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+        
+       padding-left: 20px;
+        width: 100%;
+        height: max-content;
+        
+    }
+    .HeaderEmpregoLinksResponsivo.invisivel>a{
+        display: block;
+        text-decoration: none;
+        color: #414141;
+        font-size: 13px;
+        font-weight: 500;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+          
+    }
+    #LinkSetaHeaderEmprego{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        right: 20px;
+        gap: 10px;
+        font-weight: 500;
+    }
+}
+@media(min-width:1024px){
+    .HeaderEmpregoLinksResponsivo.visivel, .HeaderEmpregoLinksResponsivo.invisivel{
+        gap: 20px;
+        padding-left: 60px;
+      
+    }
+
+    .HeaderEmpregoLinksResponsivo.invisivel>a, .HeaderEmpregoLinksResponsivo.visivel>a{
+        font-size: 14px;   
+    }
+    #LinkSetaHeaderEmprego{
+        right: 60px;
+    }
+    .HeaderEmpregoLogotipo{
+        padding-left: 60px;
+    }
+    .HeaderEmpregoLogotipo>a>img{
+        width: 180px;
+    }
+    .HeaderEmpregoLogotipo>a{
+        right: 60px;
+    }
+    .HeaderEmpregoLogotipo>div{
+        right: 60px !important;
+    }
+    .LoginDadosUsuario{
+        position: absolute;
+       right: 5vw;
+       top: 0px;
+    }
+    .dropdown-menu {
+       
+        right: 5vw;
+       width: 300px !important;
+        padding: 10px 40px;
+        
+      }
+}

@@ -1,0 +1,94 @@
+.EscolherTipo{
+    font-family: "Montserrat";
+}
+.EscolherTipo>h2{
+    text-align: center;
+    margin-top: 40px;
+    color: rgb(63, 62, 62);
+    font-size: 22px;
+}
+.EscolherTipo>section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.EscolherTipo>section>a{
+    text-decoration: none;
+    color: rgb(63, 62, 62);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(197, 195, 195);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 10px;
+     
+}
+.EscolherTipo>section>a:hover{
+    box-shadow: 0px 0px 9px rgb(192, 192, 192) ;
+
+
+}
+
+.EscolherTipo>section>a>p{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(180, 180, 180);
+}
+.EscolherTipo>section>a>h2{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight: 600;
+}
+.EscolherTipo>section>a>a{
+    margin-top: 10px;
+    
+    
+}
+.EscolherTipo>section>a>a>button{
+    margin-top: 10px;
+    padding: 8px 12px;
+    font-family: "Montserrat";
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    color: white;
+    background-color: #6e46ae;
+    font-weight: 700;
+}
+.EscolherTipo>section>a>a>button:hover{
+    background-color: #833ef3;
+    cursor: pointer;
+}
+
+
+@media (min-width:700px) {
+    .EscolherTipo>section{
+        flex-direction: row;
+        
+        
+        
+    }
+}
+
+@media (min-width:1024px) {
+    .EscolherTipo>section{
+        flex-direction: row;
+        
+    }
+    .EscolherTipo>h2{
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        color: rgb(63, 62, 62);
+        font-size: 26px;
+    }
+}
+

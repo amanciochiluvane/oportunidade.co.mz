@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&display=swap');
+
+.EmpregoIntroducao{
+    font-family: 'Barlow', sans-serif;
+    background-color: #3d2462;
+    
+
+}
+#EmpregoIntroducaoSECTION{
+    
+    color: white;
+}
+#EmpregoIntroducaoSECTION>h2{
+    font-weight: 600;
+    padding-top: 30px;
+    width: 250px;
+    padding-left: 20px;
+}
+.EmpregoIntroducaoPesquisa{
+    text-align: center;
+   width: max-content;
+   margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 20px;
+    row-gap: 20px;
+    column-gap: 1px;
+    
+    
+}
+.CategoriaEmpregoIntroducaoPesquisa{
+    color: black;
+    display: flex;
+    font-size: 12px;
+    gap: 5px;
+    padding: 10px;
+    background-color: white;
+    
+    
+}
+.CategoriaEmpregoIntroducaoPesquisa>img{
+    width: 30px;
+    height: 30px;
+    
+    
+}
+.CategoriaEmpregoIntroducaoPesquisa>p{
+    font-weight: 600;
+    padding-top: 7px;
+}
+.CategoriaEmpregoIntroducaoPesquisa>p:hover{
+    cursor: pointer;
+}
+.CategoriaEmpregoIntroducaoPesquisa>p>img{
+    margin-left: 10px;
+}
+.CategoriaEmpregoIntroducaoPesquisa>p>select{
+    border: none;
+    outline: none;
+    font-weight: 600;
+    font-family: 'Barlow', sans-serif;
+    
+}
+.categoriaInvisvel{
+    display: none;
+}
+.categoriaVisivel{
+    position: absolute;
+    background-color: white;
+    margin-top: 50px;
+    width: 132px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+
+}
+.categoriaVisivel>a:hover{
+    background-color: #6e46ae;
+    color: white;
+}
+
+.categoriaVisivel>a{
+    color: black;
+    font-weight: 500;
+   
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+    
+}
+
+.categoriaVisivel>li>a:hover{
+    color: white;
+    width: 132px;
+}
+.CategoriaEmpregoIntroducaoPesquisa>p>select>option{
+    outline: none;
+}
+#InputPesquisaEmprego{
+   width: calc(100vw - 172px) !important;
+  padding-left: 15px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   border: none;
+   outline: none;
+  
+}
+#InputPesquisaEmprego:hover{
+    outline: none;
+}
+#InputPesquisaEmprego:hover{
+    outline: none;
+}
+#InputPesquisaEmprego::placeholder{
+    color: rgb(189, 189, 189);
+    font-weight: 500;
+    font-size: 14px;
+}
+.BotaoPesquisaEmprego{
+    display: flex;
+    font-size: 13px;
+    gap: 5px;
+    background-color: #6e46ae;
+    padding: 7px 22px;
+    border-radius: 5px;
+
+}
+.BotaoPesquisaEmprego:hover{
+    background-color: #824fd3;
+    cursor: pointer;
+    transition: background-color 0.35s ease;
+}
+.BotaoPesquisaEmprego>img{
+    width: 25px;
+    height: 25px;
+}
+.BotaoPesquisaEmprego>p{
+    margin-top: 4px;
+    font-weight: 700;
+}
+.HomemOculosBack{
+    display: none;
+}
+.MarketingCriarConta{
+    font-size: 14px;
+    width: max-content;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.MarketingCriarConta>p>span{
+    font-weight: 700;
+
+}
+.MarketingCriarConta>p>span>a{
+    text-decoration: none;
+    color: white;
+}
+.MarketingCriarConta>p>span>a:hover{
+    color: #6b25dd;
+    transition: color 0.87s ease;
+    cursor: pointer;
+}
+.MaisPesquisadas{
+   font-size: 14px;
+    padding-left: 20px;
+}
+.MaisPesquisadas>article{
+margin-top: 20px;
+display: flex;
+flex-direction: row;
+gap: 10px;
+
+overflow-x: auto;
+padding-bottom: 30px;
+
+
+}
+.MaisPesquisadas>article>a{
+    display: flex;
+    font-size: 13px;
+    gap: 5px;
+    background-color: #6e46ae;
+    padding: 7px 22px;
+    border-radius: 5px;
+    text-decoration: none;
+    width: max-content;
+    
+
+}
+.MaisPesquisadas>article>a:hover{
+    background-color: #824fd3;
+    cursor: pointer;
+    transition: background-color 0.35s ease;
+}
+.MaisPesquisadas>article>a>img{
+    width: 25px;
+    height: 25px;
+}
+.MaisPesquisadas>article>a>p{
+    margin-top: 4px;
+    font-weight: 700;
+    color: white;
+}
+
+@media (min-width:700px) {
+    .EmpregoIntroducao{
+        position: relative;
+        width: 100%;
+        z-index: 123;
+    }
+    #EmpregoIntroducaoSECTION{
+        padding: 40px 7%; 
+        position: relative;
+        z-index: 1231;       
+    }
+    #EmpregoIntroducaoSECTION>h2{
+        font-size: 28px;
+        width: 300px;
+    }
+    .EmpregoIntroducaoPesquisa{
+        grid-template-columns: auto auto auto;
+        background-color: white;
+        width: 600px;
+        padding: 1px 10px;
+        position: relative;
+    }
+    #InputPesquisaEmprego{
+        width: calc(300px) !important;
+       
+       
+     }
+    .BotaoPesquisaEmprego{
+        width: max-content;
+        height: max-content;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .MaisPesquisadas{
+        width: max-content;
+        margin: auto;
+        margin-top: 40px;
+    }
+    .MaisPesquisadas>article{
+        flex-direction: row;
+    }
+    .HomemOculosBack{
+        display: block;
+        position: absolute;
+        height: 450px;
+        margin-top: -450px;
+        left: 80%;
+        transform: translateX(-80%);
+        z-index: 1;
+    }
+    
+}
+@media (min-width:1024px){
+    #EmpregoIntroducaoSECTION{
+        padding: 30px 17%; 
+               
+    }
+
+    .categoriaVisivel>a{
+       font-size: 14px;
+        
+        
+    }
+    .categoriaVisivel{
+        width: 200px;
+    }
+
+    #EmpregoIntroducaoSECTION>h2{
+        font-size: 36px;
+        font-weight: 700;
+        padding-left: 0;
+        width: 400px;
+        margin-bottom: 30px;
+    }
+    .EmpregoIntroducaoPesquisa{
+        width: 100%;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    #InputPesquisaEmprego{
+        margin-left: -240px;
+        
+    }
+    .CategoriaEmpregoIntroducaoPesquisa{
+        gap: 20px;
+        
+    }
+    .CategoriaEmpregoIntroducaoPesquisa>p{
+        margin-top: -1px;
+        font-size: 15px;
+        border-right: 2px solid rgb(173, 173, 173) ;
+        padding-right: 40px;
+        
+    }
+    .CategoriaEmpregoIntroducaoPesquisa>p>select{
+        font-size: 15px;
+        cursor: pointer;
+
+    }
+}

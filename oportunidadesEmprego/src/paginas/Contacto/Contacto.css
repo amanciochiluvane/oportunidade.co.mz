@@ -1,0 +1,125 @@
+.IntroContacto{
+    font-family: 'Barlow';
+    background-color: #111827;
+    padding-bottom: 70px;
+    position: relative;
+    height: 680px;
+}
+.MulherIntroContacto{
+    width: 380px;
+    position: absolute;
+    bottom: 0;
+}
+.IntroContacto{
+    padding-left: 10px;
+    padding-top: 30px;
+    color: white;
+}
+.IntroContacto>h2{
+    font-size: 30px;
+}
+.IntroContacto>h2>span{
+    color: white;
+    background-color:  #6e46ae;
+    padding: 3px 10px;
+    border-radius: 10px;
+}
+.IntroContactoTextNormal{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 16px;
+}
+.IntroContactoTextNormal>article>p{
+    font-weight: 400;
+    color: #b1b1b1;
+}
+.RedesSociasContacto>h2{
+    margin-bottom: 8px;
+}
+.RedesSociasContacto>article{
+    display: flex;
+    gap: 10px;
+}
+.IntroContactoTextForm{
+    background-color: rgba(0, 0, 0, 0.664);
+   
+    margin-top: 30px;
+    width: max-content;
+    padding: 30px 30px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 123;
+
+}
+.IntroContactoTextForm>form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.IntroContactoTextForm>form>div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.IntroContactoTextForm>form>div>p{
+    font-size: 15px;
+    font-weight: 400;
+
+}
+.IntroContactoTextForm>form>div>input,.IntroContactoTextForm>form>div>textarea{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 1px solid rgb(136, 135, 135);
+    outline: none;
+    color: white;
+    width: 300px;
+}
+.SubmeterContactoEmail{
+    width: 130px;
+    padding: 7px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #6e46ae;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: 'Barlow';
+}
+.SubmeterContactoEmail:hover{
+    background-color: #3e1a77;
+    cursor: pointer;
+}
+
+
+@media (min-width:700px) {
+    .IntroContactoTextForm{
+        right: 10px;
+        top: 100px;
+    }
+    .IntroContacto>h2{
+        padding-top: 40px;
+        margin-bottom: 30px;
+    }
+    .MulherIntroContacto{
+        width: 670px;
+    }
+}
+@media (min-width:1024px){
+    .IntroContacto{
+        padding-left: 5vw;
+        height: calc(100vh - 121.41px);
+    }
+    .IntroContactoTextForm{
+        right: 15vw;
+        top: 40px;
+       
+    }
+    .MulherIntroContacto{
+       right: 5vw;
+    }
+    .IntroContactoTextForm>form>div>input,.IntroContactoTextForm>form>div>textarea{
+        width: 350px;
+    }
+}

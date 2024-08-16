@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+.VagaEmprego{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.PesquisarVagasLabel>img{
+    width: 20px;
+    position: absolute;
+    margin-left: 8px;
+    margin-top: 10px;
+    
+}
+#PesquisarVagas{
+ padding: 10px 0px 10px 50px;
+ width: 230px;
+ border:1px solid #a3a3a3;
+ border-radius: 5px;
+ outline: none;
+ margin: auto;
+ margin-left: -17px;
+
+}
+#PesquisarVagas::placeholder{
+    color: #a3a3a3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+}
+#PesquisarVagas:hover{
+    outline: auto;
+    outline-color:#6e46ae ;
+    background-color: rgba(238, 236, 236, 0.144);
+}
+.PesquisaDaVaga{
+    width: max-content;
+    margin: auto;
+    margin-top: 40px;
+    
+}
+.PaginationVagas{
+    width: max-content;
+    margin: auto ;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 10px;
+}
+.PaginationVagas>button{
+    font-family: 'Montserrat';
+    background-color: #6e46ae;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-top: -5px;
+
+}
+.PaginationVagas>button:hover{
+    background-color: #925fe6;
+    cursor: pointer;
+}
+.PaginationVagas>button:disabled{
+    background-color: #c3c2c4;
+    cursor: auto;
+   
+}

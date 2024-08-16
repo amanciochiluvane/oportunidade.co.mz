@@ -1,0 +1,183 @@
+{
+    "Setor de Hotelaria e Turismo": {
+      "descrição": "O setor de Hotelaria e Turismo em Moçambique é vital para a economia, impulsionado pela beleza natural do país e sua rica cultura. Este setor inclui hotéis, resorts, restaurantes e empresas de turismo que oferecem serviços de hospitalidade para visitantes locais e internacionais.",
+      "Recepcionista de Hotel": "15,000 - 30,000 MZN",
+      "Chef de Cozinha": "25,000 - 50,000 MZN"
+    },
+    "Setor de Transportes e Logística": {
+      "descrição": "O setor de Transportes e Logística em Moçambique é fundamental para o movimento eficiente de mercadorias e pessoas. Este setor abrange desde transporte rodoviário, ferroviário, marítimo até a gestão de armazéns e cadeias de suprimentos.",
+      "Motorista de Caminhão": "20,000 - 40,000 MZN",
+      "Operador de Logística": "30,000 - 60,000 MZN"
+    },
+    "Setor de Agricultura": {
+      "descrição": "A agricultura é um dos pilares da economia moçambicana, empregando uma grande parte da população. Este setor inclui a produção de culturas alimentares e de exportação, além de tecnologias agrícolas e práticas sustentáveis.",
+      "Agricultor": "10,000 - 20,000 MZN",
+      "Engenheiro Agrónomo": "40,000 - 80,000 MZN"
+    },
+    "Setor de Mineração": {
+      "descrição": "O setor de Mineração é um dos mais importantes em Moçambique, conhecido por sua rica abundância de recursos naturais, como carvão, gás natural e minerais preciosos. A mineração contribui significativamente para as exportações e o desenvolvimento econômico.",
+      "Mineiro": "40,000 - 80,000 MZN",
+      "Engenheiro de Minas": "80,000 - 150,000 MZN"
+    },
+    "Setor de Telecomunicações": {
+      "descrição": "O setor de Telecomunicações em Moçambique está crescendo rapidamente, impulsionado pela necessidade de conectividade e tecnologia. Este setor inclui empresas que fornecem serviços de telefonia móvel, internet e outras formas de comunicação digital.",
+      "Técnico de Telecomunicações": "30,000 - 60,000 MZN",
+      "Engenheiro de Telecomunicações": "60,000 - 120,000 MZN"
+    },
+    "Setor de Consultoria e Serviços Profissionais": {
+      "descrição": "Este setor inclui empresas que oferecem consultoria em diversas áreas como finanças, recursos humanos, gestão e tecnologia. Os serviços profissionais são cruciais para ajudar outras empresas a melhorar seu desempenho e eficiência.",
+      "Consultor Financeiro": "50,000 - 100,000 MZN",
+      "Consultor de Recursos Humanos": "30,000 - 60,000 MZN"
+    },
+    "Setor de Energia e Utilities": {
+      "descrição": "O setor de Energia e Utilities em Moçambique é essencial para o fornecimento de eletricidade e água para a população. Este setor inclui a produção de energia, tanto de fontes renováveis quanto não-renováveis, e a gestão de recursos hídricos.",
+      "Técnico de Energia Solar": "25,000 - 50,000 MZN",
+      "Engenheiro Elétrico": "60,000 - 120,000 MZN"
+    },
+    "Setor de Seguros": {
+      "descrição": "O setor de Seguros em Moçambique oferece uma gama de produtos para proteção financeira, incluindo seguros de vida, saúde, automóveis e propriedades. Este setor é importante para a segurança econômica das pessoas e empresas.",
+      "Agente de Seguros": "20,000 - 40,000 MZN",
+      "Analista de Sinistros": "30,000 - 60,000 MZN"
+    },
+    "Setor de Alimentos e Bebidas": {
+      "descrição": "O setor de Alimentos e Bebidas é diversificado, abrangendo desde a produção de alimentos até a operação de restaurantes e bares. Este setor é crucial para a economia, oferecendo uma variedade de produtos e serviços alimentares.",
+      "Chef de Restaurante": "25,000 - 50,000 MZN",
+      "Barman": "15,000 - 30,000 MZN"
+    },
+    "Setor de Moda e Design": {
+      "descrição": "O setor de Moda e Design em Moçambique está crescendo, com influências locais e internacionais. Este setor inclui a criação de roupas, acessórios e produtos de design gráfico que refletem a cultura e tendências do país.",
+      "Estilista": "20,000 - 40,000 MZN",
+      "Designer Gráfico": "30,000 - 60,000 MZN"
+    },
+    "Setor de Educação Superior": {
+      "descrição": "O setor de Educação Superior inclui universidades e instituições de pesquisa que oferecem ensino avançado e formação profissional. Este setor é vital para o desenvolvimento de uma força de trabalho qualificada em Moçambique.",
+      "Professor Universitário": "80,000 - 150,000 MZN",
+      "Pesquisador Acadêmico": "50,000 - 100,000 MZN"
+    },
+    "Setor de Entretenimento e Mídia": {
+      "descrição": "O setor de Entretenimento e Mídia abrange a produção de conteúdo para televisão, rádio, cinema e mídia digital. Este setor é importante para a cultura e informação, oferecendo entretenimento e notícias à população.",
+      "Jornalista": "30,000 - 60,000 MZN",
+      "Produtor de TV/Rádio": "40,000 - 80,000 MZN"
+    },
+    "Setor de Saúde Mental e Bem-Estar": {
+      "descrição": "Este setor foca no bem-estar mental e físico, incluindo serviços de psicologia e terapia. É crucial para a saúde geral da população, oferecendo suporte para problemas de saúde mental e física.",
+      "Psicólogo Clínico": "40,000 - 80,000 MZN",
+      "Terapeuta Físico": "30,000 - 60,000 MZN"
+    },
+    "Setor de Desenvolvimento Comunitário": {
+      "descrição": "O setor de Desenvolvimento Comunitário trabalha para melhorar as condições de vida das comunidades. Inclui projetos sociais, assistência social e programas de desenvolvimento que visam reduzir a pobreza e promover a inclusão social.",
+      "Assistente Social": "25,000 - 50,000 MZN",
+      "Coordenador de Projeto Social": "40,000 - 80,000 MZN"
+    },
+    "Setor de Imobiliário e Construção Civil": {
+      "descrição": "O setor de Imobiliário e Construção Civil é responsável pelo desenvolvimento de infraestruturas, desde edifícios residenciais até comerciais. Este setor é fundamental para o crescimento urbano e econômico de Moçambique.",
+      "Corretor Imobiliário": "30,000 - 60,000 MZN",
+      "Arquiteto": "60,000 - 120,000 MZN"
+    },
+    "Setor Jurídico": {
+      "descrição": "O setor Jurídico oferece serviços de consultoria legal, defesa e processos judiciais. Este setor é essencial para a manutenção da justiça e da ordem social no país.",
+      "Advogado": "60,000 - 120,000 MZN",
+      "Juiz": "100,000 - 200,000 MZN"
+    },
+    "Setor de Tecnologia de Informação e Comunicação (TIC)": {
+      "descrição": "O setor de TIC é um dos mais dinâmicos e em crescimento, abrangendo desenvolvimento de software, segurança cibernética e análise de dados. Este setor é crucial para a modernização e inovação tecnológica em Moçambique.",
+      "Especialista em Segurança Cibernética": "80,000 - 150,000 MZN",
+      "Analista de Dados": "50,000 - 100,000 MZN"
+    },
+    "Setor de Ciência e Pesquisa": {
+      "descrição": "O setor de Ciência e Pesquisa é dedicado à inovação e desenvolvimento científico. Inclui pesquisas em várias disciplinas que contribuem para o progresso tecnológico e conhecimento.",
+      "Cientista de Dados": "60,000 - 120,000 MZN",
+      "Pesquisador Científico": "40,000 - 80,000 MZN"
+    },
+    "Setor de Vendas Diretas e Marketing Multinível": {
+      "descrição": "Este setor envolve a venda direta de produtos ao consumidor e a construção de redes de vendas. É uma área importante para o crescimento de pequenas empresas e empreendedores.",
+      "Gerente de Vendas": "40,000 - 80,000 MZN",
+      "Consultor de Marketing Digital": "30,000 - 60,000 MZN"
+    },
+    "Setor de Moda e Beleza": {
+      "descrição": "O setor de Moda e Beleza inclui a criação de roupas, acessórios e produtos de beleza. É um setor vibrante que reflete as tendências culturais e estilísticas de Moçambique.",
+      "Maquilhador Profissional": "20,000 - 40,000 MZN",
+      "Consultor de Estilo": "25,000 - 50,000 MZN"
+    },
+    "Setor de Engenharia": {
+      "descrição": "O setor de Engenharia é vital para o desenvolvimento de infraestruturas, tecnologia e indústria. Inclui várias disciplinas como engenharia civil, mecânica e elétrica, todas essenciais para o progresso do país.",
+      "Engenheiro Civil": "60,000 - 120,000 MZN",
+      "Engenheiro Mecânico": "50,000 - 100,000 MZN"
+    },
+    "Setor de RH e Administração": {
+      "descrição": "Este setor abrange a gestão de recursos humanos e operações administrativas. É crucial para o funcionamento eficiente de organizações, garantindo a gestão adequada de pessoal e recursos.",
+      "Diretor de Recursos Humanos": "100,000 - 200,000 MZN",
+      "Assistente Administrativo": "20,000 - 40,000 MZN"
+    },
+    "Setor de Finanças e Contabilidade": {
+      "descrição": "O setor de Finanças e Contabilidade é fundamental para a gestão econômica e financeira das empresas. Inclui atividades de auditoria, contabilidade, controle financeiro e consultoria fiscal.",
+      "Controller Financeiro": "70,000 - 130,000 MZN",
+      "Contabilista Certificado": "40,000 - 80,000 MZN"
+    },
+    "Setor de Marketing e Publicidade": {
+      "descrição": "O setor de Marketing e Publicidade é responsável pela promoção de produtos e serviços. Este setor inclui estratégias de marketing digital, publicidade tradicional e gestão de marcas.",
+      "Gerente de Marketing": "50,000 - 100,000 MZN",
+      "Especialista em SEO": "40,000 - 80,000 MZN"
+    },
+    "Setor de TI e Desenvolvimento de Software": {
+      "descrição": "Este setor é focado na criação e manutenção de software e sistemas de TI. É uma área em rápido crescimento que suporta a transformação digital de empresas e organizações em Moçambique.",
+      "Desenvolvedor Full Stack": "60,000 - 120,000 MZN",
+      "Especialista em Banco de Dados": "50,000 - 100,000 MZN"
+    },
+    "Setor de Compras e Suprimentos": {
+      "descrição": "O setor de Compras e Suprimentos é responsável pela aquisição e gestão de bens e serviços necessários para o funcionamento das empresas. Este setor é essencial para a eficiência operacional e controle de custos.",
+      "Gerente de Compras": "50,000 - 100,000 MZN",
+      "Analista de Suprimentos": "30,000 - 60,000 MZN"
+    },
+    "Setor de Gestão de Projetos": {
+      "descrição": "O setor de Gestão de Projetos envolve a coordenação e execução de projetos em diversas áreas, garantindo que sejam concluídos no prazo, dentro do orçamento e com a qualidade esperada.",
+      "Gerente de Projetos": "70,000 - 130,000 MZN",
+      "Coordenador de Projeto": "40,000 - 80,000 MZN"
+    },
+    "Setor de Logística e Distribuição": {
+      "descrição": "Este setor abrange a gestão do fluxo de mercadorias desde o ponto de origem até o destino final. Inclui atividades de armazenamento, transporte e distribuição, sendo crucial para o comércio e indústria.",
+      "Gerente de Logística": "60,000 - 120,000 MZN",
+      "Analista de Logística": "40,000 - 80,000 MZN"
+    },
+    "Setor de Qualidade e Controle": {
+      "descrição": "O setor de Qualidade e Controle é responsável por garantir que os produtos e serviços atendam aos padrões exigidos. Este setor é essencial para a satisfação do cliente e a manutenção da reputação das empresas.",
+      "Especialista em Controle de Qualidade": "50,000 - 100,000 MZN",
+      "Gerente de Qualidade": "60,000 - 120,000 MZN"
+    },
+    "Setor de Recursos Humanos": {
+      "descrição": "Este setor é focado na gestão de pessoal, incluindo recrutamento, treinamento, desenvolvimento e bem-estar dos funcionários. É fundamental para a construção de uma força de trabalho motivada e produtiva.",
+      "Especialista em Remuneração e Benefícios": "40,000 - 80,000 MZN",
+      "Recrutador": "30,000 - 60,000 MZN"
+    },
+    "Setor de Engenharia Ambiental": {
+      "descrição": "O setor de Engenharia Ambiental trabalha para minimizar os impactos ambientais das atividades humanas. Inclui o desenvolvimento de tecnologias e práticas sustentáveis para preservar o meio ambiente.",
+      "Engenheiro Ambiental": "50,000 - 100,000 MZN",
+      "Técnico Ambiental": "30,000 - 60,000 MZN"
+    },
+    "Setor de Auditoria e Compliance": {
+      "descrição": "Este setor é responsável por garantir que as operações e processos das empresas estejam em conformidade com leis e regulamentos. Inclui atividades de auditoria interna e externa para identificar e mitigar riscos.",
+      "Auditor Interno": "60,000 - 120,000 MZN",
+      "Especialista em Compliance": "50,000 - 100,000 MZN"
+    },
+    "Setor de Atendimento ao Cliente": {
+      "descrição": "O setor de Atendimento ao Cliente é crucial para a satisfação e retenção de clientes. Inclui atividades de suporte e serviços que garantem que os clientes tenham uma experiência positiva com produtos e serviços.",
+      "Supervisor de Atendimento ao Cliente": "40,000 - 80,000 MZN",
+      "Assistente de Atendimento ao Cliente": "20,000 - 40,000 MZN"
+    },
+    "Setor de Comunicação Corporativa": {
+      "descrição": "O setor de Comunicação Corporativa é responsável pela gestão da imagem e comunicação de uma empresa. Inclui relações públicas, comunicação interna e externa e gestão de crises.",
+      "Diretor de Comunicação": "100,000 - 200,000 MZN",
+      "Especialista em Relações Públicas": "40,000 - 80,000 MZN"
+    },
+    "Setor de Design de Interiores": {
+      "descrição": "O setor de Design de Interiores envolve a criação de ambientes internos que são funcionais, seguros e visualmente atraentes. Inclui a escolha de móveis, cores e materiais para criar espaços confortáveis e esteticamente agradáveis.",
+      "Designer de Interiores": "30,000 - 60,000 MZN",
+      "Consultor de Decoração": "20,000 - 40,000 MZN"
+    },
+    "Setor de Gestão Hoteleira": {
+      "descrição": "O setor de Gestão Hoteleira envolve a administração de hotéis e outras instalações de hospedagem. Inclui a gestão de operações diárias, atendimento ao cliente e organização de eventos.",
+      "Gerente de Hotel": "80,000 - 150,000 MZN",
+      "Supervisor de Eventos": "40,000 - 80,000 MZN"
+    }
+  }
+  
