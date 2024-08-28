@@ -239,6 +239,12 @@ padding-bottom: 30px;
     display: none;
    
 }
+.trofeu{
+    position:absolute;
+    right: 0%;
+    top:30%;
+    width: 100px;
+}
 
 @media (min-width:700px) {
     .EmpregoIntroducao{
@@ -302,6 +308,13 @@ padding-bottom: 30px;
         bottom: 0;
         right: 0;
     }
+    .trofeu{
+        position:absolute;
+        right: 0%;
+        top:50%;
+        width: 150px;
+        z-index:10;
+    }
     
 }
 @media (min-width:1024px){
@@ -363,5 +376,10 @@ padding-bottom: 30px;
         bottom: 0;
         left: 80%;
         transform: translateX(-80%);
+    }
+    .trofeu{
+        top: 35%;
+        right: 15%;
+        
     }
 }

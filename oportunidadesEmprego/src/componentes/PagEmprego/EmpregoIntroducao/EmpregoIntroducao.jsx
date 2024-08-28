@@ -4,6 +4,7 @@ import HomemOculos from '../../../assets/foto.png'
 import CategoriaIntroducao from '../../../assets/CategoriaIntroducao.png'
 import pasta from "../../../assets/pasta.png"
 import LupaAzul from '../../../assets/LupaAzul.png'
+import trofeu from "../../../assets/trofeu.png"
 import { Link } from 'react-router-dom'
 import { useNavigate} from 'react-router-dom'
 import Ver2 from '../../../assets/Ver2.png'
@@ -109,6 +110,7 @@ export default function EmpregoIntroducao({query,handleInputChange,handleChangeH
         </section>
         <img className='HomemOculosBack' src={HomemOculos} alt="Homem com óculos" />
         <img className="intersect" src={intersect}  />
+        <img src={trofeu} className='trofeu' />
         <div>
         </div>
     </div>

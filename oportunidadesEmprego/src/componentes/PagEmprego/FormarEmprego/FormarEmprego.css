@@ -1,12 +1,10 @@
 .FormarEmprego{
     background-color: #f2f2f2;
     padding-bottom: 40px;
+    overflow-x: hidden;
 }
 .FormarEmpregoImg>img{
-    width: 250px;
-    padding-top: 50px;
-    display: block;
-    margin: auto;
+    display: none;
     
 }
 .FormarEmpregoTexto{
@@ -17,21 +15,27 @@
     align-items: center;
 }
 .FormarEmpregoTexto>h2{
-    font-size: 18px;
+    font-size: 27px;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 50px;
 
+}
+.FormarEmpregoTexto>p{
+    text-align: center;
+    padding-left:5%;
+    padding-right:5%;
 }
 .FormarEmpregoTexto>a{
     display: flex;
     text-decoration: none;
     font-size: 13px;
     color: black;
-    font-weight: 600;
+    font-weight: 500;
     gap: 30px;
-    border: 1px solid rgb(70, 69, 69);
+    border: 1px solid #845eff;
     padding: 10px;
     border-radius: 8px;
+    padding-top: 14px;
 }
 .FormarEmpregoTexto>a>p{
     width: 250px;
@@ -45,9 +49,9 @@
     .FormarEmprego{
         display: flex;
         gap: 80px;
-        justify-content: center;
         padding-top: 70px;
         padding-bottom: 70px;
+        
     }
     .FormarEmpregoImg>img{
         width: 350px;
@@ -55,21 +59,46 @@
     }
     .FormarEmpregoTexto{
         gap: 5px;
+        width: max-content;
+        padding-left: 5%;
+        justify-self: left;
+        align-items: flex-start;
+        
     }
     .FormarEmpregoTexto>h2{
         margin-bottom: 20px;
+        text-align: left;
+    }
+    .FormarEmpregoTexto>p{
+        text-align: left;
+        padding: 0;
+        margin-bottom: 20px;
+        
+    }
+    .FormarEmpregoImg>img{
+        display: block;
+        
     }
     
 }
 @media(min-width:1024px){
-    .FormarEmpregoImg>img{
+    .FormarEmpregoTexto{
+        margin-left: 5%;
+    }
+    .FormarEmpregoTexto>p{
+
         width: 550px;
+    }
+    .FormarEmpregoImg>img{
+        width: 450px;
         margin-top: -40px;
+        padding-right: 10%;
       
     }
     .FormarEmpregoTexto>h2{
-        font-size: 20px;
+        font-size: 35px;
         margin-top: 60px;
+        width: 370px;
     
     }
     .FormarEmpregoTexto>a{
@@ -80,8 +109,14 @@
         width: 270px;
     }
     .FormarEmpregoTexto>a:hover{
-        background-color: #111827;
+        background-color: #845eff;
         color: white;
         transition: background-color 0.45s ease;
     }
+    .FormarEmpregoTexto>a:hover .button-img{
+        content: url('../../../assets/btn2.png');
+    }
+
+    
+    
 }

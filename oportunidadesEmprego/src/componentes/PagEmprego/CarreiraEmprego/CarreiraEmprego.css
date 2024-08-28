@@ -4,49 +4,71 @@
     
     font-family: 'Barlow', sans-serif;
     margin-top: 70px;
-    background-color: #111827;
-   
+    background-color: #845eff;
+   position: relative;
+   height: 800px;
     padding-bottom: 60px;
+    overflow-x: hidden;
 }
 .InfoCarreiraEmprego>h2{
     color: white;
-    font-size: 19px;
-    padding-top: 30px;
+    font-size: 25px;
+    padding-top: 70px;
     padding-left: 30px;
-    font-weight: 600;
-    width: 300px;
+    font-weight: 500;
+    width: 330px;
 
 }
+.InfoCarreiraEmprego>h2>span{
+    font-weight: 800;
+}
 .InfoCarreiraEmprego>p{
-    color: rgb(190, 190, 190);
+    color: rgb(255, 255, 255);
     margin-top: 10px;
     margin-left: 30px;
-    font-weight: 500;
+    font-weight: 400;
     width: 300px;
+    font-size: 17px;
 }
 .SaberMaisCarreiraEmpregoEntrar{
     text-decoration: none;
-    color: white;
-    background-color: #6e46ae;
-    padding: 5px 20px;
+    color: #845eff;
+    background-color: #ffffff;
+    padding: 10px 25px;
     font-weight: 700;
     border-radius: 5px;
     margin-left: 30px;
     
 }
 .SaberMaisCarreiraEmpregoEntrar:hover{
-    background-color: #5011b4;
+    background-color: #392161;
     transition: background-color 0.3s ease;
+    color: white;
 }
 .SaberMaisCarreiraEmpregoLink{
     text-decoration: none;
     color: white;
     font-weight: 700;
     margin-left: 30px;
+    border: 1px solid white;
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+.PessoaCell{
+    width: 420px;
+    margin-top: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+   
+}
+.PessoaCell2{
+    display: none;
 }
 .SaberMaisCarreiraEmpregoLink:hover{
-    color: #6e46ae;
-    transition: color 0.4s ease;
+    color: white;
+    background-color:#9878ff;
+    transition:  background-color 0.4s ease;
 }
 .SaberMaisCarreiraEmprego{
     margin-top: 30px;
@@ -83,6 +105,11 @@
     font-size: 15px;
     font-weight: 500;
 }
+.setaspessoas{
+    width: 170px;
+    margin-left: 10%;
+    margin-top: 20px;
+}
 .MarketingCarreiraEmprego>div>p{
     color: rgb(151, 150, 150);
     font-size: 14px;
@@ -93,6 +120,28 @@
 }
 
 @media (min-width:700px) {
+    .PessoaCell{
+        display: none;
+    }
+    .PessoaCell2{
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 350px;
+        left: 5%;
+    }
+    .CarreiraEmprego{
+        height: 400px;
+    }
+    .InfoCarreiraEmprego{
+        position: absolute;
+        right: 10%;
+        padding-top: 20px;
+    }
+    .InfoCarreiraEmprego>h2{
+        font-size: 30px;
+        width: 400px;
+    }
     .CarreiraEmprego>div{
         display: flex;
         gap:30px;
@@ -122,7 +171,7 @@
         width: 290px !important;
     }
     .CarreiraEmprego>div{
-        width: 90%;
+       display: flex;
         gap: 50px;
 
     }
@@ -157,5 +206,32 @@
     }
     .SaberMaisCarreiraEmpregoEntrar{
         margin-left: 0;
+    }
+    .PessoaCell2{
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 400px;
+        left: 10%;
+    }
+    .CarreiraEmprego{
+        height: 500px;
+    }
+    .InfoCarreiraEmprego{
+        position: absolute;
+        right: 10%;
+        padding-top: 20px;
+    }
+    .InfoCarreiraEmprego>h2{
+        font-size: 40px;
+        width: 500px;
+    }
+    .InfoCarreiraEmprego>p{
+        width:500px;
+    }
+    .setaspessoas{
+        width: 250px;
+        margin-left: 10%;
+        margin-top: 30px;
     }
 }
