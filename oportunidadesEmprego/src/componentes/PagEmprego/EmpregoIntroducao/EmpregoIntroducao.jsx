@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import './EmpregoIntroducao.css'
-import HomemOculos from '../../../assets/HomemOculos.png'
+import HomemOculos from '../../../assets/foto.png'
 import CategoriaIntroducao from '../../../assets/CategoriaIntroducao.png'
 import pasta from "../../../assets/pasta.png"
 import LupaAzul from '../../../assets/LupaAzul.png'
@@ -10,6 +10,7 @@ import Ver2 from '../../../assets/Ver2.png'
 import Ver from '../../../assets/Ver.png'
 import { useState } from 'react'
 import tracado from "../../../assets/tracado.png"
+import intersect from "../../../assets/Intersect.png"
 
 export default function EmpregoIntroducao({query,handleInputChange,handleChangeHandle, selectedCategory }){
     const navigate = useNavigate();
@@ -107,8 +108,8 @@ export default function EmpregoIntroducao({query,handleInputChange,handleChangeH
         </section>
         </section>
         <img className='HomemOculosBack' src={HomemOculos} alt="Homem com óculos" />
+        <img className="intersect" src={intersect}  />
         <div>
-
         </div>
     </div>
     )
