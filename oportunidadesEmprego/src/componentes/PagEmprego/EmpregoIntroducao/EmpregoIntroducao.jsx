@@ -2,12 +2,14 @@
 import './EmpregoIntroducao.css'
 import HomemOculos from '../../../assets/HomemOculos.png'
 import CategoriaIntroducao from '../../../assets/CategoriaIntroducao.png'
+import pasta from "../../../assets/pasta.png"
 import LupaAzul from '../../../assets/LupaAzul.png'
 import { Link } from 'react-router-dom'
 import { useNavigate} from 'react-router-dom'
 import Ver2 from '../../../assets/Ver2.png'
 import Ver from '../../../assets/Ver.png'
 import { useState } from 'react'
+import tracado from "../../../assets/tracado.png"
 
 export default function EmpregoIntroducao({query,handleInputChange,handleChangeHandle, selectedCategory }){
     const navigate = useNavigate();
@@ -44,10 +46,10 @@ export default function EmpregoIntroducao({query,handleInputChange,handleChangeH
     return(
     <div className="EmpregoIntroducao">
         <section id='EmpregoIntroducaoSECTION'>
-            <h2>Encontre o emprego dos seus <span><span>sonhos</span> connosco.</span></h2>
+            <h2>Encontre o emprego dos seus <span><span><span>sonhos</span><span><img src={tracado} /></span></span> connosco.</span></h2>
                 <article className='EmpregoIntroducaoPesquisa'>
                     <div className='CategoriaEmpregoIntroducaoPesquisa'>
-                        <img src={CategoriaIntroducao} alt="FotoCategoria"  />
+                        <img src={pasta} alt="FotoCategoria"  />
                         <p onClick={mostrarmenu} >
                             Categoria
                             <img src={menu?Ver2:Ver} alt="" />
@@ -69,38 +71,36 @@ export default function EmpregoIntroducao({query,handleInputChange,handleChangeH
 
                     <input type="text" id='InputPesquisaEmprego' placeholder='Pesquisar por vagas e empresas' onChange={handleInputChange} value={query} onKeyDown={handleKeyDown}   required/>
                     <div className='BotaoPesquisaEmprego'  onClick={handleSearch}>
-                        <img src={LupaAzul} alt="Lupa de Pesquisa"/>
+                        
                         <p>Pesquisa</p>
                     </div>
                 </article>
                 
                
 
-            <div className='MarketingCriarConta'>
-                <p><span> <Link to="/escolherConta">Crie sua conta</Link> </span> - seja visto pelos principais recrutadores!</p>
-            </div>
+            
 
             <section className='MaisPesquisadas'>
           <p>Mais Pesquisadas</p>
           <article>
             <Link to="/vagas/Tecnologia">
-              <img src={LupaAzul} alt="Tecnologia" />
+              
               <p>Tecnologia</p>
             </Link>
             <Link to="/vagas/Saúde">
-              <img src={LupaAzul} alt="Saúde" />
+              
               <p>Saúde</p>
             </Link>
             <Link to="/vagas/Educação">
-              <img src={LupaAzul} alt="Educação" />
+              
               <p>Educação</p>
             </Link>
             <Link to="/vagas/Financeiro">
-              <img src={LupaAzul} alt="Financeiro" />
+              
               <p>Financeiro</p>
             </Link>
             <Link to="/vagas/Construção">
-              <img src={LupaAzul} alt="Construção" />
+              
               <p>Construção</p>
             </Link>
           </article>
