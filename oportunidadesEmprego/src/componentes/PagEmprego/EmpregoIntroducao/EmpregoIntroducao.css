@@ -242,7 +242,7 @@ padding-bottom: 30px;
 .trofeu{
     position:absolute;
     right: 0%;
-    top:30%;
+    top:10%;
     width: 100px;
 }
 
@@ -381,5 +381,8 @@ padding-bottom: 30px;
         top: 35%;
         right: 15%;
         
+    }
+    .intersect{
+        width: 500px;
     }
 }

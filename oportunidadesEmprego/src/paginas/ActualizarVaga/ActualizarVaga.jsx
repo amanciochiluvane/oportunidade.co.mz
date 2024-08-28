@@ -33,7 +33,7 @@ export default function ActualizarVaga(){
             data.postedBy=currentUser.usuário.recruterEmail;
             
             // Now you can send the data to the server
-            fetch(`http://localhost:5000/update-job/${id}`, {
+            fetch(`${import.meta.env.VITE_APP_BACKEND}/update-job/${id}`, {
                 method: "PATCH",
                 headers: { "Content-type": "application/json" },
                 body: JSON.stringify(data)

@@ -96,7 +96,7 @@ export default function VagaEmpregoPesquisar(){
     
     useEffect(() => {
         setMensagemAparecer("Procurando Vagas ...");
-        fetch("http://localhost:5000/todasvagas").then(res => res.json()).then(data => {
+        fetch(`${import.meta.env.VITE_APP_BACKEND}/todasvagas`).then(res => res.json()).then(data => {
             setJobs(data);
             if(jobs.length === 0){
                 setMensagemAparecer("Nenhuma Vaga Encontrada");

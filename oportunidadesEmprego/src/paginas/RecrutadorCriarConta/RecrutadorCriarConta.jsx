@@ -39,7 +39,7 @@ export default function RecrutadorCriarConta(){
             data.companyLogotipo = logoBase64;
     
             // Now you can send the data to the server
-            fetch("http://localhost:5000/criar-conta/recrutador", {
+            fetch(`${import.meta.env.VITE_APP_BACKEND}/criar-conta/recrutador`, {
                 method: "POST",
                 headers: { "Content-type": "application/json" },
                 body: JSON.stringify(data)

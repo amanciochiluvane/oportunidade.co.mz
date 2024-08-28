@@ -19,12 +19,12 @@ export default function Dashboard1() {
     
     useEffect(() => {
         setIsLoading(true);
-        fetch(`http://localhost:5000/minhasVagas/${currentUser.usuário.recruterEmail}`)
+        fetch(`${import.meta.env.VITE_APP_BACKEND}/minhasVagas/${currentUser.usuário.recruterEmail}`)
             .then((res) => res.json())
             .then(async (data) => {
                 // Loop through each job to fetch the data of candidates
                 const jobsWithData = await Promise.all(data.map(async (job) => {
-                    const response = await fetch(`http://localhost:5000/candidatos-vaga/${idVaga}`);
+                    const response = await fetch(`${import.meta.env.VITE_APP_BACKEND}/candidatos-vaga/${idVaga}`);
                     const candidates = await response.json();
                     setJobs(candidates)
                     
@@ -45,7 +45,7 @@ export default function Dashboard1() {
     };
 
     const handleDelete = (id) => {
-        fetch(`http://localhost:5000/vaga/${id}`, {
+        fetch(`${import.meta.env.VITE_APP_BACKEND}/vaga/${id}`, {
             method: "DELETE"
         })
             .then(res => res.json())

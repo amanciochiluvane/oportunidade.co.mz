@@ -89,7 +89,7 @@ export default function SignUp(){
 
     const updateProfile = async (data) => {
         try {
-            const response = await fetch(`http://localhost:5000/updateCandidato/${currentUser.usuário._id}`, {
+            const response = await fetch(`${import.meta.env.VITE_APP_BACKEND}/updateCandidato/${currentUser.usuário._id}`, {
                 method: "PATCH",
                 headers: { "Content-type": "application/json" },
                 body: JSON.stringify(data)

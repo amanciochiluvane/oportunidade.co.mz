@@ -12,7 +12,7 @@ const ResetPassword = () => {
     e.preventDefault();
     const recruterPassword=password;
     try {
-      const res = await fetch(`http://localhost:5000/reset-password/${id}/${token}`, {
+      const res = await fetch(`${import.meta.env.VITE_APP_BACKEND}/reset-password/${id}/${token}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

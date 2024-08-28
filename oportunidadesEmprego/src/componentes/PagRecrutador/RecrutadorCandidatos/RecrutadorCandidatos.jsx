@@ -32,7 +32,7 @@ export default function RecrutadorCandidatos() {
 
     const fetchApplicants = async () => {
         try {
-            const response = await fetch(`http://localhost:5000/candidatos`);
+            const response = await fetch(`${import.meta.env.VITE_APP_BACKEND}/candidatos`);
             if (!response.ok) {
                 throw new Error('Erro ao buscar candidatos');
             }

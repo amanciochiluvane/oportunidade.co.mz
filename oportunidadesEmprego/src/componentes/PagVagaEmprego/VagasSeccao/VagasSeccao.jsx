@@ -121,7 +121,7 @@ export default function VagasSeccao({query,handleInputChange,result,handleChange
             return;
           }
           
-          const response = await fetch('http://localhost:5000/candidatar-se', {
+          const response = await fetch(`${import.meta.env.VITE_APP_BACKEND}/candidatar-se`, {
             method: 'POST',
             headers: {
               'Authorization': `Bearer ${currentUser.token}`,

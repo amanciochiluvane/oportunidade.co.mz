@@ -28,7 +28,7 @@ export default function Contacto (){
         setValorSubmeter(false);
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:5000/send-email', {
+            const response = await fetch(`${import.meta.env.VITE_APP_BACKEND}/send-email`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

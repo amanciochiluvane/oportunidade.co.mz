@@ -25,7 +25,7 @@ export default function PostarVaga(){
             data.postedBy=currentUser.usuário.recruterEmail;
             
             // Now you can send the data to the server
-            fetch("http://localhost:5000/publicar-vaga", {
+            fetch(`${import.meta.env.VITE_APP_BACKEND}/publicar-vaga`, {
                 method: "POST",
                 headers: { "Content-type": "application/json" },
                 body: JSON.stringify(data)

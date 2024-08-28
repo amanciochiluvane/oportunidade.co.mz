@@ -15,11 +15,11 @@ export default function Dashboard() {
 
     useEffect(() => {
         setIsLoading(true);
-        fetch(`http://localhost:5000/minhasVagas/${currentUser.usuário.recruterEmail}`)
+        fetch(`${import.meta.env.VITE_APP_BACKEND}/minhasVagas/${currentUser.usuário.recruterEmail}`)
             .then((res) => res.json())
             .then(async (data) => {
                 const jobsWithApplications = await Promise.all(data.map(async (job) => {
-                    const response = await fetch(`http://localhost:5000/candidaturas/${job._id}`);
+                    const response = await fetch(`${import.meta.env.VITE_APP_BACKEND}/candidaturas/${job._id}`);
                     const applications = await response.json();
                     return { ...job, numApplications: applications.numCandidaturas };
                 }));
@@ -37,7 +37,7 @@ export default function Dashboard() {
     const handleDelete = (id) => {
         const confirmDelete = window.confirm("Tem certeza que deseja apagar esta vaga?");
         if (confirmDelete) {
-            fetch(`http://localhost:5000/vaga/${id}`, {
+            fetch(`${import.meta.env.VITE_APP_BACKEND}/vaga/${id}`, {
                 method: "DELETE"
             })
                 .then(res => res.json())

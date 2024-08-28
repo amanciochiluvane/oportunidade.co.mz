@@ -83,7 +83,7 @@ export default function VagaEmprego() {
     
     useEffect(() => {
         setMensagemAparecer("Procurando Vagas ...");
-        fetch("http://localhost:5000/todasvagas").then(res => res.json()).then(data => {
+        fetch(`${import.meta.env.VITE_APP_BACKEND}/todasvagas`).then(res => res.json()).then(data => {
             setJobs(data);
             
 

@@ -46,7 +46,7 @@ export default function Login() {
 
             const recruterEmail = result._tokenResponse.email;
 
-            const res = await fetch('http://localhost:5000/googleRecrutador', {
+            const res = await fetch(`${import.meta.env.VITE_APP_BACKEND}/googleRecrutador`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -85,7 +85,7 @@ export default function Login() {
         const onSubmit = (data) => {
             setIsLoading(true);
             dispatch(signInStart());
-            fetch("http://localhost:5000/login", {
+            fetch(`${import.meta.env.VITE_APP_BACKEND}/login`, {
                 method: "POST",
                 headers: { "Content-type": "application/json" },
                 body: JSON.stringify(data)

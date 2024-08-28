@@ -13,8 +13,8 @@ const EmailVerification = () => {
       // Determinar se o token é de recrutador ou candidato
       const isRecruiterToken = token.startsWith('rec-');
       const endpoint = isRecruiterToken
-        ? `http://localhost:5000/verificar-email/recrutador/${token}`
-        : `http://localhost:5000/verificar-email/candidato/${token}`;
+        ? `${import.meta.env.VITE_APP_BACKEND}/verificar-email/recrutador/${token}`
+        : `${import.meta.env.VITE_APP_BACKEND}/verificar-email/candidato/${token}`;
 
       fetch(endpoint, {
         method: 'GET' // Especifica explicitamente o método GET

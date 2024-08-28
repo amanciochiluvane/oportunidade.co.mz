@@ -67,7 +67,7 @@ export default function SignUp(){
                 setProgress(75); // Update progress to 75%
 
                 // Now you can send the data to the server
-                fetch("http://localhost:5000/criar-conta/candidato", {
+                fetch(`${import.meta.env.VITE_APP_BACKEND}/criar-conta/candidato`, {
                     method: "POST",
                     headers: { "Content-type": "application/json" },
                     body: JSON.stringify(data)

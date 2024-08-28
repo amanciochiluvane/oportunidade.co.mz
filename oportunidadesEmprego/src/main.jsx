@@ -143,7 +143,7 @@ const router = createBrowserRouter([
   {
     path:"/actualizar-vaga/:id",
     element:<ActualizarVaga/>,
-    loader: ({params}) => fetch(`http://localhost:5000/all-jobs/${params.id}`)
+    loader: ({params}) => fetch(`${import.meta.env.VITE_APP_BACKEND}/all-jobs/${params.id}`)
   },
   {
     path:"/vagas/detalhesdavaga",

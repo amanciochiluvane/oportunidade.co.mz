@@ -10,7 +10,7 @@ export default function VerPerfil() {
 
     useEffect(() => {
         // Fetch candidate data based on the id from the URL
-        fetch(`http://localhost:5000/candidato/${id}`)
+        fetch(`${import.meta.env.VITE_APP_BACKEND}/candidato/${id}`)
             .then(res => res.json())
             .then(data => {
                 setCandidato(data);

@@ -10,7 +10,7 @@ const ForgotPasswordCandidato = () => {
     e.preventDefault();
     const candidatoEmail=email;
     try {
-      const res = await fetch('http://localhost:5000/forgot-password-candidato', {
+      const res = await fetch(`${import.meta.env.VITE_APP_BACKEND}/forgot-password-candidato`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

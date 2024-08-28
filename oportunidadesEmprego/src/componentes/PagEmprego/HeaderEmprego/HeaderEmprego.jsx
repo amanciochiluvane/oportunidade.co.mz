@@ -21,7 +21,7 @@ export default function HeaderEmprego() {
 
   const handleSignOut = async () => {
     try {
-      const response = await fetch('http://localhost:5000/signout', {
+      const response = await fetch(`${import.meta.env.VITE_APP_BACKEND}/signout`, {
         method: 'GET', // Usando método GET
         headers: {
           'Content-Type': 'application/json',

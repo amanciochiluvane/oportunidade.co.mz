@@ -42,7 +42,7 @@ export default function LoginCandidato(){
             
             const candidatoEmail = result._tokenResponse.email;
             
-            const res = await fetch('http://localhost:5000/googleCandidato', {
+            const res = await fetch(`${import.meta.env.VITE_APP_BACKEND}/googleCandidato`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -81,7 +81,7 @@ export default function LoginCandidato(){
     const onSubmit = (data) => {
         setIsLoading(true);
         dispatch(signInStart());
-        fetch("http://localhost:5000/loginCandidato", {
+        fetch(`${import.meta.env.VITE_APP_BACKEND}/loginCandidato`, {
             method: "POST",
             headers: { "Content-type": "application/json" },
             body: JSON.stringify(data)

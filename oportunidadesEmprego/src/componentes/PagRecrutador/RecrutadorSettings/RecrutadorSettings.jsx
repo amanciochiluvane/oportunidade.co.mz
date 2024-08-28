@@ -73,7 +73,7 @@ const submitForm = async (data) => {
     dispatch(updateUserStart());
 
     try {
-        const res = await fetch(`http://localhost:5000/updateRecrutador/${currentUser.usuário._id}`, {
+        const res = await fetch(`${import.meta.env.VITE_APP_BACKEND}/updateRecrutador/${currentUser.usuário._id}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',

@@ -45,7 +45,7 @@ export default function UploadPdfPopup({ onClose, valorPay }) {
         formData.append('valorPago',valorPay);
     
         try {
-            const response = await fetch('http://localhost:5000/enviar-cv-email', {
+            const response = await fetch(`${import.meta.env.VITE_APP_BACKEND}/enviar-cv-email`, {
                 method: 'POST',
                 body: formData,
             });
