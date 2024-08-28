@@ -1,0 +1,40 @@
+.EmailVerification{
+    background-color: rgb(241, 241, 241);
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Montserrat';
+}
+.EmailVerification>article{
+    background-color: white;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgb(219, 218, 218);
+}
+.EmailVerification>article>h1{
+    font-size: 21px;
+    color: rgb(44, 44, 44);
+    text-shadow:1px  rgb(61, 61, 61);
+}
+.EmailVerification>article>img{
+    padding-top: 40px;
+}
+.EmailVerification>article>p{
+    font-size: 15px;
+    color: rgb(95, 95, 95);
+}
+
+@media (min-width:800px) {
+    .EmailVerification>article{
+        width: 500px;
+        height: 300px;
+    }
+    .EmailVerification>article>img{
+        padding-top: 60px;
+    }
+}

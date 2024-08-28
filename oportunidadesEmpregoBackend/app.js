@@ -73,7 +73,9 @@ async function run() {
     // Create separate databases for recruiters and applicants
     const recruiterDb = client.db("recrutadores"); // Database for recruiters
     const applicantDb = client.db("candidatos");   // Database for applicants
-    const applicationsDb = client.db("candidaturas")
+    const applicationsDb = client.db("candidaturas");
+    const preRecruiterCollection = db.collection('preRecruiter'); 
+    const preApplicantCollection = db.collection('pre_applicants');
 
     const recruiterCollection = recruiterDb.collection("usuarios"); // Collection for recruiters
     const applicantCollection = applicantDb.collection("usuarios"); // Collection for applicants
@@ -102,55 +104,182 @@ async function run() {
             res.status(500).json({ error: 'Failed to initiate C2B transaction' });
         });
 });
+
+
+const sendVerificationEmail = (email, token) => {
+  const transporter = nodemailer.createTransport({
+      
+    service: 'gmail',
+    auth: {
+      user: process.env.EMAIL_ADDRESS,
+      pass: process.env.EMAIL_PASSWORD,
+    },
+  });
   
 
 
-    app.post("/criar-conta/candidato", async (req, res) => {
-      try {
-        const { candidatoFirstName, candidatoLastName, candidatoEmail, candidatoPassword, candidatoGenero, candidatoSobreMim,candidatoProfissao,candidatoNacionalidade, candidatoProvincia, candidatoDataNascimento, candidatoNumero, candidatoAnosExperiencia, candidatoFormacaoAcademica, candidatoCV, candidatoFotoPerfil
+  const verificationLink = `http://localhost:5173/verificar-email/${token}`;
 
-        } = req.body;
+  const mailOptions = {
+    from: `${process.env.EMAIL_ADDRESS}`,
+    to: email,
+    subject: "Confirmação de Criação de Conta",
+    html: `<p>Obrigado por criar uma conta. Por favor, verifique seu e-mail clicando no link abaixo:</p>
+           <a href="${verificationLink}">Verificar Email</a>`
+  };
 
-        // Verificar se o email já está em uso
-        const existingApplicant = await applicantCollection.findOne({ candidatoEmail});
-        if (existingApplicant) {
-          return res.status(400).json({ message: "Email já cadastrado" });
-        }
+  return transporter.sendMail(mailOptions);
+};
+// Criar conta de recrutador
+app.post("/criar-conta/recrutador", async (req, res) => {
+  try {
+    const { recruterName, recruterEmail, recruterPassword, companyLogotipo } = req.body;
 
-        // Hash da senha
-        const hashedPassword = await bcrypt.hash(candidatoPassword, 10);
+    // Verificar se o email já está em uso
+    const existingRecruiter = await recruiterCollection.findOne({ recruterEmail });
+    if (existingRecruiter) {
+      return res.status(400).json({ message: "Email já cadastrado" });
+    }
 
-        // Criar conta de recrutador
-        const result = await applicantCollection.insertOne({
-          candidatoFirstName, 
-          candidatoLastName, 
-          candidatoEmail, 
-          candidatoPassword: hashedPassword, 
-          candidatoGenero, 
-          candidatoSobreMim,
-          candidatoProfissao,
-          candidatoNacionalidade, 
-          candidatoProvincia, 
-          candidatoDataNascimento, 
-          candidatoNumero, 
-          candidatoAnosExperiencia, 
-          candidatoFormacaoAcademica, 
-          candidatoCV, 
-          candidatoFotoPerfil
-       
-        });
+    // Hash da senha
+    const hashedPassword = await bcrypt.hash(recruterPassword, 10);
 
-        if (result.insertedId) {
-          return res.status(201).json({ messageSuccess: "Conta de candidato criada com sucesso" });
-        } else {
-          return res.status(500).json({ message: "Erro ao criar conta de candidato" });
-        }
-      } catch (error) {
-        console.error(error);
-        return res.status(500).json({ message: "Erro interno do servidor" });
-      }
+    // Gerar token de verificação
+    const verificationToken = generateVerificationToken();
+
+    // Armazenar dados temporários na coleção de pré-registro
+    await preRecruiterCollection.insertOne({
+      recruterName,
+      recruterEmail,
+      recruterPassword: hashedPassword,
+      companyLogotipo,
+      verificationToken,
+      createdAt: new Date()
     });
 
+    // Enviar e-mail de verificação
+    await sendVerificationEmail(recruterEmail, verificationToken);
+
+    return res.status(201).json({ messageSuccess: "Verifique seu e-mail para concluir o cadastro" });
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ message: "Erro interno do servidor" });
+  }
+});
+const generateVerificationToken = () => {
+  const token = crypto.randomBytes(32).toString('hex');
+  return `rec-${token}`; // Adiciona o prefixo 'rec-'
+};
+// Verificar e-mail do recrutador
+app.get("/verificar-email/recrutador/:token", async (req, res) => {
+  try {
+    const { token } = req.params;
+
+    // Verificar o token na coleção de pré-registro
+    const preRecruiter = await preRecruiterCollection.findOne({ verificationToken: token });
+    if (!preRecruiter) {
+      return res.status(400).json({ message: "Token de verificação inválido" });
+    }
+
+    // Inserir o recrutador na coleção principal
+    await recruiterCollection.insertOne({
+      recruterName: preRecruiter.recruterName,
+      recruterEmail: preRecruiter.recruterEmail,
+      recruterPassword: preRecruiter.recruterPassword,
+      companyLogotipo: preRecruiter.companyLogotipo
+    });
+
+    // Remover o registro da coleção de pré-registro
+    await preRecruiterCollection.deleteOne({ verificationToken: token });
+
+    return res.status(200).json({ messageSuccess: "Conta verificada e criada com sucesso" });
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ message: "Erro ao verificar o email" });
+  }
+});
+
+// Criar conta de candidato
+app.post("/criar-conta/candidato", async (req, res) => {
+  try {
+    const { 
+      candidatoFirstName, candidatoLastName, candidatoEmail, candidatoPassword, candidatoGenero, candidatoSobreMim,
+      candidatoProfissao, candidatoNacionalidade, candidatoProvincia, candidatoDataNascimento, candidatoNumero,
+      candidatoAnosExperiencia, candidatoFormacaoAcademica, candidatoCV, candidatoFotoPerfil
+    } = req.body;
+
+    // Verificar se o email já está em uso
+    const existingApplicant = await applicantCollection.findOne({ candidatoEmail });
+    if (existingApplicant) {
+      return res.status(400).json({ message: "Email já cadastrado" });
+    }
+
+    // Hash da senha
+    const hashedPassword = await bcrypt.hash(candidatoPassword, 10);
+
+    // Gerar token de verificação
+    const verificationToken = crypto.randomBytes(32).toString('hex');
+
+    // Armazenar dados temporários na coleção de pré-registro
+    await preApplicantCollection.insertOne({
+      candidatoFirstName, candidatoLastName, candidatoEmail, candidatoPassword: hashedPassword,
+      candidatoGenero, candidatoSobreMim, candidatoProfissao, candidatoNacionalidade, candidatoProvincia,
+      candidatoDataNascimento, candidatoNumero, candidatoAnosExperiencia, candidatoFormacaoAcademica,
+      candidatoCV, candidatoFotoPerfil, verificationToken, createdAt: new Date()
+    });
+
+    // Enviar e-mail de verificação
+    await sendVerificationEmail(candidatoEmail, verificationToken);
+
+    return res.status(201).json({ messageSuccess: "Verifique seu e-mail para concluir o cadastro" });
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ message: "Erro interno do servidor" });
+  }
+});
+
+// Verificar e-mail do candidato
+app.get("/verificar-email/candidato/:token", async (req, res) => {
+  try {
+    const { token } = req.params;
+
+    // Verificar o token na coleção de pré-registro
+    const preApplicant = await preApplicantCollection.findOne({ verificationToken: token });
+    if (!preApplicant) {
+      return res.status(400).json({ message: "Token de verificação inválido" });
+    }
+
+    // Inserir o candidato na coleção principal
+    await applicantCollection.insertOne({
+      candidatoFirstName: preApplicant.candidatoFirstName,
+      candidatoLastName: preApplicant.candidatoLastName,
+      candidatoEmail: preApplicant.candidatoEmail,
+      candidatoPassword: preApplicant.candidatoPassword,
+      candidatoGenero: preApplicant.candidatoGenero,
+      candidatoSobreMim: preApplicant.candidatoSobreMim,
+      candidatoProfissao: preApplicant.candidatoProfissao,
+      candidatoNacionalidade: preApplicant.candidatoNacionalidade,
+      candidatoProvincia: preApplicant.candidatoProvincia,
+      candidatoDataNascimento: preApplicant.candidatoDataNascimento,
+      candidatoNumero: preApplicant.candidatoNumero,
+      candidatoAnosExperiencia: preApplicant.candidatoAnosExperiencia,
+      candidatoFormacaoAcademica: preApplicant.candidatoFormacaoAcademica,
+      candidatoCV: preApplicant.candidatoCV,
+      candidatoFotoPerfil: preApplicant.candidatoFotoPerfil
+    });
+
+    // Remover o registro da coleção de pré-registro
+    await preApplicantCollection.deleteOne({ verificationToken: token });
+
+    return res.status(200).json({ messageSuccess: "Conta verificada e criada com sucesso" });
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ message: "Erro ao verificar o email" });
+  }
+});
+
+
+   
  
 
 app.post("/loginCandidato", async (req, res) => {
@@ -191,37 +320,7 @@ app.post("/loginCandidato", async (req, res) => {
   })
 
     // Endpoint for applicant account creation
-    app.post("/criar-conta/recrutador", async (req, res) => {
-      try {
-        const { recruterName, recruterEmail, recruterPassword,companyLogotipo} = req.body;
-
-        // Verificar se o email já está em uso
-        const existingRecruiter = await recruiterCollection.findOne({ recruterEmail});
-        if (existingRecruiter) {
-          return res.status(400).json({ message: "Email já cadastrado" });
-        }
-
-        // Hash da senha
-        const hashedPassword = await bcrypt.hash(recruterPassword, 10);
-
-        // Criar conta de recrutador
-        const result = await recruiterCollection.insertOne({
-          recruterName,
-          recruterEmail,
-          recruterPassword:hashedPassword,
-          companyLogotipo 
-        });
-
-        if (result.insertedId) {
-          return res.status(201).json({ messageSuccess: "Conta de recrutador criada com sucesso" });
-        } else {
-          return res.status(500).json({ message: "Erro ao criar conta de recrutador" });
-        }
-      } catch (error) {
-        console.error(error);
-        return res.status(500).json({ message: "Erro interno do servidor" });
-      }
-    });
+    
 
     app.post("/login", async (req, res) => {
       const {  recruterEmail, recruterPassword } = req.body;

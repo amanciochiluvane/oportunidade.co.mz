@@ -44,7 +44,7 @@ export default function EmpregoIntroducao({query,handleInputChange,handleChangeH
     return(
     <div className="EmpregoIntroducao">
         <section id='EmpregoIntroducaoSECTION'>
-            <h2>Encontre a melhor oportunidade para ti.</h2>
+            <h2>Encontre o emprego dos seus <span><span>sonhos</span> connosco.</span></h2>
                 <article className='EmpregoIntroducaoPesquisa'>
                     <div className='CategoriaEmpregoIntroducaoPesquisa'>
                         <img src={CategoriaIntroducao} alt="FotoCategoria"  />

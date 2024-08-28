@@ -48,8 +48,13 @@ import CV2 from "./paginas/CV/CV2.jsx"
 import CV3 from "./paginas/CV/CV3.jsx"
 import CV4 from "./paginas/CV/CV4.jsx"
 import PagamentoMpesa from './paginas/PagamentoMpesa/PagamentoMpesa.jsx'
+import EmailVerification from "./paginas/EmailVerification/EmailVerification"
 
 const router = createBrowserRouter([
+  {
+    path:"/verificar-email/:token",
+    element:<EmailVerification/>
+  },
   {
     path:"/teste-vocacional/perguntas",
     element:<TestePerguntas/>

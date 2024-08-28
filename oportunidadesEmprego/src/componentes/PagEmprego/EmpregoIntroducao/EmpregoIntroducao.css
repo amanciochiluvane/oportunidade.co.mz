@@ -2,7 +2,9 @@
 
 .EmpregoIntroducao{
     font-family: 'Barlow', sans-serif;
-    background-color: #3d2462;
+    background-image: url("../../../assets/bgLanding.png");
+    background-size: cover;
+    
     
 
 }
@@ -11,10 +13,18 @@
     color: white;
 }
 #EmpregoIntroducaoSECTION>h2{
-    font-weight: 600;
+    font-weight: 700;
     padding-top: 30px;
-    width: 250px;
+    width: 270px;
     padding-left: 20px;
+    color: rgb(31, 30, 30);
+    font-size: 29px;
+}
+#EmpregoIntroducaoSECTION>h2>span{
+    color: #6e46ae;
+}
+#EmpregoIntroducaoSECTION>h2>span>span{
+    border-image: url("../../../assets/tracado.png") 100% round;
 }
 .EmpregoIntroducaoPesquisa{
     text-align: center;
