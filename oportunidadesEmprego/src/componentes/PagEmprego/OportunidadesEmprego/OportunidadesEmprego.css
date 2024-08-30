@@ -6,25 +6,30 @@
     margin-top: 70px;
 }
 .OprtunidadesEmprego>h2{
-    font-size: 20px;
-    width: 250px;
+    font-size: 24px;
+    width: 320px;
     margin: auto;
-    text-align: center;
+  text-align: center;
+  color: rgb(27, 27, 27);
+  margin-bottom: 30px;
+   
 
 }
 .FiltragemNiveisSECTION{
     
 }
 .FiltragemNiveisSECTION>h2{
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 20px;
     margin-left: 20px;
     margin-bottom: 10px;
+    color: rgb(27, 27, 27);
 }
 .FiltragemNiveisArticleOVERVIEW>p{
-    font-size: 16px;
+    font-size: 14px;
     margin-left: 20px;
     margin-bottom: 10px;
+    margin-right: 20px;
 }
 .ArticleNivies{
    text-align: center;
@@ -34,18 +39,28 @@
 
 .BoxEmpregoExperiencia{
      text-decoration: none;
-    width: 200px !important;
+    width: 250px !important;
+    height: 185px;
     margin: auto!important;
    color: black;
-    border: 2px solid #9ca3af;
+    border: 1px solid #6e46ae;
+ 
+    box-shadow: 0px 6px 5px  #c1a2f3;
     border-radius: 10px;
-    text-align: center;
+    
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-bottom: 20px !important;
+    
     
 }
+.BoxEmpregoExperiencia>img{
+    width: 30px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
 .BoxEmpregoExperiencia:hover{
-    background-color: #e9e9e9;
+
 }
 .BoxEmpregoExperiencia2{
     width: 200px !important;
@@ -57,7 +72,7 @@
     text-align: center;
    height: 170px;
    position: relative;
-   background-color: #eeeeee;
+   
 }
 
 .BoxEmpregoExperiencia2>img{
@@ -79,56 +94,83 @@ filter: invert(50%);
  transition: filter 0.15s ease-in-out;
 }
 .BoxEmpregoExperiencia>h2{
-    font-size: 14px;
+    font-size: 17px;
+    width: 160px;
+    text-align: left;
+    margin-left: 20px;
+    color: rgb(56, 56, 56);
+
 }
 .BoxEmpregoExperiencia>p{
-    font-size: 12px;
-    color: #9d9fa3;
-    margin-top: 10px;
+    font-size: 14px;
+    color: #6d6d6d;
+    margin-top: 5px;
+    text-align: left;
+    margin-left: 20px;
+    
+}
+#ArticleNiviesBulltes>.slick-slider>.slick-dots{
+    display: none !important;
 }
 .BoxEmpregoExperiencia>div{
-    display: flex;
-    gap: 5px;
-    justify-content: center;
+    
     margin-top: 10px;
+    margin-left: 20px;
+    border: 1px solid #6e46ae;
+    width: max-content;
+    padding: 7px 12px;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 40px;
+    color:#6e46ae;
     
 }
 .BoxEmpregoExperiencia>div>a{
     text-decoration: none;
-    color:#6e46ae;
-    font-size: 13px;
-    font-weight: 500;
-  
     
+    font-size: 13px;
+    font-weight: 600;
+    text-align: left; 
+    
+}
+.BoxEmpregoExperiencia>div>a:hover{
+    color: white;
+}
+.BoxEmpregoExperiencia>div:hover{
+    background-color: #6e46ae;
+    color: white;
 }
 .BoxEmpregoExperiencia>div>img{
     width: 15px;
 
 }
 .TodasVagas{
-    background-color: #6e46ae;
-    color: white;
+    background-color: #6e46ae33;
+    color: #6e46ae;
     text-decoration: none;
-    font-size: 13px;
-    padding: 7px 20px;
+    font-size: 16px;
+    padding: 12px 25px;
     font-family: 'Barlow', sans-serif;
     font-weight: 600;
     display: block;
     width: max-content;
     margin: auto;
-    border-radius: 7px;
-    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-bottom: 80px;
+    margin-top: 50px !important;
    
    
 }
 .TodasVagas:hover{
-    background-color: #8956db;
+    background-color: #eadeff;
 }
 #TodasEmpresas{
-    background-color: #0eb5b2;
+    background-color: #6e46ae;
+    color: white;
+    box-shadow: 0px 6px 5px  #ac95cf;
 }
 #TodasEmpresas:hover{
-    background-color: #13d6d3;
+    background-color: #784cc0;
 }
 .FiltragemNiveisArticle{
     margin-bottom: 30px;
@@ -137,7 +179,7 @@ filter: invert(50%);
     display: block !important;
     position: absolute;
     top: -39px;
-    left: 82% !important;
+    left: calc(100% - 65px) !important;
     width: 15px !important;
    
 }
@@ -151,7 +193,7 @@ filter: invert(50%);
     display: block !important;
     position: absolute;
     top: -39px;
-    right: 5% !important;
+    right: 20px !important;
     width: 15px !important;
 }
 .LinhaEmprego1{
@@ -165,7 +207,7 @@ filter: invert(50%);
 @media(min-width:700px){
     .OprtunidadesEmprego>h2{
         width: 500px;
-        font-size: 23px;
+        font-size: 29px;
     }
     .ArticleNivies>.slick-slider>.slick-prev{
         display: block !important;
@@ -180,6 +222,19 @@ filter: invert(50%);
         top: -39px;
         right: 5% !important;
     }
+    .FiltragemNiveisSECTION>h2{
+        font-size: 21px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        color: rgb(27, 27, 27);
+    }
+    .FiltragemNiveisArticleOVERVIEW>p{
+        font-size: 17px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        margin-right: 20px;
+    }
     
 }
 @media (min-width:1024px) {
@@ -193,7 +248,9 @@ filter: invert(50%);
         left: 0;
             
     }
-    .LinhaEmprego2{
+    .BoxEmpregoExperiencia2>img{
+        width: 180px !important;
+    } .LinhaEmprego2{
         display: block;
             width: 25%;
             height: 1px;
@@ -205,9 +262,10 @@ filter: invert(50%);
     }
     .OprtunidadesEmprego>h2{
         margin-top: 60px;
-        width: 500px;
-        font-size: 27px;
+        width: 600px;
+        font-size: 35px;
         font-weight: 700;
+        color: rgb(51, 51, 51);
     }
     .FiltragemNiveisSECTION{
         width: 1000px;
@@ -223,8 +281,8 @@ filter: invert(50%);
     }
     .FiltragemNiveisArticleOVERVIEW>p{
         font-size: 15px;
-        color: #9ca3af;
-        font-weight: 500;
+        color: #727272;
+        font-weight: 400;
     }
     #FiltragemNiveisArticleOVERVIEW2{
         position: absolute;

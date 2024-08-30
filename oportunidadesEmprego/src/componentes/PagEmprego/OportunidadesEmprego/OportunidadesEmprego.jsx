@@ -12,6 +12,7 @@ import Yango from '../../../assets/Yango.png'
 import Mpesa from '../../../assets/Mpesa.png'
 import Brandview from '../../../assets/Brandview.png'
 import Moza from '../../../assets/Moza.png'
+import icon1 from "../../../assets/icon1.png"
 
 
 export default function OportunidadesEmprego(){
@@ -68,8 +69,8 @@ export default function OportunidadesEmprego(){
           {
             breakpoint: 2024,
             settings: {
-              slidesToShow: 5,
-              slidesToScroll: 5,
+              slidesToShow: 4,
+              slidesToScroll: 4,
               infinite: true,
               dots: true,
              
@@ -100,6 +101,54 @@ export default function OportunidadesEmprego(){
         ]
     };
 
+    var settings2 = {
+      dots: true,
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      initialSlide: 0,
+      autoplay:false,
+      speed:2000,
+      nextArrow: <SampleNextArrow />,
+      prevArrow: <SamplePrevArrow />,
+      
+      
+      responsive: [
+        {
+          breakpoint: 2024,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            infinite: true,
+            dots: true,
+           
+          }
+        },
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            initialSlide: 1
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 520,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        }
+      ]
+  };
+
 
 
 
@@ -107,7 +156,7 @@ export default function OportunidadesEmprego(){
     return(
         <div className="OprtunidadesEmprego">
             <div className='LinhaEmprego1'></div>
-             <h2>Encontre as oportunidades de emprego adequadas na Moçambique.</h2>
+             <h2>Encontre as oportunidades de emprego adequadas em Moçambique.</h2>
              <div className='LinhaEmprego2'></div>
              <section className="FiltragemNiveisSECTION">
                 <h2>Filtragem baseada em experiência.</h2>
@@ -119,57 +168,63 @@ export default function OportunidadesEmprego(){
                     <article className='ArticleNivies'>
                     <Slider{...settings}>
                         <Link className='BoxEmpregoExperiencia' to="/vagas">
+                            <img src={icon1} />
                             <h2>Sem Experiência</h2>
                             <p>30 Vagas</p>
                             <div>
                             <Link to="/vagas"><p>Explorar Vagas</p></Link>
-                                <img src={Seta} alt="Seta Imagem" />
+                                
                             </div>
                         </Link>
 
                         <Link className='BoxEmpregoExperiencia'to="/vagas"> 
+                            <img src={icon1} />
                             <h2>Estágio e Recém-formado</h2>
                             <p>30 Vagas</p>
                             <div>
                             <Link to="/vagas"><p>Explorar Vagas</p></Link>
-                                <img src={Seta} alt="Seta Imagem" />
+                                
                             </div>
                         </Link>
 
                         <Link className='BoxEmpregoExperiencia' to="/vagas">
+                             <img src={icon1} />
                             <h2>Nivel Executivo</h2>
                             <p>30 Vagas</p>
                             <div>
                             <Link to="/vagas"><p>Explorar Vagas</p></Link>
-                                <img src={Seta} alt="Seta Imagem" />
+                                
                             </div>
                         </Link>
 
                         <Link className='BoxEmpregoExperiencia' to="/vagas">
+                            <img src={icon1} />
                             <h2>Nivel Sênior</h2>
                             <p>30 Vagas</p>
                             <div>
                                 <Link to="/vagas"><p>Explorar Vagas</p></Link>
-                                <img src={Seta} alt="Seta Imagem" />
+                                
                             </div>
                         </Link>
 
                         
                         <Link className='BoxEmpregoExperiencia' to="/vagas">
+                            <img src={icon1} />
                             <h2>Nivel Médio</h2>
                             <p>30 Vagas</p>
                             <div>
                             <Link to="/vagas"><p>Explorar Vagas</p></Link>
-                                <img src={Seta} alt="Seta Imagem" />
+                                
                             </div>
                         </Link>
 
                         <Link className='BoxEmpregoExperiencia' to="/vagas">
+                            <img src={icon1} />
                             <h2>Nivel Médio</h2>
                             <p>30 Vagas</p>
                             <div>
                             <Link to="/vagas"><p>Explorar Vagas</p></Link>
-                                <img src={Seta} alt="Seta Imagem" />
+                                
                             </div>
                         </Link>
                         </Slider>
@@ -180,17 +235,18 @@ export default function OportunidadesEmprego(){
                 <Link to="/vagas" className='TodasVagas'>Todas as Vagas</Link>
              </section>
 
+
+
+<h2>As melhores empresas estão aqui oferecendo vagas de emprego</h2>
+
 <section className="FiltragemNiveisSECTION">
-
-<h2>Empresas atualmente recrutando em Moçambique</h2>
-
 <article className="FiltragemNiveisArticle">
     <div className="FiltragemNiveisArticleOVERVIEW">
         <p>Encontre empregos na empresa que deseja em trabalhar</p>
         <p id="FiltragemNiveisArticleOVERVIEW2">Veja Mais Empresas</p>
     </div>
-    <article className='ArticleNivies'>
-    <Slider{...settings}>
+    <article className='ArticleNivies' id='ArticleNiviesBulltes'>
+    <Slider{...settings2}>
         <Link to="/empregadores-detalhes">
           <div className='BoxEmpregoExperiencia2'>
               <img src={Yango}  />
