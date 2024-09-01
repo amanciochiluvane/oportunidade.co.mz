@@ -34,7 +34,7 @@ export default function EmpregadoresEmprego(){
     return(
         <div className="EmpregadoresEmprego">
             <section className="EmpregadoresEmpregoOverview">
-                <section className="TalentoEmpregadores">
+              {/*  <section className="TalentoEmpregadores">
                     <article className="TalentoEmpregadoresTexto">
                         <h3>PARA EMPREGADORES</h3>
                         <h2>Em busca do talento ideal?</h2>
@@ -47,7 +47,7 @@ export default function EmpregadoresEmprego(){
                     <article className="TalentoEmpregadoresImg">
                         <img src={HomemTalento} alt="Homem" />
                     </article>
-                </section>
+                </section> */} 
 
                 <section className="DicasCarreiraEmprego">
                     <h2>Principais Dicas de Carreira</h2>

@@ -13,7 +13,10 @@ import Mpesa from '../../../assets/Mpesa.png'
 import Brandview from '../../../assets/Brandview.png'
 import Moza from '../../../assets/Moza.png'
 import icon1 from "../../../assets/icon1.png"
-
+import icon2 from "../../../assets/icon2.png"
+import icon3 from "../../../assets/icon3.png"
+import icon4 from "../../../assets/icon4.png"
+import icon5 from "../../../assets/icon5.png"
 
 export default function OportunidadesEmprego(){
 
@@ -178,7 +181,7 @@ export default function OportunidadesEmprego(){
                         </Link>
 
                         <Link className='BoxEmpregoExperiencia'to="/vagas"> 
-                            <img src={icon1} />
+                            <img src={icon2} />
                             <h2>Estágio e Recém-formado</h2>
                             <p>30 Vagas</p>
                             <div>
@@ -188,7 +191,7 @@ export default function OportunidadesEmprego(){
                         </Link>
 
                         <Link className='BoxEmpregoExperiencia' to="/vagas">
-                             <img src={icon1} />
+                             <img src={icon4} />
                             <h2>Nivel Executivo</h2>
                             <p>30 Vagas</p>
                             <div>
@@ -198,7 +201,7 @@ export default function OportunidadesEmprego(){
                         </Link>
 
                         <Link className='BoxEmpregoExperiencia' to="/vagas">
-                            <img src={icon1} />
+                            <img src={icon3} />
                             <h2>Nivel Sênior</h2>
                             <p>30 Vagas</p>
                             <div>
@@ -209,7 +212,7 @@ export default function OportunidadesEmprego(){
 
                         
                         <Link className='BoxEmpregoExperiencia' to="/vagas">
-                            <img src={icon1} />
+                            <img src={icon5} />
                             <h2>Nivel Médio</h2>
                             <p>30 Vagas</p>
                             <div>
@@ -218,15 +221,7 @@ export default function OportunidadesEmprego(){
                             </div>
                         </Link>
 
-                        <Link className='BoxEmpregoExperiencia' to="/vagas">
-                            <img src={icon1} />
-                            <h2>Nivel Médio</h2>
-                            <p>30 Vagas</p>
-                            <div>
-                            <Link to="/vagas"><p>Explorar Vagas</p></Link>
-                                
-                            </div>
-                        </Link>
+                        
                         </Slider>
                     </article>
 

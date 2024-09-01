@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&display=swap');
-
+.CarreiraEmpregoMother{
+    background-color:#f2f2f2 ;
+}
 .CarreiraEmprego{
     
     font-family: 'Barlow', sans-serif;
     margin-top: 70px;
     background-color: #845eff;
    position: relative;
-   height: 800px;
+   height: 1000px;
     padding-bottom: 60px;
     overflow-x: hidden;
 }
@@ -55,11 +57,13 @@
     border-radius: 10px;
 }
 .PessoaCell{
-    width: 420px;
+    width: 370px;
     margin-top: 50px;
     position: absolute;
     bottom: 0;
     right: 0;
+   
+  
    
 }
 .PessoaCell2{
@@ -118,8 +122,44 @@
 .imgCarreiraEmprego{
     display: none;
 }
+.alertasCarreira{
+    margin-top:40px;
+    color:white;
+}
+.alertasCarreira>article{
+    display:flex;  
+}
+.alertasCarreira>article>img{
+    width: 100px;
+}
+.alertasCarreira>article>img{
+    height:max-content;
+}
+.alertasCarreira>article>div>h3{
+    font-size:16px;
+    width:220px;
+    margin-top:20px;
+    margin-bottom: 5px;
+}
+.alertasCarreira>article>div>p{
+    font-size:13px;
+    color:rgb(247, 247, 247);
+    width: 250px;
+}
+.wave{
+    display: none;
+}
+.wave>svg{
+    width: 100%;
+}
+.setaalerta{
+    display: none;
+}
+
+
 
 @media (min-width:700px) {
+    
     .PessoaCell{
         display: none;
     }
@@ -131,8 +171,13 @@
         left: 5%;
     }
     .CarreiraEmprego{
-        height: 400px;
+        height: 600px;
+
     }
+
+    
+
+
     .InfoCarreiraEmprego{
         position: absolute;
         right: 10%;
@@ -196,8 +241,36 @@
 
 }
 @media (min-width:1200px) {
+    
+    .alertasCarreira2{
+        margin-left: 300px;
+    }
+    .setaalerta{
+        display: block;
+        position: absolute;
+        left:350px ;
+        margin-top: -50px;
+    }
+    .CarreiraEmpregoMother{
+        position: relative;
+    }
+    .wave{
+        display: block;
+        width: 100%;
+       bottom:-30px;
+        position: absolute;
+       
+    }
+   
     .CarreiraEmprego>div{
       width: 1100px;
+    }
+    .CarreiraEmpregoMother{
+        height: max-content !important;
+    }
+.CarreiraEmprego{
+        height: 800px;
+      
     }
     .imgCarreiraEmprego>img{
         width: 350px;
@@ -209,14 +282,12 @@
     }
     .PessoaCell2{
         position: absolute;
-        bottom: 0;
+        bottom: 60px;
         display: block;
-        width: 400px;
-        left: 10%;
+        width: 550px;
+        left: 5%;
     }
-    .CarreiraEmprego{
-        height: 500px;
-    }
+   
     .InfoCarreiraEmprego{
         position: absolute;
         right: 10%;
@@ -234,4 +305,5 @@
         margin-left: 10%;
         margin-top: 30px;
     }
+ 
 }

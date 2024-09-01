@@ -5,6 +5,7 @@ import SiteLink from '../../assets/Link.png'
 import OportunidadesEmprego from '../../componentes/PagEmprego/OportunidadesEmprego/OportunidadesEmprego'
 import CarreiraEmprego from '../../componentes/PagEmprego/CarreiraEmprego/CarreiraEmprego'
 import FormarEmprego from '../../componentes/PagEmprego/FormarEmprego/FormarEmprego'
+
 import EmpregadoresEmprego from '../../componentes/PagEmprego/EmpregadoresEmprego/EmpregadoresEmprego'
 import Relatorio from '../../assets/Relatorio.png'
 import Seta from '../../assets/SetaAzul.png'
@@ -88,8 +89,9 @@ export default function Emprego(){
             <CarreiraEmprego/>
             <FormarEmprego/>
             <EmpregadoresEmprego/>
+            
             <section className='RelatorioEmprego'>
-                <img src={Relatorio} alt="Foto Relatorio" />
+               
 
                 <article className='RelatorioEmpregoTexto'>
                     <h2>
@@ -99,7 +101,7 @@ export default function Emprego(){
 
                     <Link>
                     <p>Obter Relatório</p>
-                    <img src={Seta} alt="Seta Azul" />
+                   
                     </Link>
                 </article>
             </section>
