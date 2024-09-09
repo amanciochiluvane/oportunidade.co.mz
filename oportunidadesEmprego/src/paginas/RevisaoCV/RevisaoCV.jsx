@@ -71,7 +71,7 @@ export default function RevisaoCv() {
             <section className="IntroRevisao">
                 <section>
                     <p>
-                        Destaque o Seu Potencial Profissional: <span>Revise seu CV</span> e Alcance Novas
+                        Destaque o Seu Potencial Profissional:<span>Revise seu CV</span> e Alcance Novas
                         Oportunidades
                     </p>
 
@@ -90,12 +90,12 @@ export default function RevisaoCv() {
                     </div>
                 </section>
 
-                <img src={MulherRevisaoCv} className="MulherRevisaoCv" />
-                <img src={Animacao} className="Animacao" />
+                
             </section>
 
             <section className="InformacoesRevisao">
                 <section id="RecruterRevisaoCV" className="InfoRevisaoCv">
+                    <img src={recruter} />
                     <div>
                         <h2>Destaque-se para os recrutadores instantaneamente</h2>
                         <p>
@@ -105,11 +105,11 @@ export default function RevisaoCv() {
                             potenciais empregadores.
                         </p>
                     </div>
-                    <img src={recruter} />
+                    
                 </section>
 
                 <section id="CanidatoRevisaoCV" className="InfoRevisaoCv">
-                    <img src={candidato} />
+                    
                     <div>
                         <h2>
                             Cative potenciais empregadores com um currículo excepcional, uma carta de
@@ -121,6 +121,7 @@ export default function RevisaoCv() {
                             perfil profissional verdadeiramente excepcional.
                         </p>
                     </div>
+                    <img src={candidato} />
                 </section>
             </section>
 

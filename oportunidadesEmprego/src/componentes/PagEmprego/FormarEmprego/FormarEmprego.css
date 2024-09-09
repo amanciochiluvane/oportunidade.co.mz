@@ -18,6 +18,8 @@
     font-size: 27px;
     text-align: center;
     margin-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
 
 }
 .FormarEmpregoTexto>p{
@@ -32,10 +34,15 @@
     color: black;
     font-weight: 500;
     gap: 30px;
-    border: 1px solid #845eff;
+    border: 1px solid #6e46ae;
     padding: 10px;
     border-radius: 8px;
     padding-top: 14px;
+}
+.FormarEmpregoTexto>a:hover{
+    background-color: #6e46ae;
+    color: white;
+    transition: background-color 0.45s ease;
 }
 .FormarEmpregoTexto>a>p{
     width: 250px;
@@ -82,6 +89,10 @@
     
 }
 @media(min-width:1024px){
+    .FormarEmprego{
+        padding-top: 0;
+      
+    }
     .FormarEmpregoTexto{
         margin-left: 5%;
     }
@@ -90,15 +101,17 @@
         width: 550px;
     }
     .FormarEmpregoImg>img{
-        width: 450px;
-        margin-top: -40px;
+        position: absolute;
+        width: 550px;
+        margin-top: -30px;
         padding-right: 10%;
       
     }
     .FormarEmpregoTexto>h2{
-        font-size: 35px;
-        margin-top: 60px;
-        width: 370px;
+        font-size: 39px;
+        margin-top: 20px;
+        width: 380px;
+        padding: 0;
     
     }
     .FormarEmpregoTexto>a{
@@ -108,11 +121,7 @@
         font-size: 14px;
         width: 270px;
     }
-    .FormarEmpregoTexto>a:hover{
-        background-color: #845eff;
-        color: white;
-        transition: background-color 0.45s ease;
-    }
+   
     .FormarEmpregoTexto>a:hover .button-img{
         content: url('../../../assets/btn2.png');
     }

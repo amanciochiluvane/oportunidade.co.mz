@@ -10,13 +10,16 @@
 }
 
 .IntroRevisao{
-    background-color: #111827;
-    padding-bottom: 40px;
+    background-color: #6e46ae;
+    padding-bottom: 70px;
     padding-left: 10px;
     padding-right: 10px;
     margin-bottom: 30px;
+    padding-top: 30px;
+    text-align: center;
     
 }
+
 
 .IntroRevisao>section>p{
 
@@ -43,35 +46,39 @@
     display: flex;
     flex-direction: column;
    gap: 10px;
-    margin-top: 20px;
+    margin-top: 40px;
+    justify-content: center ;
+    align-items: center;
 
 }
 .PacotesCVLINKINTRO{
-    color: white;
-    padding: 6px 10px;
-    background-color: #6E46AE;
-    border-radius: 5px;
+    color: #6E46AE;
+    padding: 8px 15px;
+    background-color: white;
+    border-radius: 15px;
     font-size: 17px;
     font-weight: 600;
     width: max-content;
 
 }
 .PacotesCVLINKINTRO:hover{
-    background-color: #8a4bee;
+    background-color: #e2e2e2;
 }
 .PacotesCVLINKREVISAOCV{
     color: white;
     font-size: 17px;
     font-weight: 600;
-   
-    border: 1px solid rgb(119, 119, 119);
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
     width: max-content;
     padding: 6px 10px;
     border-radius: 5px;
 }
 .PacotesCVLINKREVISAOCV:hover{
-    background-color:rgba(187, 185, 185, 0.377) ;
+    background-color:rgba(187, 185, 185, 0) ;
     transition: background-color 1s ease;
+    color: rgb(201, 201, 201);
+    cursor: pointer;
 }
 .Animacao{
     display: none;
@@ -327,8 +334,24 @@
     }
     .IntroRevisao{
         padding-top: 30px;
-        padding-bottom: 50px;
+        padding-bottom: 70px;
         
+    }
+    .IntroRevisao>section>p{
+        width: 500px;
+        font-size: 35px;
+        display: block;
+        margin: auto;
+    }
+    .IntroRevisao>section>h3{
+       
+        width: 500px;
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .IntroRevisao>section>div{
+        flex-direction: row;
     }
     .MulherRevisaoCv{
         display: block;
@@ -344,7 +367,20 @@
     }
     .InfoRevisaoCv{
         flex-direction: row;
+        gap: 30px;
+        padding-left: 7vw;
+        padding-right: 7vw;
         
+    }
+    .InfoRevisaoCv>img{
+        width:300px;
+    }
+    .InfoRevisaoCv>div>h2{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    #RecruterRevisaoCV>div>h2{
+        margin-top: 60px;
     }
     
     
@@ -366,33 +402,39 @@
      }
        
     .IntroRevisao{
-     padding-left: 5vw;
-     padding-top: 45px;
-     padding-bottom: 75px;
+   
+     padding-top: 65px;
+     padding-bottom: 115px;
      
         
     }
-    .Animacao{
-      right: 5vw;
-
+   
+    .InfoRevisaoCv>img{
+        width:400px;
+    }
+    .InfoRevisaoCv>div{
+        width: 300px;
+    }
+    .InfoRevisaoCv>div>h2{
+        margin-top: 80px;
+    
+    }
+    .InfoRevisaoCv>div>h2{
+        margin-top: 60px;
+        font-size: 30px;
+        margin-bottom: 30px;
+        width: 470px;
     }
     
-    .MulherRevisaoCv{
-        right: 10vw;
-        width: 400px;
-    }
-    .IntroRevisao>section{
-        width: 45% !important;
-    }
     .IntroRevisao>section>p{
-
-       font-size: 35px;
+        width:700px;
+       font-size: 45px;
     }
     .IntroRevisao>section>h3{
        
         font-weight: 400;
         color: rgb(211, 209, 209);
-        font-size: 16px;
+        font-size: 19px;
     }
     .IntroRevisao>section>div{
         flex-direction: row;
@@ -401,8 +443,8 @@
         height: max-content;
     }
     .InfoRevisaoCv{
-        padding-left: 5vw;
-        padding-right: 5vw;
+        padding-left: 8vw;
+        padding-right: 8vw;
         
         
     }
@@ -410,11 +452,7 @@
         width: 50%;
 
     }
-    .InfoRevisaoCv>div>h2{
-        margin-bottom: 10px;
-        font-size: 29px;
-        
-    }
+  
     .InfoRevisaoCv>div>p{
         margin-bottom: 10px;
         font-size: 19px;
@@ -424,25 +462,9 @@
     #RecruterRevisaoCV{
         margin-top: 90px;
     }
-    #CanidatoRevisaoCV{
-        margin-top: 200px;
-    }
-    #RecruterRevisaoCV>img{
-        position: absolute;
-        right: 5vw;
-    }
-    #CanidatoRevisaoCV>div{
-        position: absolute;
-        right: 5vw;
-    }
     
-    .InfoRevisaoCv>img{
-        width: 300px;
-        display: block;
-        margin: 0;
-        
-        
-    }
+   
+    
     
     .PacotesRevisaoCV{
         padding-bottom: 100px;

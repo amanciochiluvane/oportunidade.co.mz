@@ -117,10 +117,10 @@ export default function HeaderEmprego() {
           </>
         ) : (
           <div className="ContaDetalhesVagEmprego">
-            <Link to="/escolher-tipo-login" className="LoginVagaEmprego">
+            <Link to="/escolher-tipo-login" className="SignVagaEmprego" >
               <button>Login</button>
             </Link>
-            <Link to="/escolherConta" className="SignVagaEmprego">
+            <Link to="/escolherConta" className="LoginVagaEmprego">
               <button>Sign up</button>
             </Link>
           </div>

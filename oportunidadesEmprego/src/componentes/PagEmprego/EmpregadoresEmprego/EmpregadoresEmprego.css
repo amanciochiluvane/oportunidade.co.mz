@@ -80,7 +80,7 @@ transition: background-color 0.4s;
 .DicasDivsEmprego{
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 40px !important;
     justify-content: center;
     align-items: center;
 }
@@ -133,6 +133,9 @@ font-weight: 500;
 #Vermelho{
     background-color: #ff5741;
 }
+.DicaArtigosRelacionados>section{
+    row-gap: 20px;
+}
 @media (min-width:700px) {
     .DicasDivsEmprego{
         display: grid;
@@ -179,4 +182,7 @@ font-weight: 500;
         display: grid;
         grid-template-columns: auto auto auto auto;
     }
+   .DicaArtigosRelacionados>section>a>article{
+    width: 350px;
+   }
 }

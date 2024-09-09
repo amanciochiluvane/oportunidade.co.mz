@@ -45,7 +45,6 @@
    color: black;
     border: 1px solid #6e46ae;
  
-    box-shadow: 0px 6px 5px  #c1a2f3;
     border-radius: 10px;
     
     padding-top: 20px;
@@ -53,6 +52,9 @@
     margin-bottom: 20px !important;
     
     
+}
+.BoxEmpregoExperiencia:hover{
+    box-shadow: 0px 6px 5px  #c1a2f3;
 }
 .BoxEmpregoExperiencia>img{
     width: 30px;
@@ -138,8 +140,13 @@ filter: invert(50%);
 }
 .BoxEmpregoExperiencia>div:hover{
     background-color: #6e46ae;
-    color: white;
+    color: white !important;
 }
+
+.BoxEmpregoExperiencia>div:hover .ExplorVagasLiNkHover{
+    color: white !important;
+}
+
 .BoxEmpregoExperiencia>div>img{
     width: 15px;
 
@@ -167,7 +174,7 @@ filter: invert(50%);
 #TodasEmpresas{
     background-color: #6e46ae;
     color: white;
-    box-shadow: 0px 6px 5px  #ac95cf;
+    
 }
 #TodasEmpresas:hover{
     background-color: #784cc0;
@@ -244,7 +251,7 @@ filter: invert(50%);
             height: 1px;
         background-color: #d4d4d4;
         position: absolute;
-        margin-top: 40px;
+        margin-top: 45px;
         left: 0;
             
     }
@@ -256,7 +263,7 @@ filter: invert(50%);
             height: 1px;
         background-color: #d4d4d4;
         position: absolute;
-        margin-top: -20px;
+        margin-top: -70px;
         right: 0;
             
     }

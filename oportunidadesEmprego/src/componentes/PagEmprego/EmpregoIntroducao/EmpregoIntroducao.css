@@ -20,7 +20,7 @@
     font-size: 35px;
 }
 #EmpregoIntroducaoSECTION>h2>span{
-    color:#754ee0;
+    color:#6e46ae;
     display: flex;
     gap: 10px;
 }
@@ -145,7 +145,7 @@
 }
 .BotaoPesquisaEmprego{
     font-size: 15px;
-    background-color: #6b25dd;
+    background-color: #6e46ae;
     padding-bottom: 12px;
     padding-top: 8px;
     border-radius: 10px;
@@ -211,7 +211,7 @@ padding-bottom: 30px;
     display: flex;
     font-size: 13px;
     gap: 5px;
-    background-color: #6b25dd;
+    background-color: #6e46ae;
     padding: 7px 22px;
     border-radius: 10px;
     text-decoration: none;

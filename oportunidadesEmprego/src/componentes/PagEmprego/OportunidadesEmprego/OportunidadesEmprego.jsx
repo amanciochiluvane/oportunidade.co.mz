@@ -110,8 +110,10 @@ export default function OportunidadesEmprego(){
       slidesToShow: 1,
       slidesToScroll: 1,
       initialSlide: 0,
-      autoplay:false,
-      speed:2000,
+      autoplay:true,
+      speed:6000,
+      autoplaySpeed:8000,
+      cssEase:"linear",
       nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />,
       
@@ -175,7 +177,7 @@ export default function OportunidadesEmprego(){
                             <h2>Sem Experiência</h2>
                             <p>30 Vagas</p>
                             <div>
-                            <Link to="/vagas"><p>Explorar Vagas</p></Link>
+                            <Link  className="ExplorVagasLiNkHover" to="/vagas"><p>Explorar Vagas</p></Link>
                                 
                             </div>
                         </Link>
@@ -184,8 +186,8 @@ export default function OportunidadesEmprego(){
                             <img src={icon2} />
                             <h2>Estágio e Recém-formado</h2>
                             <p>30 Vagas</p>
-                            <div>
-                            <Link to="/vagas"><p>Explorar Vagas</p></Link>
+                            <div >
+                            <Link to="/vagas" className="ExplorVagasLiNkHover" ><p>Explorar Vagas</p></Link>
                                 
                             </div>
                         </Link>
@@ -195,7 +197,7 @@ export default function OportunidadesEmprego(){
                             <h2>Nivel Executivo</h2>
                             <p>30 Vagas</p>
                             <div>
-                            <Link to="/vagas"><p>Explorar Vagas</p></Link>
+                            <Link  className="ExplorVagasLiNkHover" to="/vagas"><p>Explorar Vagas</p></Link>
                                 
                             </div>
                         </Link>
@@ -205,7 +207,7 @@ export default function OportunidadesEmprego(){
                             <h2>Nivel Sênior</h2>
                             <p>30 Vagas</p>
                             <div>
-                                <Link to="/vagas"><p>Explorar Vagas</p></Link>
+                                <Link  className="ExplorVagasLiNkHover" to="/vagas"><p>Explorar Vagas</p></Link>
                                 
                             </div>
                         </Link>
@@ -216,7 +218,7 @@ export default function OportunidadesEmprego(){
                             <h2>Nivel Médio</h2>
                             <p>30 Vagas</p>
                             <div>
-                            <Link to="/vagas"><p>Explorar Vagas</p></Link>
+                            <Link  className="ExplorVagasLiNkHover" to="/vagas"><p>Explorar Vagas</p></Link>
                                 
                             </div>
                         </Link>
