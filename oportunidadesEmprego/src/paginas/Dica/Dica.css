@@ -150,15 +150,26 @@
        width: calc(100vw - 120px);
        margin-top: 20px;
     }
+
     .Dica>section>article{
         width: 50%;
     }
+    .ImgArtigoarticleDicaCarreira{
+        position: sticky;
+        top: 0;
+        align-self: start;
+    }
     .ContentArtigo>h2{
-        font-size: 26px;
+        font-size: 33px;
+  
+    }
+    .ContentArtigo>p{
+        text-align: justify;
+        font-size: 15px !important;
   
     }
     .ImgArtigo{
-        height: 600px;
+        height: 500px;
         background-position: 50%;
     }
     .DicaArtigosRelacionados{

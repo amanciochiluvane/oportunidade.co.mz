@@ -64,7 +64,7 @@ export default function UltimasDicas(){
 
                     <article className='PublicidadeCriarConta'>
                         <h2>Crie uma  <span>conta gratuita</span>   preencha seu perfil e seja conectado com o emprego dos seus sonhos</h2>
-                        <Link>Criar Conta</Link>
+                        <Link to="/escolherConta">Criar Conta</Link>
                         <img src={MulherApontando} />
                     </article>
                 </section>

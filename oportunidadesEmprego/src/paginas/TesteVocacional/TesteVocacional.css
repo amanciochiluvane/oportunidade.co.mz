@@ -1,5 +1,5 @@
 .TesteVocacional{
-    font-family: "Barlow";
+font-family: 'Grandis', sans-serif;
 }
 .TesteVocacionalBackground{
     background-image: url("../../assets/TesteVocacional.png");
@@ -10,7 +10,7 @@
     padding-bottom: 50px;
     color: white;
     position: relative;
-    height: 360px;
+    height: 410px;
     background-position: 70%;
 }
 .TesteVocacionalBackground>h2{
@@ -26,7 +26,7 @@
 .TesteVocacionalBackground>article{
     position: absolute;
     z-index: 12;
-    margin-top: 170px;
+    margin-top: 210px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -35,7 +35,7 @@
     color: rgb(235, 235, 235);
     position: absolute;
     z-index: 12;
-    margin-top: 70px;
+    margin-top: 110px;
     padding-right: 10px;
 }
 .TesteVocacionalBackgroundOverlay{
@@ -197,8 +197,8 @@
 @media (min-width:1024px) {
     .TesteVocacionalBackground{
         padding-left: 5vw;
-        padding-top: 90px;
-        height: 450px;
+        padding-top: 100px;
+        height: 490px;
         
     }
     .TesteVocacionalBackgroundOverlay{
@@ -211,7 +211,7 @@
     }
     .TesteVocacionalBackground>h2{
         font-size: 38px;
-        width: 500px;
+        width: 600px;
     }
     .TesteVocacionalBackground>p{
         width: 600px;
@@ -221,7 +221,7 @@
 
     }
     .TesteVocacionalBackground>article{
-        margin-top: 200px;
+        margin-top: 220px;
     }
     .FuncionamentoTesteArticle{
      

@@ -30,6 +30,7 @@ import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import ActualizarVaga from './paginas/ActualizarVaga/ActualizarVaga.jsx'
 import ForgetPassword from './componentes/ForgetPassword/ForgetPassword.jsx'
+import ForgetPasswordCandidato from './componentes/ForgetPassword/ForgetPasswordCandidato.jsx'
 import ResetPassword from './componentes/ResetPassword/ResetPassword.jsx'
 import UsuarioDetalhes from './paginas/UsuarioDetalhes/UsuarioDetalhes.jsx'
 import ActualizarCandidato from './paginas/ActualizarCandidato/ActualizarCandidato.jsx'
@@ -135,7 +136,7 @@ const router = createBrowserRouter([
     },
     {
       path:"/esquecer-senha-candidato",
-      element: <ForgetPassword/>},
+      element: <ForgetPasswordCandidato/>},
   {
     path:"/vagas",
     element:<VagaEmprego/>

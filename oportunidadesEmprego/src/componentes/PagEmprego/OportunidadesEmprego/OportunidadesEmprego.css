@@ -2,7 +2,7 @@
 
 
 .OprtunidadesEmprego{
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Grandis', sans-serif;
     margin-top: 70px;
 }
 .OprtunidadesEmprego>h2{
@@ -157,7 +157,7 @@ filter: invert(50%);
     text-decoration: none;
     font-size: 16px;
     padding: 12px 25px;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Grandis', sans-serif;
     font-weight: 600;
     display: block;
     width: max-content;

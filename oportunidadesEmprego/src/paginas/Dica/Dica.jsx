@@ -79,7 +79,7 @@ export default function Dica() {
                     <h2>{dica.category}</h2>
 
                     <section>
-                        <article>
+                        <article className='ImgArtigoarticleDicaCarreira'>
                             <div className='ImgArtigo' style={{ backgroundImage: `url(${dica.image})` }}></div>
                             <div className='InfoArtigo'>
                                 <div className='InfoArtigo1'>

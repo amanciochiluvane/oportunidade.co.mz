@@ -95,6 +95,7 @@
     }
     .FormarEmpregoTexto{
         margin-left: 5%;
+        margin-top: 40px;
     }
     .FormarEmpregoTexto>p{
 
@@ -114,12 +115,10 @@
         padding: 0;
     
     }
-    .FormarEmpregoTexto>a{
-        padding: 15px;
-    }
+   
     .FormarEmpregoTexto>a>p{
         font-size: 14px;
-        width: 270px;
+        width: 300px;
     }
    
     .FormarEmpregoTexto>a:hover .button-img{

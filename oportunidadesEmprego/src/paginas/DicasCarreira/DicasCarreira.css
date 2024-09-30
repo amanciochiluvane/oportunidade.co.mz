@@ -47,7 +47,7 @@
     padding-left: 20px;
     padding-right: 50px;
     padding-bottom: 20px;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Grandis', sans-serif;
     margin-bottom: 50px;
    
 }
@@ -78,7 +78,7 @@
 }
 .PesquisarDica>input{
     border: none;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Grandis', sans-serif;
     width: 80%;
     outline-color: white;
     color: black;
@@ -87,7 +87,7 @@
 .PesquisarDica>button{
     position: absolute;
     right: 10px;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Grandis', sans-serif;
     font-size: 12px;
     padding: 6px 8px;
     margin-top: -4px;

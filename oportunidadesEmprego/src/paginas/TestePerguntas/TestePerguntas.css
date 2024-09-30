@@ -1,5 +1,5 @@
 .TestePerguntas{
-    font-family: "Barlow";
+font-family: 'Grandis', sans-serif;
 }
 .questionVocacional{
     padding-left: 10px;
@@ -55,7 +55,7 @@
     border: 1px solid #6E46AE;
     background-color: white;
     color: #6E46AE;
-    font-family: "Barlow";
+font-family: 'Grandis', sans-serif;
    
 }
 .BotoesVoltar:hover{
@@ -70,7 +70,7 @@
     border: 1px solid #6E46AE;
     background-color: #6E46AE;
     color: #ffffff;
-    font-family: "Barlow";
+font-family: 'Grandis', sans-serif;
 }
 .BotoesSubmeter:hover{
     background-color: #441d85;

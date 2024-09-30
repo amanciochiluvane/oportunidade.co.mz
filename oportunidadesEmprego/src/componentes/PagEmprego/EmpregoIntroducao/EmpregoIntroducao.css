@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&display=swap');
 
 .EmpregoIntroducao{
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Grandis', sans-serif;
     background-image: url("../../../assets/bgLanding.png");
     background-size: cover;
 }
@@ -84,7 +84,7 @@
     border: none;
     outline: none;
     font-weight: 600;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Grandis', sans-serif;
     
 }
 .categoriaInvisvel{
@@ -207,6 +207,9 @@ padding-bottom: 30px;
 
 
 }
+.MaisPesquisadas>article::-webkit-scrollbar{
+    display: none;
+}
 .MaisPesquisadas>article>a{
     display: flex;
     font-size: 13px;
@@ -242,7 +245,7 @@ padding-bottom: 30px;
 .trofeu{
     position:absolute;
     right: 0%;
-    top:10%;
+    top:15%;
     width: 100px;
 }
 
@@ -344,7 +347,7 @@ padding-bottom: 30px;
         font-size: 46px;
         font-weight: 700;
         padding-left: 0;
-        width: 650px;
+        width: 710px;
         margin-bottom: 30px;
     }
     .EmpregoIntroducaoPesquisa{

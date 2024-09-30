@@ -467,7 +467,7 @@ export default function SignUp(){
 
                         <div>
                             <p>Não tem CV?</p>
-                            <Link to="/cv">Criar CV</Link>
+                            <Link to="/criacao-de-cv">Criar CV</Link>
                         </div>
 
 

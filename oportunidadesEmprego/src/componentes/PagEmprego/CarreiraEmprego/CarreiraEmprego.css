@@ -4,7 +4,7 @@
 }
 .CarreiraEmprego{
     
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Grandis', sans-serif;
     margin-top: 70px;
     background-color: #845eff;
    position: relative;
@@ -257,7 +257,7 @@
     .wave{
         display: block;
         width: 100%;
-       bottom:180px;
+       bottom:130px;
         position: absolute;
         height: 100px;
        
@@ -283,7 +283,7 @@
     }
     .PessoaCell2{
         position: absolute;
-        bottom: 100px;
+        bottom: 70px;
         display: block;
         width: 500px;
         left: 5%;

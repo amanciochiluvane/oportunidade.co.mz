@@ -119,7 +119,7 @@ const sendVerificationEmail = (email, token) => {
   
 
 
-  const verificationLink = `http://localhost:5173/verificar-email/${token}`;
+  const verificationLink = `${process.env.APP_FRONTEND}/verificar-email/${token}`;
 
   const mailOptions = {
     from: `${process.env.EMAIL_ADDRESS}`,
@@ -355,6 +355,33 @@ app.post("/loginCandidato", async (req, res) => {
           res.status(500).json({ erro: "Erro interno do servidor" });
       }
     });
+
+    const sendResetEmail = (email,id, token) => {
+      const transporter = nodemailer.createTransport({
+          
+        service: 'gmail',
+        auth: {
+          user: process.env.EMAIL_ADDRESS,
+          pass: process.env.EMAIL_PASSWORD,
+        },
+      });
+    
+      const mailOptions = {
+        from: `${process.env.EMAIL_ADDRESS}`,
+        to: email,
+        subject: 'Redefinição de Senha',
+          html: `
+            <p>Você está recebendo este e-mail porque você (ou alguém) solicitou a redefinição da senha da sua conta.</p>
+            <p>Clique no link a seguir ou cole-o no seu navegador para completar o processo:</p>
+            <p><a href="${process.env.APP_FRONTEND}/reset-password/${id}/${token}">Redefinir senha</a></p>
+            <p>Se você não solicitou isso, por favor ignore este e-mail e sua senha permanecerá inalterada.</p>
+          `
+      };
+    
+      return transporter.sendMail(mailOptions);
+    };
+    
+
     app.post('/forgot-password', async (req, res) => {
   const { recruterEmail } = req.body;
   
@@ -367,36 +394,18 @@ app.post("/loginCandidato", async (req, res) => {
     }
     const secret = process.env.CHAVE_SEGURA;
     const token = jwt.sign({id: user._id}, secret, {expiresIn: "1h"}) 
+   
     
-    const transporter = nodemailer.createTransport({
-      
-      service: 'gmail',
-      auth: {
-        user: process.env.EMAIL_ADDRESS,
-        pass: process.env.EMAIL_PASSWORD,
-      },
-    });
+    await sendResetEmail(user.recruterEmail,user._id, token);
 
     
-   
-    const mailOptions = {
-      to: user.recruterEmail,
-      from: process.env.EMAIL_ADDRESS,
-      subject: 'Redefinição de Senha',
-      text: `Você está recebendo este e-mail porque você (ou alguém) solicitou a redefinição da senha da sua conta.\n\n` +
-            `Clique no link a seguir ou cole no seu navegador para completar o processo:\n\n` +
-            `http://${req.headers.host}/reset-password/${user._id}/${token}\n\n` +
-            `Se você não solicitou isso, por favor ignore este e-mail e sua senha permanecerá inalterada.\n`,
-    };
-   
-
-    transporter.sendMail(mailOptions);
 
     res.status(200).json({ message: 'E-mail de redefinição de senha enviado com sucesso' });
   } catch (error) {
     res.status(500).json({ error: 'Erro ao processar solicitação de redefinição de senha'});
   }
 });
+
 
 app.post('/forgot-password-candidato', async (req, res) => {
   const { candidatoEmail } = req.body;
@@ -411,27 +420,7 @@ app.post('/forgot-password-candidato', async (req, res) => {
     const secret = process.env.CHAVE_SEGURA;
     const token = jwt.sign({id: user._id}, secret, {expiresIn: "1h"}) 
     
-    const transporter = nodemailer.createTransport({
-      
-      service: 'gmail',
-      auth: {
-        user: process.env.EMAIL_ADDRESS,
-        pass: process.env.EMAIL_PASSWORD,
-      },
-    });
-  
-    const mailOptions = {
-      to: user.candidatoEmail,
-      from: process.env.EMAIL_ADDRESS,
-      subject: 'Redefinição de Senha',
-      text: `Você está recebendo este e-mail porque você (ou alguém) solicitou a redefinição da senha da sua conta.\n\n` +
-            `Clique no link a seguir ou cole no seu navegador para completar o processo:\n\n` +
-            `http://${req.headers.host}/reset-password-candidato/${user._id}/${token}\n\n` +
-            `Se você não solicitou isso, por favor ignore este e-mail e sua senha permanecerá inalterada.\n`,
-    };
-   
-
-    transporter.sendMail(mailOptions);
+    await sendResetEmail(user.candidatoEmail,user._id,token);
 
     res.status(200).json({ message: 'E-mail de redefinição de senha enviado com sucesso' });
   } catch (error) {

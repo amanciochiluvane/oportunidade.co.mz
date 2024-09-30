@@ -2,13 +2,17 @@ import './IntroCv.css'
 import HeaderEmprego from '../../componentes/PagEmprego/HeaderEmprego/HeaderEmprego'
 import { Link } from 'react-router-dom'
 import HomemCriarCv from "../../assets/Mulher-Surpresa.png"
-import Doiscvs from "../../assets/DoisCVs.png"
+import Doiscvs from "../../assets/elementscv1.png"
 import cv1 from "../../assets/Cv-Modelo01.png"
 import cv2 from "../../assets/Cv-Modelo02.png"
 import cv3 from "../../assets/Cv-Modelo03.png"
 import cv4 from "../../assets/Cv-Modelo04.png"
 import FooterEmprego from "../../componentes/PagEmprego/FooterEmprego/FooterEmprego"
-
+import mcv from "../../assets/mcv.png"
+import mod1 from "../../assets/modcv1.png"
+import mod2 from "../../assets/modcv2.png"
+import mod3 from "../../assets/modcv3.png"
+import sett from "../../assets/settt.png"
 
 export default function IntroCv(){
     return(
@@ -21,19 +25,21 @@ export default function IntroCv(){
                 </h2>
 
                 <article>
-                Criar um currículo em minutos é possível com as ferramentas certas. Use modelos prontos e organize suas informações de forma clara.
+                <p>Criar um currículo em minutos é possível com as ferramentas certas. Use modelos prontos e organize suas informações de forma clara.</p>
 
-                <Link to=".ModelosCv" className='LinkCriarCVIntroCV'>Criar Cv</Link>
+                <Link to="#Modelos-de-cv" className='LinkCriarCVIntroCV'>Criar Cv</Link>
                 </article>
+
+
+                <div className="wave" id="wave">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f2f2f2" fillOpacity="1" d="M0,64L80,90.7C160,117,320,171,480,165.3C640,160,800,96,960,80C1120,64,1280,96,1360,112L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+                </div>
             </section>
 
-            <section className='IntroCvDescricao2'>
-                <h2>
-                Atinja <span>Altos Patamares</span> e Seja Reconhecido
-                </h2>
-                <img src={HomemCriarCv} alt="Criar Cv Homem"/>
-                
-            </section>
+            
+
+            <img className="mcv" src={mcv} alt="Mulher Criar CV" />
+           
 
             <section className='PassosCV'>
                 <article className='IMGPassosCV'>
@@ -75,35 +81,33 @@ export default function IntroCv(){
             </section>
 
             <section className='PassosCards'>
-                <article>
-                    <h2>1.</h2>
-
-                    <div>
+                    <article>
+                        <img src={mod1}  />
                         <h2>Escolha um Modelo Pronto</h2>
                         <p>Selecionamos modelos modernos e adequados para diferentes setores e níveis de experiência. Escolha o que melhor se adapta às suas necessidades.</p>
-                    </div>
-                </article>
+                        <img className="sett" src={sett} />
+                    </article>
 
-                <article>
-                    <h2>2.</h2>
-
-                    <div>
+                    <article>
+                        <img src={mod2}  />
                         <h2>Organize suas Informações</h2>
                         <p>Insira seus dados pessoais, histórico profissional, formação acadêmica e habilidades em nossa plataforma intuitiva de forma clara e objetiva.</p>
-                    </div>
-                </article>
+                        <img  className="sett" src={sett} />
+                    </article>
 
-                <article>
-                    <h2>3.</h2>
-
-                    <div>
+                    <article>
+                        <img src={mod3}  />
                         <h2>Revise e Finalize</h2>
                         <p>Nossa equipe revisa seu currículo para garantir que esteja livre de erros e bem formatado. Faça os ajustes necessários e, em minutos, tenha um documento profissional pronto para enviar.</p>
-                    </div>
-                </article>
+                        <img  className="sett" src={sett} />
+                    </article>
+                    
+                    
+                
+
             </section>
 
-            <section className='ModelosCv'>
+            <section className='ModelosCv' id='Modelos-de-cv'>
                 <h2>Escolha um Modelo e tenha o seu CV</h2>
                 <section>
                     <Link to='/modelo-de-cv-01'>

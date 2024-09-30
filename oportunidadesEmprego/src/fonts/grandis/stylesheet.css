@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Grandis';
+    src: url('Grandis-Regular.eot');
+    src: local('Grandis Regular'), local('Grandis-Regular'),
+        url('Grandis-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Grandis-Regular.woff2') format('woff2'),
+        url('Grandis-Regular.woff') format('woff'),
+        url('Grandis-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Grandis';
+    src: url('Grandis-RegularItalic.eot');
+    src: local('Grandis Regular Italic'), local('Grandis-RegularItalic'),
+        url('Grandis-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('Grandis-RegularItalic.woff2') format('woff2'),
+        url('Grandis-RegularItalic.woff') format('woff'),
+        url('Grandis-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Grandis';
+    src: url('Grandis-Medium.eot');
+    src: local('Grandis Medium'), local('Grandis-Medium'),
+        url('Grandis-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Grandis-Medium.woff2') format('woff2'),
+        url('Grandis-Medium.woff') format('woff'),
+        url('Grandis-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Grandis';
+    src: url('Grandis-Bold.eot');
+    src: local('Grandis Bold'), local('Grandis-Bold'),
+        url('Grandis-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Grandis-Bold.woff2') format('woff2'),
+        url('Grandis-Bold.woff') format('woff'),
+        url('Grandis-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Grandis';
+    src: url('Grandis-Light.eot');
+    src: local('Grandis Light'), local('Grandis-Light'),
+        url('Grandis-Light.eot?#iefix') format('embedded-opentype'),
+        url('Grandis-Light.woff2') format('woff2'),
+        url('Grandis-Light.woff') format('woff'),
+        url('Grandis-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Grandis';
+    src: url('Grandis-LightItalic.eot');
+    src: local('Grandis Light Italic'), local('Grandis-LightItalic'),
+        url('Grandis-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Grandis-LightItalic.woff2') format('woff2'),
+        url('Grandis-LightItalic.woff') format('woff'),
+        url('Grandis-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Grandis';
+    src: url('Grandis-Thin.eot');
+    src: local('Grandis Thin'), local('Grandis-Thin'),
+        url('Grandis-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Grandis-Thin.woff2') format('woff2'),
+        url('Grandis-Thin.woff') format('woff'),
+        url('Grandis-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Grandis';
+    src: url('Grandis-Black.eot');
+    src: local('Grandis Black'), local('Grandis-Black'),
+        url('Grandis-Black.eot?#iefix') format('embedded-opentype'),
+        url('Grandis-Black.woff2') format('woff2'),
+        url('Grandis-Black.woff') format('woff'),
+        url('Grandis-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Grandis';
+    src: url('Grandis-ThinItalic.eot');
+    src: local('Grandis Thin Italic'), local('Grandis-ThinItalic'),
+        url('Grandis-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('Grandis-ThinItalic.woff2') format('woff2'),
+        url('Grandis-ThinItalic.woff') format('woff'),
+        url('Grandis-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Grandis';
+    src: url('Grandis-MediumItalic.eot');
+    src: local('Grandis Medium Italic'), local('Grandis-MediumItalic'),
+        url('Grandis-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Grandis-MediumItalic.woff2') format('woff2'),
+        url('Grandis-MediumItalic.woff') format('woff'),
+        url('Grandis-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Grandis';
+    src: url('Grandis-BlackItalic.eot');
+    src: local('Grandis Black Italic'), local('Grandis-BlackItalic'),
+        url('Grandis-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('Grandis-BlackItalic.woff2') format('woff2'),
+        url('Grandis-BlackItalic.woff') format('woff'),
+        url('Grandis-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Grandis';
+    src: url('Grandis-BoldItalic.eot');
+    src: local('Grandis Bold Italic'), local('Grandis-BoldItalic'),
+        url('Grandis-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Grandis-BoldItalic.woff2') format('woff2'),
+        url('Grandis-BoldItalic.woff') format('woff'),
+        url('Grandis-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+

@@ -2,10 +2,10 @@
     display: none;
 }
 .RevisaoCv{
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Grandis', sans-serif;
 }
 .RevisaoCv2{
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Grandis', sans-serif;
     
 }
 
@@ -119,6 +119,8 @@
     padding-right: 10px;
     margin-top: 40px;
     background-size: cover;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .PacotesRevisaoCV>h2{
     color: white;
@@ -131,6 +133,9 @@
 .PacotesRevisaoCV>p{
     color: rgb(241, 241, 241);
     text-align: center;
+    
+    width: 320px;
+    margin: auto;
     margin-top: 5px;
 }
 .PacotesRevisaoCVValor {
@@ -222,10 +227,10 @@
     
 }
 .PedirCV{
-    background-color: rgb(245, 245, 245);
+    
     padding-top: 60px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: center;
     font-size: 15px;
     padding-bottom: 60px;
@@ -235,10 +240,9 @@
     width: 300px;
     display: block;
     margin: auto;
-    border-radius: 10px;
-    box-shadow: 1px 1px 1px rgb(206, 206, 206);
-    margin-top: 20px;
-    margin-bottom: 30px;
+
+    margin-top: 30px;
+    margin-bottom: 40px;
 
 }
 .PedirCV>a{
@@ -320,6 +324,143 @@
     z-index:124 !important;
     
 }
+
+.PacotesRevisaoCV2{
+    padding: 10px;
+    background-color:#f8f6ff ;
+    margin-top: 70px;
+    padding-top: 60px;
+    
+}
+.PacotesRevisaoCV2>h2{
+    font-size: 27px;
+    width: 240px;
+    margin: auto;
+    text-align: center;
+    color: rgb(47, 47, 47);
+}
+.PacotesRevisaoCV2>p{
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+
+.PacotesRevisaoSectionCV2{
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    gap: 20px;
+    
+    padding-top: 30px;
+}
+
+
+.PacotesRevisaoSectionCV2CARD{
+    flex: 0 0 270px; /* flex-grow | flex-shrink | flex-basis */
+    width: 270px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 490px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+.HeaderPacotesRevisaoCV2{
+    background-image: linear-gradient(135deg, rgb(255, 255, 255), #f7f7f7);
+    padding:20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 2px solid #6e46ae;
+}
+.HeaderPacotesRevisaoCV2>div{
+    display: flex;
+    gap: 40px;
+}
+.HeaderPacotesRevisaoCV2>div>img{
+    width:40px;
+    height: max-content;
+    
+}
+.HeaderPacotesRevisaoCV2>div>div>h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.HeaderPacotesRevisaoCV2>h3{
+    font-size: 35px;
+    margin-top: 10px;
+    font-weight: 800;
+    position: relative;
+   
+}
+.HeaderPacotesRevisaoCV2>h3>span{
+    position: absolute;
+font-weight: 400;
+font-size: 15px;
+margin-top: 15px !important;
+}
+.TextosPacotesRevisaoCV2{
+    padding: 20px;
+}
+.TextosPacotesRevisaoCV2>ul>li{
+    display: flex;
+    gap: 10px;
+}
+.TextosPacotesRevisaoCV2>ul>li>img{
+    height: max-content;
+    margin-top: 5px;
+}
+.TextosPacotesRevisaoCV2>ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    height: 250px;
+}
+.TextosPacotesRevisaoCV2>button{
+    background-color: white;
+    padding: 9px 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 2px solid #c7a9f8;
+    color: #6e46ae;
+    font-weight: 700;
+    margin: auto;
+    display: block
+    ;
+    
+}
+.TextosPacotesRevisaoCV2>button:hover {
+    background-color: #6E46AE;
+    color: white;
+    border: none;
+    cursor: pointer;
+   
+    
+}
+#TextosPacotesRevisaoCV2Button111:hover #PacotesRevisaoSectionCV2CARD111{
+    background-color: #6E46AE;
+}
+
+.SwitchVersion{
+    width: 300px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 80px;
+    padding: 15px;
+    font-size: 20px;
+}
+.invisivel{
+    height: 0px;
+}
+.invisivel>h2{
+    display: none;
+}
+.invisivel>p{
+    display: none;
+}
+
+
 @media (min-width:800px) {
     .popup-content{
         width: 500px;
@@ -382,6 +523,23 @@
     #RecruterRevisaoCV>div>h2{
         margin-top: 60px;
     }
+    .PacotesRevisaoCV2>h2{
+        font-size: 30px;
+        width: max-content;
+        margin: auto;
+        text-align: center;
+        color: rgb(47, 47, 47);
+    }
+    .PacotesRevisaoCV2>p{
+        margin-top: 10px;
+        text-align: center;
+        margin-bottom: 30px;
+        
+    }
+    .PacotesRevisaoSectionCV2{
+        justify-content: center;
+    }
+
     
     
    
@@ -392,13 +550,17 @@
     }
     .PedirCV>div{
        display: flex;
-       gap: 20px;
+       gap: 0px;
        justify-content: center;
        margin-top: 30px;
-       margin-bottom: 30px;
+       margin-bottom: 80px;
     }
     .PedirCV>div>img{
         margin: 0;
+        width: 700px;
+     }
+     .PedirCV>a{
+        padding: 10px 30px;
      }
        
     .IntroRevisao{
@@ -425,11 +587,39 @@
         margin-bottom: 30px;
         width: 470px;
     }
+    .InfoRevisaoCv>div>p{
+        width: 470px;
+    }
+
+    
     
     .IntroRevisao>section>p{
         width:700px;
        font-size: 45px;
     }
+
+    .PacotesRevisaoCV2{
+        padding-bottom: 90px;
+    }
+    .PacotesRevisaoCV2>h2{
+        font-size: 45px;
+        margin: auto;
+        text-align: center;
+        color: rgb(47, 47, 47);
+        padding-top: 20px;
+    }
+    .PacotesRevisaoCV2>p{
+        margin-top: 10px;
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 20px;
+        
+    }
+    .PacotesRevisaoSectionCV2{
+        gap: 50px;
+    }
+
+
     .IntroRevisao>section>h3{
        
         font-weight: 400;
@@ -477,17 +667,43 @@
     }
     .PacotesRevisaoCV>h2{
         width: max-content;
-        padding-top:80px ;
-        font-size: 27px;
+        padding-top:50px ;
+        font-size: 42px;
     }
     .PacotesRevisaoCV>p{
-        font-size: 17px;
+        font-size: 20px;
         margin-bottom: 60px;
+        width: max-content;
     }
     .PacotesRevisaoCVValor > article >p{
         margin-top: 10px;
         text-align: center;
         height: 150px;
+    }
+    .PedirCV>h2{
+        font-size: 40px;
+        width: 630px;
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .PacotesRevisaoSectionCV2CARD{
+        flex: 0 0 320px; /* flex-grow | flex-shrink | flex-basis */
+        width: 300px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        height: 490px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        
+    }
+    .HeaderPacotesRevisaoCV2>div{
+        display: flex;
+        gap: 90px;
+    }
+
+    .HeaderPacotesRevisaoCV2{
+        
     }
     
    
