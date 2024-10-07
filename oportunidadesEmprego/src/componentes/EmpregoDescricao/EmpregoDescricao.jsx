@@ -4,6 +4,10 @@ import SetaVoltar from '../../assets/SetaVoltar.png';
 import { useEffect, useState} from "react";
 import { useSelector} from 'react-redux';
 import { useNavigate } from "react-router-dom";
+import de1 from "../../assets/de1.png"
+import de2 from "../../assets/de2.png"
+import de3 from "../../assets/de3.png"
+import de4 from "../../assets/de4.png"
 
 export default function EmpregoDescricao({onClose,vagaIdd,jobTitle,description,companyLogo,companyName,location,responsabilities,positions,employmentType,experiencelevel,requirements}){
     const [requirementsArray, setRequirementsArray] = useState([]);
@@ -66,65 +70,110 @@ export default function EmpregoDescricao({onClose,vagaIdd,jobTitle,description,c
     return(
         <div className="EmpregoDescricao">
              <div className='VagaExplicacao2'>
-                                    <article className='IntroVaga2'>
-                                        <img src={companyLogo} />
+                <article className="IntroVagaEmpregoDescricao">
+
+                </article>
+                    <img loading="lazy"className="IntroVagaEmpregoDescricaoCompanyLogo" src={companyLogo} />
+
+                <article className="JOBSDetalhes">
+                  <h2>{jobTitle}</h2>
+                  <p>{companyName}</p>
+                  
+                </article>
+
+                        <article className='IntroVaga2'>
+                            
+                                <div>
+                                      
+                                  <article className='DetalhesVaga2'>
+                                    <article>
                                         <div>
-                                            <h2>{jobTitle}</h2>
-                                            <article className='DetalhesVaga2'>
-                                            <button className='DetalhesVermelho2'>{employmentType}</button>
-                                            <button className='DetalhesAzulEscuro2'>{location}</button>
-                                            <button className='DetalhesVerde2'>Posições: {positions} </button>
-                                            
-                                            </article>
+                                          <img loading="lazy"src={de1} alt="" />
+                                          <p>Localização do trabalho</p>
                                         </div>
+                                        <p>{location}</p>
                                     </article>
-                                    <article  className="LinksDetalhesDescricao">
-                                        <Link>
-                                        Descrição da Vaga
-                                        </Link>
 
-                                        
+                                    <article>
+                                        <div>
+                                          <img loading="lazy"src={de2} alt="" />
+                                          <p>Posições</p>
+                                        </div>
+                                        <p>{positions}</p>
                                     </article>
-                                    
-                                  
 
-                                    <article className='DescricaoVaga2'>
-                                     
-                                        <p>{description}</p>
-
-                                        <h2>
-                                            Responsabilidades
-                                        </h2>
-
-                                        <ul type="none">
-                                        {responsabilitiesArray.map((item,index)=> (
-                                            <li key={index}>{item}</li>
-                                        ))}
-                                        </ul>
-
-                                        <h2>
-                                            Requisitos
-                                        </h2>
-                                        <ul type="none">
-                                        {requirementsArray.map((item,index)=> (
-                                            <li key={index}>{item}</li>
-                                        ))}
-                                        </ul>
-
+                                    <article>
+                                        <div>
+                                          <img loading="lazy"src={de3} alt="" />
+                                          <p>Tipo de trabalho</p>
+                                        </div>
+                                        <p>{employmentType}</p>
                                     </article>
 
                                     
+                                    <article>
+                                        <div>
+                                          <img loading="lazy"src={de4} alt="" />
+                                          <p>Nivel de Experiência</p>
+                                        </div>
+                                        <p>{experiencelevel}</p>
+                                    </article>
 
-                                    <article className='OverwiewVaga2'>
+
+                                    
+                                            </article>
+                                </div>
+                        </article>
+                                   
+                        <article className='OverwiewVaga2'>
                                         <Link className='CandidatarVaga2'>
                                         <button  onClick={() => candidatarSe(vagaIdd)} >Candidatar-me</button>
                                         </Link>
                                        
 
+                                    </article>       
+
+                                    <article className='DescricaoVaga2'>
+                                    <h2>
+                                      Descrição da vaga          
+                                          </h2>
+                                        <p>{description}</p>
                                     </article>
 
+                                        <article className='DescricaoVaga22'>
+                                          <h2>
+                                              Responsabilidades
+                                          </h2>
+                                          <p>
+                                            <ul type="bullet">
+                                            {responsabilitiesArray.map((item,index)=> (
+                                                <li key={index}>{item}</li>
+                                            ))}
+                                            </ul>
+                                          </p>
+                                        </article>
+
+                                        <article className='DescricaoVaga22'>
+                                          <h2>
+                                              Requisitos
+                                          </h2>
+                                          <p>
+                                            <ul type="none">
+                                            {requirementsArray.map((item,index)=> (
+                                                <li key={index}>{item}</li>
+                                            ))}
+                                            </ul>
+                                          </p>
+                                        </article>
+
+                                    
+
+                                    
+
+                                    
+
                                     <Link to="#" className="VoltarEmprego" onClick={onClose}>
-                                        <img src={SetaVoltar} />
+                                        <img loading="lazy"src={SetaVoltar} />
                                         <p>Voltar</p>
                                     </Link>
                                 </div>

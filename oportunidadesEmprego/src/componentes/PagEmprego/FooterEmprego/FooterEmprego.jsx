@@ -63,14 +63,14 @@ export default function FooterEmprego(){
 
             </article>
             <section className='OverviewFooter'>
-            <img className="FooterLogotipo" src={Logo}/>
+            <img loading="lazy"className="FooterLogotipo" src={Logo}/>
                 <article>
                     <h2>Pagamento seguro</h2>
                     <div>
-                        <img className='PagamentoFormas' src={Pag2}/>
-                        <img className='PagamentoFormas' src={Pag3}/>
-                        <img className='PagamentoFormas' src={Pag4}/>
-                        <img className='PagamentoFormas' src={Pag5}/>
+                        <img loading="lazy"className='PagamentoFormas' src={Pag2}/>
+                        <img loading="lazy"className='PagamentoFormas' src={Pag3}/>
+                        <img loading="lazy"className='PagamentoFormas' src={Pag4}/>
+                        <img loading="lazy"className='PagamentoFormas' src={Pag5}/>
                     </div>
                    
                 
@@ -79,10 +79,10 @@ export default function FooterEmprego(){
                 <article className='SocialMedia3'>
                     <h2>Redes Sociais</h2>
                     <div className='SocialMedia2'>
-                    <Link to="#"><img src={Facebook} alt="Ícone Facebook" /></Link>
-                    <Link to="#"><img src={LinkedIn} alt="Ícone LinkedIn" /></Link>
-                    <Link to="#"><img src={Twitter} alt="Ícone Twitter" /></Link>
-                    <Link to="#"><img src={Instagram} alt="Ícone Instagram" /></Link>
+                    <Link to="#"><img loading="lazy"src={Facebook} alt="Ícone Facebook" /></Link>
+                    <Link to="#"><img loading="lazy"src={LinkedIn} alt="Ícone LinkedIn" /></Link>
+                    <Link to="#"><img loading="lazy"src={Twitter} alt="Ícone Twitter" /></Link>
+                    <Link to="#"><img loading="lazy"src={Instagram} alt="Ícone Instagram" /></Link>
    
                 </div>
                 </article>

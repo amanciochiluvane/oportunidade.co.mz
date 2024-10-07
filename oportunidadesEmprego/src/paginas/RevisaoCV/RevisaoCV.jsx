@@ -21,6 +21,11 @@ import pac1 from "../../assets/pac1.png"
 import pac2 from "../../assets/pac2.png"
 import pac3 from "../../assets/pac3.png"
 import certo from "../../assets/certo.png"
+import Coca from '../../assets/Coca.png'
+import Yango from '../../assets/Yango.png'
+import Mpesa from '../../assets/Mpesa.png'
+import Brandview from '../../assets/Brandview.png'
+import Moza from '../../assets/Moza.png'
 
 export default function RevisaoCv() {
     const [showPopup, setShowPopup] = useState(false);
@@ -67,6 +72,12 @@ export default function RevisaoCv() {
       const SwitchVersion=()=>{
         setVersao(!versao);
       }
+      const scrollToElement = () => {
+        const element = document.getElementById('Modelos-Pacotes-Revisao-CV');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
       
 
     return (
@@ -106,7 +117,7 @@ export default function RevisaoCv() {
                         <Link className="PacotesCVLINKINTRO" to="/criacao-de-cv">
                             Criar CV do zero
                         </Link>
-                        <button className="PacotesCVLINKREVISAOCV" >
+                        <button onClick={scrollToElement} className="PacotesCVLINKREVISAOCV" >
                             Pedir revisão de CV
                         </button>
                     </div>
@@ -114,10 +125,34 @@ export default function RevisaoCv() {
 
                 
             </section>
+            <section className="CompanyRecruter">
+
+            <div className="CompanyRecruter-Duplicate">
+                        
+                <div className="CompanyRecruter-Slider">
+                        <img loading="lazy"src={Coca}  />
+                                <img loading="lazy"src={Yango}  />
+                                <img loading="lazy"src={Mpesa}  />
+                                <img loading="lazy"src={Brandview}  />
+                                <img loading="lazy"src={Moza}  />
+                        
+                </div>
+
+                <div className="CompanyRecruter-Slider">
+                        <img loading="lazy"src={Coca}  />
+                                <img loading="lazy"src={Yango}  />
+                                <img loading="lazy"src={Mpesa}  />
+                                <img loading="lazy"src={Brandview}  />
+                                <img loading="lazy"src={Moza}  />
+                        
+                </div>
+                        </div>
+                
+            </section>
 
             <section className="InformacoesRevisao">
                 <section id="RecruterRevisaoCV" className="InfoRevisaoCv">
-                    <img src={recruter} />
+                    <img loading="lazy"src={recruter} />
                     <div>
                         <h2>Destaque-se para os recrutadores instantaneamente</h2>
                         <p>
@@ -134,8 +169,7 @@ export default function RevisaoCv() {
                     
                     <div>
                         <h2>
-                            Cative potenciais empregadores com um currículo excepcional, uma carta de
-                            apresentação e um perfil no LinkedIn.
+                            Cative empregadores com um currículo excepcional
                         </h2>
                         <p>
                             Passe de um candidato comum a um profissional de destaque com uma história
@@ -143,13 +177,13 @@ export default function RevisaoCv() {
                             perfil profissional verdadeiramente excepcional.
                         </p>
                     </div>
-                    <img src={candidato} />
+                    <img loading="lazy"src={candidato} />
                 </section>
             </section>
 
-            <button className="SwitchVersion" onClick={SwitchVersion}>{versao?"Clique aqui para a versao2":"Clique aqui para a versao1"}</button>
+            
 
-            <section className={versao?"invisivel":"PacotesRevisaoCV2"} >
+            <section className={versao?"invisivel":"PacotesRevisaoCV2"} id='Modelos-Pacotes-Revisao-CV' >
                     <h2>Descubra o plano ideal para você</h2>
                     <p>Recursos que ajudarão a alcançar as melhores oportunidades de trabalho</p>
 
@@ -162,7 +196,7 @@ export default function RevisaoCv() {
                                             <p>Ideal para iniciantes</p>
                                         </div>
 
-                                        <img src={pac1}  />
+                                        <img loading="lazy"src={pac1}  />
                                     </div>
 
                                     <h3>300,00<span>/MTn</span></h3>
@@ -171,11 +205,11 @@ export default function RevisaoCv() {
 
                                 <article className='TextosPacotesRevisaoCV2'>
                                     <ul>
-                                        <li><img src={certo} /> <p>Revisão básica: Ortográfica e gramatical</p></li>
-                                        <li><img src={certo} /> <p>Formatação: estrutura, margens e fontes</p></li>
-                                        <li><img src={certo} /> <p>Seu CV livre de erros básicos</p></li>
-                                        <li><img src={certo} /> <p>Feedback Geral</p></li>
-                                        <li><img src={certo} /> <p>Modelo de CV básico</p></li>
+                                        <li><img loading="lazy"src={certo} /> <p>Revisão básica: Ortográfica e gramatical</p></li>
+                                        <li><img loading="lazy"src={certo} /> <p>Formatação: estrutura, margens e fontes</p></li>
+                                        <li><img loading="lazy"src={certo} /> <p>Seu CV livre de erros básicos</p></li>
+                                        <li><img loading="lazy"src={certo} /> <p>Feedback Geral</p></li>
+                                        <li><img loading="lazy"src={certo} /> <p>Modelo de CV básico</p></li>
                                     </ul>
 
                                     <button id ='TextosPacotesRevisaoCV2Button111'   onMouseOver={() => handleMouseOver(111)} 
@@ -193,7 +227,7 @@ export default function RevisaoCv() {
                                             <p>Revisão Completa</p>
                                         </div>
 
-                                        <img src={pac2}  />
+                                        <img loading="lazy"src={pac2}  />
                                     </div>
 
                                     <h3>3000,00<span>/MTn</span></h3>
@@ -202,12 +236,12 @@ export default function RevisaoCv() {
 
                                 <article className='TextosPacotesRevisaoCV2'>
                                     <ul>
-                                        <li><img src={certo} alt="check" /> <p>Tudo do pacote Profissional + Essncial</p></li>
-                                        <li><img src={certo} alt="check" /> <p>Revisão Detalhada</p></li>
-                                        <li><img src={certo} alt="check" /> <p>Consultoria Individual</p></li>
-                                        <li><img src={certo} alt="check" /> <p>Optimização de Conteúdos</p></li>
-                                        <li><img src={certo} alt="check" /> <p>Carta  de Apresentação</p></li>
-                                        <li><img src={certo} alt="check" /> <p>Perfil LinkedIn</p></li>
+                                        <li><img loading="lazy"src={certo} alt="check" /> <p>Tudo do pacote Profissional + Essncial</p></li>
+                                        <li><img loading="lazy"src={certo} alt="check" /> <p>Revisão Detalhada</p></li>
+                                        <li><img loading="lazy"src={certo} alt="check" /> <p>Consultoria Individual</p></li>
+                                        <li><img loading="lazy"src={certo} alt="check" /> <p>Optimização de Conteúdos</p></li>
+                                        <li><img loading="lazy"src={certo} alt="check" /> <p>Carta  de Apresentação</p></li>
+                                        <li><img loading="lazy"src={certo} alt="check" /> <p>Perfil LinkedIn</p></li>
                                     </ul>
 
                                     <button id='TextosPacotesRevisaoCV2Button222'  onMouseOver={() => handleMouseOver(222)} 
@@ -225,7 +259,7 @@ export default function RevisaoCv() {
                                             <p>Eleve seu CV</p>
                                         </div>
 
-                                        <img src={pac3}  />
+                                        <img loading="lazy"src={pac3}  />
                                     </div>
 
                                     <h3>1500,00<span>/MTn</span></h3>
@@ -234,11 +268,11 @@ export default function RevisaoCv() {
 
                                 <article className='TextosPacotesRevisaoCV2'>
                                     <ul>
-                                        <li><img src={certo} alt="check" /> <p>Tudo do pacote Essencial</p></li>
-                                        <li><img src={certo} alt="check" /> <p>Correção de erros ortográficos e gramaticais</p></li>
-                                        <li><img src={certo} alt="check" /> <p>Feedback personalizado</p></li>
-                                        <li><img src={certo} alt="check" /> <p>Recomendações de reestruturação</p></li>
-                                        <li><img src={certo} alt="check" /> <p>Modelo de CV Editável</p></li>
+                                        <li><img loading="lazy"src={certo} alt="check" /> <p>Tudo do pacote Essencial</p></li>
+                                        <li><img loading="lazy"src={certo} alt="check" /> <p>Correção de erros ortográficos e gramaticais</p></li>
+                                        <li><img loading="lazy"src={certo} alt="check" /> <p>Feedback personalizado</p></li>
+                                        <li><img loading="lazy"src={certo} alt="check" /> <p>Recomendações de reestruturação</p></li>
+                                        <li><img loading="lazy"src={certo} alt="check" /> <p>Modelo de CV Editável</p></li>
                                     </ul>
 
                                     <button id='TextosPacotesRevisaoCV2Button333'  onMouseOver={() => handleMouseOver(333)} 
@@ -256,17 +290,17 @@ export default function RevisaoCv() {
 
                 <section className="PacotesRevisaoCVValor">
                     <article>
-                        <img src={PES} />
+                        <img loading="lazy"src={PES} />
                         <button onClick={() => showPaymentPopup('300')}>Aprimorar CV</button>
                     </article>
 
                     <article>
-                        <img src={PP} />
+                        <img loading="lazy"src={PP} />
                         <button onClick={() => showPaymentPopup('1500')}>Aprimorar CV</button>
                     </article>
 
                     <article>
-                        <img src={PEX} />
+                        <img loading="lazy"src={PEX} />
                         <button onClick={() => showPaymentPopup('3000')}>Aprimorar CV</button>
                     </article>
                 </section>
@@ -276,11 +310,11 @@ export default function RevisaoCv() {
                 <h2>Crie CV com a oportunidade.co.mz e seja visto!</h2>
 
                 <div>
-                    <img src={cv} />
+                    <img loading="lazy"src={cv} />
                     
                 </div>
 
-                <Link to="/cv">Criar CV</Link>
+                <Link to="/criacao-de-cv">Criar CV</Link>
             </section>
 
             {showPopup && (

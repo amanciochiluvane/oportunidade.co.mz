@@ -16,7 +16,7 @@ function Header() {
         </p>
       </div>
       <div className={styles.right}>
-        <img src={resumeSvg} alt="Resume" />
+        <img loading="lazy"src={resumeSvg} alt="Resume" />
       </div>
     </div>
   );

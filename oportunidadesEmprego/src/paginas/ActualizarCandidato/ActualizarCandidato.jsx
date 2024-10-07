@@ -144,7 +144,7 @@ export default function SignUp(){
       <title>Actualizar Candidato</title>
       
    </Helmet>
-        <Link to="/" className='VoltarSign'><img src={SetaVoltar}/></Link>
+        <Link to="/" className='VoltarSign'><img loading="lazy"src={SetaVoltar}/></Link>
         <div className='IntroSignUp'>
             <h1>Actualizar dados da Conta</h1>
             
@@ -471,7 +471,7 @@ export default function SignUp(){
 
                         <div>
                             <p>Não tem CV?</p>
-                            <Link to="/cv">Criar CV</Link>
+                            <Link to="/criacao-de-cv">Criar CV</Link>
                         </div>
 
 

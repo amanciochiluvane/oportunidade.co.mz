@@ -59,7 +59,7 @@ export default function Dashboard1() {
             <section className='RecrutadorCandidatosDiv'>
                 <div>
                     <div className='SearchCandidatos'>
-                        <label htmlFor="PesquisarCandidato"><img src={lupa} onClick={handleSearch} /></label>
+                        <label htmlFor="PesquisarCandidato"><img loading="lazy"src={lupa} onClick={handleSearch} /></label>
                         <input type="text" placeholder='Pesquisar Candidatos' id='PesquisarCandidato' onChange={(e) => setSearchText(e.target.value)} />
                     </div>
                 </div>
@@ -73,7 +73,7 @@ export default function Dashboard1() {
                                 <div key={index}>
                                    {console.log(job)}
                                     <div>
-                                        <img src={job.candidatoFotoPerfil} />
+                                        <img loading="lazy"src={job.candidatoFotoPerfil} />
                                         <h2>{job.candidatoFirstName}{" "}{job.candidatoLastName}</h2>
                                     </div>
                                     <p className='EsspecialJob'>{job.candidatoEmail}</p>

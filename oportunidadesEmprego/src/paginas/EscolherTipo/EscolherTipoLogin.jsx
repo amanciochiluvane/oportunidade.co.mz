@@ -18,25 +18,25 @@ export default function EscolherTipoLogin(){
 
             <section>
                 <Link to="/escolher-tipo-login/candidato" className="CandidatoEscolhaConta">
-                        <img src={candidatofoto} />
+                        <img loading="lazy"src={candidatofoto} />
 
                         <h2>Candidato</h2>
                         <p>Está a procura da sua vaga dos sonhos?</p>
                         <p>Crie uma conta com a oportunidades.co.mz</p>
 
-                        <Link>
+                        <Link to="/escolher-tipo-login/candidato">
                             <button>Login como Candidato</button>
                         </Link>
                 </Link>
 
                 <Link to="/escolher-tipo-login/recrutador" className="EmpregadorEscolhaConta">
-                <img src={empregadorfoto} />
+                <img loading="lazy"src={empregadorfoto} />
 
                         <h2>Recrutador</h2>
                         <p>Está a procura de talentos qualificados?</p>
                         <p>Crie uma conta com a oportunidades.co.mz</p>
 
-                        <Link>
+                        <Link to="/escolher-tipo-login/recrutador">
                             <button>Login como Recrutador</button>
                         </Link>
                 </Link>

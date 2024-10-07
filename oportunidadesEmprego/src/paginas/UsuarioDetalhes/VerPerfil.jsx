@@ -31,12 +31,12 @@ export default function VerPerfil() {
                 <div className="FundoUserProfile"></div>
 
                 <section className="IntroUser">
-                    <img src={candidato.candidatoFotoPerfil} alt="Foto do Candidato" />
+                    <img loading="lazy"src={candidato.candidatoFotoPerfil} alt="Foto do Candidato" />
                     <div>
                         <h2>{candidato.candidatoFirstName} {candidato.candidatoLastName}</h2>
                         <h3>{candidato.candidatoProfissao}</h3>
                         <div>
-                            <img src={foto} alt="Localização" />
+                            <img loading="lazy"src={foto} alt="Localização" />
                             <p>{candidato.candidatoProvincia}</p>
                         </div>
                     </div>

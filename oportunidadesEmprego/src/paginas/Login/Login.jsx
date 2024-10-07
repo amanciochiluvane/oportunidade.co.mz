@@ -126,11 +126,11 @@ export default function Login() {
 
                 <section className='LoginInfo2'>
                     <section className='LoginInfo'>
-                        <Link to="/" className='VoltarLogin'><img src={SetaVoltar}/></Link>
+                        <Link to="/" className='VoltarLogin'><img loading="lazy"src={SetaVoltar}/></Link>
                         <h2 className='EntrarLoginTitulo'>Por favor faça Log in Como Recrutador</h2>
                         <div>
-                            <Link id='GoogleConta' onClick={handleGoogleClick}><img src={LogoGoogle}/> <p>Continue com Google</p></Link>
-                            {/* <Link id='LinkedInConta'><img src={LogoLinkedIn}/><p>Continue com LinkedIn</p></Link> */}
+                            <Link id='GoogleConta' onClick={handleGoogleClick}><img loading="lazy"src={LogoGoogle}/> <p>Continue com Google</p></Link>
+                            {/* <Link id='LinkedInConta'><img loading="lazy"src={LogoLinkedIn}/><p>Continue com LinkedIn</p></Link> */}
                         </div>
                         <p className='OpEntrarLogin'>Ou usando seu email:</p>
     
@@ -162,7 +162,7 @@ export default function Login() {
                                 <input type="email" {...register("recruterEmail")} required placeholder='Digite seu Email' />
                                 <div>
                                     <input type={showPassword ? "text" : "password"}  {...register("recruterPassword")} required placeholder='Digite seu Password' />
-                                    <img  src={showPassword?hide:show} onClick={trocarpassword}/>
+                                    <img loading="lazy" src={showPassword?hide:show} onClick={trocarpassword}/>
                                 </div>
                                 
                                 <Link className='EsquecerSenha' to="/esquecer-senha">Esqueci-me da Senha</Link>
@@ -175,7 +175,7 @@ export default function Login() {
                 </section>
     
                 <section className='LoginImg'>
-                    <img src={FundoMulher} />
+                    <img loading="lazy"src={FundoMulher} />
                 </section>
             </div>
         )

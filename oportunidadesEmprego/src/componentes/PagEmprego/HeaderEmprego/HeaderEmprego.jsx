@@ -47,7 +47,7 @@ export default function HeaderEmprego() {
   function DropdownItem(props) {
     return (
       <li className='dropdownItem' onClick={props.onClick}>
-        <img src={props.img} alt={props.text} />
+        <img loading="lazy"src={props.img} alt={props.text} />
         <Link to={props.link}> {props.text} </Link>
       </li>
     );
@@ -74,7 +74,7 @@ export default function HeaderEmprego() {
   return (
     <div className="HeaderEmprego">
       <section className="HeaderEmpregoLogotipo">
-        <Link to="/"><img src={Logo} alt="Logotipo" /></Link>
+        <Link to="/"><img loading="lazy"src={Logo} alt="Logotipo" /></Link>
 
         {currentUser ? (
           <>
@@ -84,13 +84,13 @@ export default function HeaderEmprego() {
                   <div className="LoginDadosUsuario">
                     <p>Olá, {currentUser.usuário.candidatoFirstName} 👋!</p>
                     <Link to="#" onClick={() => { setOpen(!open) }}>
-                      <img src={currentUser.usuário.candidatoFotoPerfil} alt="Foto do candidato" />
+                      <img loading="lazy"src={currentUser.usuário.candidatoFotoPerfil} alt="Foto do candidato" />
                     </Link>
                   </div>
 
                   <div className={`dropdown-menu ${open ? 'active' : 'inactive'}`}>
                     <h3 className="h3">
-                      <img className="HoverDadosCandidato" src={currentUser.usuário.candidatoFotoPerfil} alt="Candidato" />
+                      <img loading="lazy"className="HoverDadosCandidato" src={currentUser.usuário.candidatoFotoPerfil} alt="Candidato" />
                       <br />
                       {currentUser.usuário.candidatoFirstName}
                       <br />
@@ -109,13 +109,15 @@ export default function HeaderEmprego() {
                 <div className="LoginDadosUsuario">
                   <p>Olá, {currentUser.usuário.recruterName} 👋!</p>
                   <Link to="/recrutador">
-                    <img src={currentUser.usuário.companyLogotipo} alt="Logotipo da empresa" />
+                    <img loading="lazy"src={currentUser.usuário.companyLogotipo} alt="Logotipo da empresa" />
                   </Link>
-                </div>
+                </div> 
               </>
             ) : null}
           </>
         ) : (
+          <>
+
           <div className="ContaDetalhesVagEmprego">
             <Link to="/escolher-tipo-login" className="SignVagaEmprego" >
               <button>Login</button>
@@ -124,19 +126,29 @@ export default function HeaderEmprego() {
               <button>Sign up</button>
             </Link>
           </div>
+
+          
+          </>
         )}
       </section>
       <section></section>
       <section className="HeaderEmpregoLinks">
-        <img src={Menu ? Fechar : MenuBurguer} alt="Menu Burguer" onClick={mostrarMenu} />
+        <img loading="lazy"src={Menu ? Fechar : MenuBurguer} id="MenuBurguerNew"  alt="Menu Burguer" onClick={mostrarMenu} />
       </section>
+      
 
       <section className={Menu ? 'HeaderEmpregoLinksResponsivo visivel' : 'HeaderEmpregoLinksResponsivo invisivel'}>
+
+      <img loading="lazy"src={Menu ? Fechar : MenuBurguer} id="MenuBurguerNew"  alt="Menu Burguer" onClick={mostrarMenu} />
+
+      
+      
         <Link to="/vagas"><p>Procurar vaga</p></Link>
         <Link to="/revisao-de-cv"><p>Revisão de CV</p></Link>
         <Link to="/salario"><p>Pesquisa Salarial</p></Link>
         <Link to='/dicas-de-carreira'><p>Dicas de Carreira</p></Link>
-        <Link id="LinkSetaHeaderEmprego" to="/recrutador"><p>Recrutador / Postar vaga</p><img src={seta} alt="Ícone seta" /></Link>
+        <Link id="LinkSetaHeaderEmprego" to="/recrutador"><p>Recrutador / Postar vaga</p><img loading="lazy"src={seta} alt="Ícone seta" /></Link>
+       
       </section>
     </div>
   );

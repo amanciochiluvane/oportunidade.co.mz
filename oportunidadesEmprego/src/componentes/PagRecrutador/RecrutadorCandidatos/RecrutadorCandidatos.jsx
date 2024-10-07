@@ -53,11 +53,11 @@ export default function RecrutadorCandidatos() {
         }
 
         if (filters.industria) {
-            filtered = filtered.filter(applicant => applicant.candidatoIndustria === filters.industria);
+            filtered = filtered.filter(applicant => applicant.candidatoGenero === filters.industria);
         }
 
-        if (filters.experiencia) {
-            filtered = filtered.filter(applicant => applicant.candidatoAnosExperiencia === filters.experiencia);
+        if (filters.candidatoFormacaoAcademica) {
+            filtered = filtered.filter(applicant => applicant.candidatoFormacaoAcademica === filters.candidatoFormacaoAcademica);
         }
 
         if (searchTerm) {
@@ -115,7 +115,7 @@ export default function RecrutadorCandidatos() {
             <section className='RecrutadorCandidatosDiv'>
                 <div>
                     <div className={filtros ? 'FiltrosCandidatos2' : 'FiltrosCandidatos'} onClick={showfilters}>
-                        <img src={Filtros} alt="Ícone de Filtros" />
+                        <img loading="lazy"src={Filtros} alt="Ícone de Filtros" />
                         <p>Filtros</p>
                     </div>
 
@@ -141,30 +141,25 @@ export default function RecrutadorCandidatos() {
                                 </div>
 
                                 <div>
-                                    <p>Indústria:</p>
+                                    <p>Gênero:</p>
                                     <select name="industria" value={filters.industria} onChange={handleFilterChange}>
                                         <option value="">Todas</option>
-                                        <option value="Agricultura">Agricultura</option>
-                                        <option value="Tecnologia">Tecnologia</option>
-                                        <option value="Construção">Construção</option>
-                                        <option value="Educação">Educação</option>
-                                        <option value="Saúde">Saúde</option>
-                                        <option value="Financeiro">Financeiro</option>
-                                        <option value="Mecânica">Mecânica</option>
-                                        <option value="Energia">Energia</option>
-                                        <option value="Transporte">Transporte</option>
+                                            <option value="Masculino">Masculino</option>
+                                            <option value="Feminino">Feminino</option>
+
                                     </select>
                                 </div>
 
                                 <div>
-                                    <p>Experiência:</p>
-                                    <select name="experiencia" value={filters.experiencia} onChange={handleFilterChange}>
+                                    <p>Formação académica:</p>
+                                    <select name="experiencia" value={filters.candidatoFormacaoAcademica} onChange={handleFilterChange}>
                                         <option value="">Todas</option>
-                                        <option value="SemExperiencia">Sem Experiência</option>
-                                        <option value="Estagio">Estágio e Recém-formado</option>
-                                        <option value="Executivo">Executivo</option>
-                                        <option value="Senior">Sênior</option>
-                                        <option value="Medio">Médio</option>
+                                        <option value="Nenhuma">Nenhuma</option>
+                                        <option value="Médio">Médio</option>
+                                        <option value="Técnico">Técnico</option>
+                                        <option value="Licenciatura">Licenciatura </option>
+                                        <option value="Mestrado">Mestrado</option>
+                                        <option value="Doutoramento">Doutoramento</option>
                                     </select>
                                 </div>
                             </article>
@@ -173,7 +168,7 @@ export default function RecrutadorCandidatos() {
                     </div>
 
                     <div className='SearchCandidatos'>
-                        <label htmlFor="PesquisarCandidatos"><img src={lupa} alt="Ícone de Lupa" /></label>
+                        <label htmlFor="PesquisarCandidatos"><img loading="lazy"src={lupa} alt="Ícone de Lupa" /></label>
                         <input type="text" placeholder='Pesquisar candidatos' id='PesquisarCandidatos' value={searchTerm} onChange={handleSearchChange} />
                     </div>
                 </div>
@@ -191,7 +186,7 @@ export default function RecrutadorCandidatos() {
                                 {currentApplicants.map(applicant => (
                                     <div key={applicant._id}>
                                         <div>
-                                            <img src={applicant.candidatoFotoPerfil || c1} alt="Foto do Candidato" />
+                                            <img loading="lazy"src={applicant.candidatoFotoPerfil || c1} alt="Foto do Candidato" />
                                             <h2>{applicant.candidatoFirstName} {applicant.candidatoLastName}</h2>
                                         </div>
                                         
@@ -209,13 +204,13 @@ export default function RecrutadorCandidatos() {
 
                 <section className='MaisCandidatos'>
                     <div onClick={prevPage}>
-                        <img src={setavoltar} alt="Seta Voltar" />
+                        <img loading="lazy"src={setavoltar} alt="Seta Voltar" />
                         <p>Anterior</p>
                     </div>
 
                     <div onClick={nextPage}>
                         <p>Seguinte</p>
-                        <img src={setavoltar2} alt="Seta Voltar 2" />
+                        <img loading="lazy"src={setavoltar2} alt="Seta Voltar 2" />
                     </div>
                 </section>
             </section>

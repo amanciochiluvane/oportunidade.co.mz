@@ -60,7 +60,7 @@ export default function Salario() {
 
                             <form onSubmit={handleSubmit}>
                         <div>
-                            <label htmlFor="PesquisarSalarioImg"><img src={Pesquisar} alt="Pesquisar" /></label>
+                            <label htmlFor="PesquisarSalarioImg"><img loading="lazy"src={Pesquisar} alt="Pesquisar" /></label>
                             <select value={selectedSetor} onChange={handleSetorChange} required>
                                 <option value="">Selecione um setor</option>
                                 {setores.map(setor => (
@@ -82,7 +82,7 @@ export default function Salario() {
 
                             <form onSubmit={handleSubmit}>
                         <div>
-                            <label htmlFor="PesquisarSalarioImg"><img src={Pesquisar} alt="Pesquisar" /></label>
+                            <label htmlFor="PesquisarSalarioImg"><img loading="lazy"src={Pesquisar} alt="Pesquisar" /></label>
                             <select value={selectedSetor} onChange={handleSetorChange} required>
                                 <option value="">Selecione um setor</option>
                                 {setores.map(setor => (
@@ -100,7 +100,7 @@ export default function Salario() {
                        
                     )}
 
-<img src={HomemSalario} alt="Homem" /> 
+<img loading="lazy"src={HomemSalario} alt="Homem" /> 
                 </section>
                 
                 

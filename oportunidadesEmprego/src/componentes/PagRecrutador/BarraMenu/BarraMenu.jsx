@@ -47,32 +47,32 @@ export default function BarraMenu(){
     return(
         <div className="BarraMenu">
             <aside onClick={mostrarMenu} className={menu?'Menu2 invisivel2':'BarraMenuBurguer'} >
-                <img src={setabranca}  />
+                <img loading="lazy"src={setabranca}  />
                 
             </aside>
 
             <aside className={menu?'Menu2 visivel2':'Menu2 invisivel2'}>
-                <img onClick={mostrarMenu} src={Fechar} />
+                <img loading="lazy"onClick={mostrarMenu} src={Fechar} />
                 <Link className='LinkEspecialDashboard' to="/recrutador">
-                <img src={Dashboard} />
+                <img loading="lazy"src={Dashboard} />
                 <p>Minhas Vagas</p>
                 </Link>
                 <Link to="/candidatos">
-                <img src={Candidatos} />
+                <img loading="lazy"src={Candidatos} />
                 <p>Recrutar Candidatos</p>
                 </Link>
                 <Link to="/publicar-vaga">
-                <img src={PublicarVaga} />
+                <img loading="lazy"src={PublicarVaga} />
                 <p>Publicar Vaga</p>
                 </Link>
                 
                  <Link to="/configuracoes">
-                <img src={Settings} />
+                <img loading="lazy"src={Settings} />
                 <p>Configurações</p>
                 </Link>
 
                 <Link className='EspecialItemLogOut' onClick={handleSignOut} >
-                <img src={LogOut} />
+                <img loading="lazy"src={LogOut} />
                 <p>Log out</p></Link>
                
             

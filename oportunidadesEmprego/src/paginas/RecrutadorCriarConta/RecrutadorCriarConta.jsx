@@ -102,7 +102,7 @@ export default function RecrutadorCriarConta(){
 
 
 
-        <Link to="/escolherConta" className='VoltarSign'><img src={SetaVoltar}/></Link>
+        <Link to="/escolherConta" className='VoltarSign'><img loading="lazy"src={SetaVoltar}/></Link>
         <div className='IntroSignUp'>
             <h1>Criar Conta</h1>
             <p>Crie uma conta e recrute talentos para sua empresa</p>
@@ -130,7 +130,7 @@ export default function RecrutadorCriarConta(){
                         <p>Criar Password</p>
                         <div>
                         <input type={showPassword ? "text" : "password"} {...register("recruterPassword")} required  />
-                        <img  src={showPassword?hide:show} onClick={trocarpassword}/>
+                        <img loading="lazy" src={showPassword?hide:show} onClick={trocarpassword}/>
                         </div>
                         
                     </div >

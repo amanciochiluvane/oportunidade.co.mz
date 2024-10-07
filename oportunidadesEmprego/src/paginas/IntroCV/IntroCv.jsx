@@ -15,6 +15,12 @@ import mod3 from "../../assets/modcv3.png"
 import sett from "../../assets/settt.png"
 
 export default function IntroCv(){
+    const scrollToElement = () => {
+        const element = document.getElementById('Modelos-de-cv');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
     return(
         <div className="IntroCv">
             <HeaderEmprego/>
@@ -27,7 +33,7 @@ export default function IntroCv(){
                 <article>
                 <p>Criar um currículo em minutos é possível com as ferramentas certas. Use modelos prontos e organize suas informações de forma clara.</p>
 
-                <Link to="#Modelos-de-cv" className='LinkCriarCVIntroCV'>Criar Cv</Link>
+                <Link  className='LinkCriarCVIntroCV' onClick={scrollToElement} >Criar Cv</Link>
                 </article>
 
 
@@ -38,12 +44,12 @@ export default function IntroCv(){
 
             
 
-            <img className="mcv" src={mcv} alt="Mulher Criar CV" />
+            <img loading="lazy"className="mcv" src={mcv} alt="Mulher Criar CV" />
            
 
             <section className='PassosCV'>
                 <article className='IMGPassosCV'>
-                    <img src={Doiscvs} className='IMGCv1' />
+                    <img loading="lazy"src={Doiscvs} className='IMGCv1' />
                    
                 </article>
 
@@ -82,24 +88,24 @@ export default function IntroCv(){
 
             <section className='PassosCards'>
                     <article>
-                        <img src={mod1}  />
+                        <img loading="lazy"src={mod1}  />
                         <h2>Escolha um Modelo Pronto</h2>
                         <p>Selecionamos modelos modernos e adequados para diferentes setores e níveis de experiência. Escolha o que melhor se adapta às suas necessidades.</p>
-                        <img className="sett" src={sett} />
+                        <img loading="lazy"className="sett" src={sett} />
                     </article>
 
                     <article>
-                        <img src={mod2}  />
+                        <img loading="lazy"src={mod2}  />
                         <h2>Organize suas Informações</h2>
                         <p>Insira seus dados pessoais, histórico profissional, formação acadêmica e habilidades em nossa plataforma intuitiva de forma clara e objetiva.</p>
-                        <img  className="sett" src={sett} />
+                        <img loading="lazy" className="sett" src={sett} />
                     </article>
 
                     <article>
-                        <img src={mod3}  />
+                        <img loading="lazy"src={mod3}  />
                         <h2>Revise e Finalize</h2>
                         <p>Nossa equipe revisa seu currículo para garantir que esteja livre de erros e bem formatado. Faça os ajustes necessários e, em minutos, tenha um documento profissional pronto para enviar.</p>
-                        <img  className="sett" src={sett} />
+                        <img loading="lazy" className="sett" src={sett} />
                     </article>
                     
                     
@@ -111,16 +117,16 @@ export default function IntroCv(){
                 <h2>Escolha um Modelo e tenha o seu CV</h2>
                 <section>
                     <Link to='/modelo-de-cv-01'>
-                        <img src={cv1} alt="Modelo 1 " />
+                        <img loading="lazy"src={cv1} alt="Modelo 1 " />
                     </Link>
                     <Link to="/modelo-de-cv-02">
-                        <img src={cv2} alt="Modelo 2 " />
+                        <img loading="lazy"src={cv2} alt="Modelo 2 " />
                     </Link>
                     <Link to="/modelo-de-cv-03">
-                        <img src={cv3} alt="Modelo 3 " />
+                        <img loading="lazy"src={cv3} alt="Modelo 3 " />
                     </Link>
                     <Link to="/modelo-de-cv-04">
-                        <img src={cv4} alt="Modelo 4 " />
+                        <img loading="lazy"src={cv4} alt="Modelo 4 " />
                     </Link>
                 </section>
             </section>

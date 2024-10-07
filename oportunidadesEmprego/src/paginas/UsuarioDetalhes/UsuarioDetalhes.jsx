@@ -14,12 +14,12 @@ export default function UsuarioDetalhes(){
                 <div className="FundoUserProfile" ></div>
 
                 <section className="IntroUser">
-                    <img src={currentUser.usuário.candidatoFotoPerfil}  />
+                    <img loading="lazy"src={currentUser.usuário.candidatoFotoPerfil}  />
                     <div>
                         <h2>{currentUser.usuário.candidatoFirstName} {""} {currentUser.usuário.candidatoLastName}</h2>
                         <h3>{currentUser.usuário.candidatoProfissao}</h3>
                         <div>
-                            <img src={foto} />
+                            <img loading="lazy"src={foto} />
                             <p>{currentUser.usuário.candidatoProvincia}</p>
                         </div>
                         

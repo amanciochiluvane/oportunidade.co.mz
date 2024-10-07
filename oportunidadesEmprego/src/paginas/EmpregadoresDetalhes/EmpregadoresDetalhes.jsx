@@ -12,7 +12,7 @@ export default function EmpregadoresDetalhes(){
                 <div className='Lilache'>
 
                 </div>
-                <img className='EmpregadoresLogoEmpresa' src={LogoCoca}/>
+                <img loading="lazy"className='EmpregadoresLogoEmpresa' src={LogoCoca}/>
 
                 <div className='OverwiewTextEmpregadores'>
                     <h2>The Coca Cola Company</h2>
@@ -23,7 +23,7 @@ export default function EmpregadoresDetalhes(){
 
                 <section className='VagasAbertasEmpregadores' >
                     <article>
-                        <img src={LogoCoca}/>
+                        <img loading="lazy"src={LogoCoca}/>
                         <div>
                             <h2>Engenheiro Quimico</h2>
                             <p>Publicado em 12/04/2024</p>
@@ -33,7 +33,7 @@ export default function EmpregadoresDetalhes(){
                     </article>
 
                     <article>
-                        <img src={LogoCoca}/>
+                        <img loading="lazy"src={LogoCoca}/>
                         <div>
                             <h2>Engenheiro Quimico</h2>
                             <p>Publicado em 12/04/2024</p>
@@ -42,7 +42,7 @@ export default function EmpregadoresDetalhes(){
                         <button className='VagaDisponivel'>Disponivel</button>
                     </article>
                     <article>
-                        <img src={LogoCoca}/>
+                        <img loading="lazy"src={LogoCoca}/>
                         <div>
                             <h2>Engenheiro Quimico</h2>
                             <p>Publicado em 12/04/2024</p>
@@ -51,7 +51,7 @@ export default function EmpregadoresDetalhes(){
                         <button className='VagaDisponivel'>Disponivel</button>
                     </article>
                     <article>
-                        <img src={LogoCoca}/>
+                        <img loading="lazy"src={LogoCoca}/>
                         <div>
                             <h2>Engenheiro Quimico</h2>
                             <p>Publicado em 12/04/2024</p>

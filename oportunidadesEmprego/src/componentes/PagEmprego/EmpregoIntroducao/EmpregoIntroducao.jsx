@@ -3,7 +3,7 @@ import './EmpregoIntroducao.css'
 import HomemOculos from '../../../assets/foto.png'
 import CategoriaIntroducao from '../../../assets/CategoriaIntroducao.png'
 import pasta from "../../../assets/pasta.png"
-import LupaAzul from '../../../assets/LupaAzul.png'
+import LupaAzul from '../../../assets/Lupa.png'
 import trofeu from "../../../assets/trofeu.png"
 import { Link } from 'react-router-dom'
 import { useNavigate} from 'react-router-dom'
@@ -48,13 +48,13 @@ export default function EmpregoIntroducao({query,handleInputChange,handleChangeH
     return(
     <div className="EmpregoIntroducao">
         <section id='EmpregoIntroducaoSECTION'>
-            <h2>Encontre o emprego dos seus <span><span><span>sonhos</span><span><img src={tracado} /></span></span> connosco.</span></h2>
+            <h2>Encontre o emprego dos seus <span><span><span>sonhos</span><span><img loading="lazy"src={tracado} /></span></span> connosco.</span></h2>
                 <article className='EmpregoIntroducaoPesquisa'>
                     <div className='CategoriaEmpregoIntroducaoPesquisa'>
-                        <img src={pasta} alt="FotoCategoria"  />
+                        <img loading="lazy"src={pasta} alt="FotoCategoria"  />
                         <p onClick={mostrarmenu} >
-                            Categoria
-                            <img src={menu?Ver2:Ver} alt="" />
+                            <span>Categoria</span>
+                            <img loading="lazy"src={menu?Ver2:Ver} alt="" />
                         </p>
                         
                     </div>
@@ -74,7 +74,7 @@ export default function EmpregoIntroducao({query,handleInputChange,handleChangeH
                     <input type="text" id='InputPesquisaEmprego' placeholder='Pesquisar por vagas e empresas' onChange={handleInputChange} value={query} onKeyDown={handleKeyDown}   required/>
                     <div className='BotaoPesquisaEmprego'  onClick={handleSearch}>
                         
-                        <p>Pesquisa</p>
+                        <p><img loading="lazy"src={LupaAzul} alt="" /><p>Pesquisa</p></p>
                     </div>
                 </article>
                 
@@ -108,9 +108,9 @@ export default function EmpregoIntroducao({query,handleInputChange,handleChangeH
           </article>
         </section>
         </section>
-        <img className='HomemOculosBack' src={HomemOculos} alt="Homem com óculos" />
-        <img className="intersect" src={intersect}  />
-        <img src={trofeu} className='trofeu' />
+        <img loading="lazy"className='HomemOculosBack' src={HomemOculos} alt="Homem com óculos" />
+        <img loading="lazy"className="intersect" src={intersect}  />
+        <img loading="lazy"src={trofeu} className='trofeu' />
         <div>
         </div>
     </div>

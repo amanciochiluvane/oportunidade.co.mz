@@ -173,7 +173,7 @@ export default function OportunidadesEmprego(){
                     <article className='ArticleNivies'>
                     <Slider{...settings}>
                         <Link className='BoxEmpregoExperiencia' to="/vagas">
-                            <img src={icon1} />
+                            <img loading="lazy"src={icon1} />
                             <h2>Sem Experiência</h2>
                             <p>30 Vagas</p>
                             <div>
@@ -183,7 +183,7 @@ export default function OportunidadesEmprego(){
                         </Link>
 
                         <Link className='BoxEmpregoExperiencia'to="/vagas"> 
-                            <img src={icon2} />
+                            <img loading="lazy"src={icon2} />
                             <h2>Estágio e Recém-formado</h2>
                             <p>30 Vagas</p>
                             <div >
@@ -193,7 +193,7 @@ export default function OportunidadesEmprego(){
                         </Link>
 
                         <Link className='BoxEmpregoExperiencia' to="/vagas">
-                             <img src={icon4} />
+                             <img loading="lazy"src={icon4} />
                             <h2>Nivel Executivo</h2>
                             <p>30 Vagas</p>
                             <div>
@@ -203,7 +203,7 @@ export default function OportunidadesEmprego(){
                         </Link>
 
                         <Link className='BoxEmpregoExperiencia' to="/vagas">
-                            <img src={icon3} />
+                            <img loading="lazy"src={icon3} />
                             <h2>Nivel Sênior</h2>
                             <p>30 Vagas</p>
                             <div>
@@ -214,7 +214,7 @@ export default function OportunidadesEmprego(){
 
                         
                         <Link className='BoxEmpregoExperiencia' to="/vagas">
-                            <img src={icon5} />
+                            <img loading="lazy"src={icon5} />
                             <h2>Nivel Médio</h2>
                             <p>30 Vagas</p>
                             <div>
@@ -246,30 +246,30 @@ export default function OportunidadesEmprego(){
     <Slider{...settings2}>
         <Link to="/empregadores-detalhes">
           <div className='BoxEmpregoExperiencia2'>
-              <img src={Yango}  />
+              <img loading="lazy"src={Yango}  />
           
           </div>
         </Link>
 
         <div className='BoxEmpregoExperiencia2'> 
-            <img src={Mpesa}  /> 
+            <img loading="lazy"src={Mpesa}  /> 
         </div>
 
         <div className='BoxEmpregoExperiencia2'>
-            <img src={Brandview}  />
+            <img loading="lazy"src={Brandview}  />
         </div>
 
         <div className='BoxEmpregoExperiencia2'>
-        <img src={Moza}  /> 
+        <img loading="lazy"src={Moza}  /> 
         </div>
 
         
         <div className='BoxEmpregoExperiencia2'>
-        <img src={Coca}  /> 
+        <img loading="lazy"src={Coca}  /> 
         </div>
 
         <div className='BoxEmpregoExperiencia2'>
-        <img src={Mpesa}  /> 
+        <img loading="lazy"src={Mpesa}  /> 
         </div>
         </Slider>
     </article>

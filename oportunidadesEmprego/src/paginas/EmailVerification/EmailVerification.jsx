@@ -48,7 +48,7 @@ const EmailVerification = () => {
   return (
     <div className='EmailVerification'>
       <article>
-           <img src={verifyemail}/>
+           <img loading="lazy"src={verifyemail}/>
           <h1>Verificação de Email</h1>
           <p>{message}</p>
       </article>

@@ -88,10 +88,10 @@ export default function Dica() {
                                 <div className='InfoArtigo2'>
                                     <p>Compartilhar artigo:</p>
                                     <div className='SocialMedia2'>
-                                        <Link to="#"><img src={Facebook} alt="Ícone Facebook" /></Link>
-                                        <Link to="#"><img src={LinkedIn} alt="Ícone LinkedIn" /></Link>
-                                        <Link to="#"><img src={Twitter} alt="Ícone Twitter" /></Link>
-                                        <Link to="#"><img src={Instagram} alt="Ícone Instagram" /></Link>
+                                        <Link to="#"><img loading="lazy"src={Facebook} alt="Ícone Facebook" /></Link>
+                                        <Link to="#"><img loading="lazy"src={LinkedIn} alt="Ícone LinkedIn" /></Link>
+                                        <Link to="#"><img loading="lazy"src={Twitter} alt="Ícone Twitter" /></Link>
+                                        <Link to="#"><img loading="lazy"src={Instagram} alt="Ícone Instagram" /></Link>
                                     </div>
                                 </div>
                             </div>

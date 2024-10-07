@@ -41,11 +41,11 @@ export default function EmpregadoresEmprego(){
                         <p>Contamos com mais de 100 mil profissionais em busca de emprego em todos os níveis, perfeitos para a sua organização!</p>
                         <Link>
                         <p>Saber mais</p>
-                        <img src={SetaAzuelEscura} alt="Seta Azul Escura"  />
+                        <img loading="lazy"src={SetaAzuelEscura} alt="Seta Azul Escura"  />
                         </Link>
                     </article>
                     <article className="TalentoEmpregadoresImg">
-                        <img src={HomemTalento} alt="Homem" />
+                        <img loading="lazy"src={HomemTalento} alt="Homem" />
                     </article>
                 </section> */} 
 
@@ -53,7 +53,7 @@ export default function EmpregadoresEmprego(){
                     <h2>Principais Dicas de Carreira</h2>
                     <Link to="/dicas-de-carreira">
                         <p>Pesquisar</p>
-                        <img src={SetaAzuelEscura} alt="Seta Azul Escura" />
+                        <img loading="lazy"src={SetaAzuelEscura} alt="Seta Azul Escura" />
                     </Link>
 
                     <div className='DicaArtigosRelacionados'>

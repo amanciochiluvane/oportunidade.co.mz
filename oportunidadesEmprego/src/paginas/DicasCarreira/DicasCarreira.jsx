@@ -93,7 +93,7 @@ export default function DicasCarreira(){
                         <Link to="/categoria/Networking"><button>Networking</button></Link>
                     </div>
                 </div>
-                <img  className="IntroDicasCarreiraIMG" src={SenhorCarreira} />
+                <img loading="lazy" className="IntroDicasCarreiraIMG" src={SenhorCarreira} />
             </section>
 
             

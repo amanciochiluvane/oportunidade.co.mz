@@ -8,11 +8,11 @@ export default function HeaderRecrutador(){
     const { currentUser } = useSelector((state) => state.user);
     return(
     <div className="HeaderRecrutador">
-        <Link to='/'> <img src={Logo} alt="Logotipo" /></Link>
+        <Link to='/'> <img loading="lazy"src={Logo} alt="Logotipo" /></Link>
          
           <div>
             <p>Olá, {currentUser.usuário.recruterName} 👋!</p>
-            <Link><img src={currentUser.usuário.companyLogotipo}/></Link>
+            <Link><img loading="lazy"src={currentUser.usuário.companyLogotipo}/></Link>
             
         </div>  
     </div>

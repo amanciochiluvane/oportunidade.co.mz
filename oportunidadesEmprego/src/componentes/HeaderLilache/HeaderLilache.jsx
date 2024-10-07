@@ -19,7 +19,7 @@ export default function HeaderLilache(){
 
     return(
         <div className='HeaderLilache'>
-            <Link to="/" ><img id='Logotipo' src={Logo} alt="Logotipo Oportunidades"/></Link>
+            <Link to="/" ><img loading="lazy"id='Logotipo' src={Logo} alt="Logotipo Oportunidades"/></Link>
            <div id={Menu?"Fechar":"MenuBurguer"} onClick={ActivarMenu} >
 
            </div>

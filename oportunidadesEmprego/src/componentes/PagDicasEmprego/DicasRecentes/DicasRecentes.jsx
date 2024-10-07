@@ -39,7 +39,7 @@ export default function DicasRecentes() {
                 <div>
                     <h2>{dicaRecente.titulo}</h2>
                     <Link className='LermaisDicaGrande' to={`/dica/${dicaRecente._id}`}>
-                        <img src={SetBranca} alt="Seta Branca" />
+                        <img loading="lazy"src={SetBranca} alt="Seta Branca" />
                         <p>Ler mais</p>
                     </Link>
                     <article>

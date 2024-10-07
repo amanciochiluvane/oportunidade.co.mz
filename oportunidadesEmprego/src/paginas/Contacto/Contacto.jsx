@@ -78,9 +78,9 @@ export default function Contacto (){
                         <article className='RedesSociasContacto'>
                             <h2>Redes Sociais</h2>
                             <article>
-                                <Link><img src={ Facebook} alt="" /></Link>
-                                <Link><img src={ Instagram} alt="" /></Link>
-                                <Link><img src={ LinkedIn} alt="" /></Link>
+                                <Link><img loading="lazy"src={ Facebook} alt="" /></Link>
+                                <Link><img loading="lazy"src={ Instagram} alt="" /></Link>
+                                <Link><img loading="lazy"src={ LinkedIn} alt="" /></Link>
                             </article>
                         </article>
                     </section>
@@ -114,7 +114,7 @@ export default function Contacto (){
                         </form>
                     </section>
 
-                    <img className='MulherIntroContacto' src={woman} />
+                    <img loading="lazy"className='MulherIntroContacto' src={woman} />
                 </section>
             </section>
 

@@ -17,7 +17,7 @@ export default function CarreiraEmprego(){
         <div className="CarreiraEmpregoMother">
             <div className="CarreiraEmprego">
             <div>
-                <img src={PessoaCell} className="PessoaCell2" alt="" />
+                <img loading="lazy"src={PessoaCell} className="PessoaCell2" alt="" />
                 <section className="InfoCarreiraEmprego">
                     <h2>Desenvolva sua carreira com a <span>oportunidade.co.mz</span></h2>
                     <p>Crie uma conta gratuita, preencha seu perfil e seja conectado com o emprego dos seus sonhos</p>
@@ -27,15 +27,15 @@ export default function CarreiraEmprego(){
                     </div>
                     <section className="alertasCarreira">
                         <article className="alertasCarreira1">
-                            <img src={alerta1} />
+                            <img loading="lazy" src={alerta1} />
                             <div>
                                 <h3>Seja visto pelos empregadores</h3>
                                 <p>Um perfil completo garante destaque e visibilidade para empregadores.</p>
                             </div>
                         </article>
-                        <img src={setalaerta} className="setaalerta"/>
+                        <img loading="lazy" src={setalaerta} className="setaalerta"/>
                         <article className="alertasCarreira2">
-                            <img src={alerta2} />
+                            <img loading="lazy"src={alerta2} />
                             <div>
                                 <h3>Acesse oportunidades ideais para você</h3>
                                 <p>Receba alertas de emprego alinhados à sua experiência, setor, função e localização.</p>
@@ -43,7 +43,7 @@ export default function CarreiraEmprego(){
                         </article>
                     </section>
                 </section>
-                <img className="PessoaCell" src={PessoaCell} />
+                <img loading="lazy" className="PessoaCell"  src={PessoaCell} />
             </div>
                   
                 </div>

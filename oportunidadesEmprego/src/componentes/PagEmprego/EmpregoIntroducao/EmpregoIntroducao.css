@@ -38,7 +38,7 @@
    width: max-content;
    margin: auto;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     margin-top: 20px;
     row-gap: 10px;
     column-gap: 1px;
@@ -73,6 +73,10 @@
     font-weight: 500;
     padding-top: 7px;
     color: rgb(78, 77, 77);
+    
+}
+.CategoriaEmpregoIntroducaoPesquisa>p>span{
+    display: none;
 }
 .CategoriaEmpregoIntroducaoPesquisa>p:hover{
     cursor: pointer;
@@ -147,8 +151,9 @@
     font-size: 15px;
     background-color: #6e46ae;
     padding-bottom: 12px;
-    padding-top: 8px;
-    border-radius: 10px;
+    padding: 3px 9px;
+    
+    border-radius: 15px;
     box-shadow: 0px 0px 10px #6c25dd3f;
 
 }
@@ -157,13 +162,15 @@
     cursor: pointer;
     transition: background-color 0.35s ease;
 }
-.BotaoPesquisaEmprego>img{
+.BotaoPesquisaEmprego>p>img{
     width: 25px;
-    height: 25px;
 }
 .BotaoPesquisaEmprego>p{
     margin-top: 4px;
     font-weight: 700;
+}
+.BotaoPesquisaEmprego>p>p{
+    display: none;
 }
 .HomemOculosBack{
     display: none;
@@ -240,7 +247,7 @@ padding-bottom: 30px;
 }
 .intersect{
     display: none;
-   
+    
 }
 .trofeu{
     position:absolute;
@@ -250,6 +257,22 @@ padding-bottom: 30px;
 }
 
 @media (min-width:700px) {
+    .CategoriaEmpregoIntroducaoPesquisa>p>span{
+        display: block;
+    }
+    .BotaoPesquisaEmprego>p>p{
+        display: block;
+    }
+    .BotaoPesquisaEmprego>p>img{
+        display: none;
+    }
+    .CategoriaEmpregoIntroducaoPesquisa>p{
+        display: flex;
+    }
+    .CategoriaEmpregoIntroducaoPesquisa>p>img{
+        width: 20px;
+        height: max-content;
+    }
     .EmpregoIntroducao{
         position: relative;
         width: 100%;

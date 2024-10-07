@@ -17,27 +17,27 @@ export default function FormarEmprego(){
 
             <Link>
                 <p>Acesse o Centro para Recém-Formados</p>
-                <img src={ProximoBotao} className="button-img" alt="Botao Proximo" />
+                <img loading="lazy"src={ProximoBotao} className="button-img" alt="Botao Proximo" />
             </Link>
 
             <Link to="/salario">
                 <p>Pesquise salários por área de estudo</p>
-                <img src={ProximoBotao} className="button-img" alt="Botao Proximo" />
+                <img loading="lazy"src={ProximoBotao} className="button-img" alt="Botao Proximo" />
             </Link>
 
             <Link to="/revisao-de-cv">
                 <p>Receba uma avaliação gratuita do currículo</p>
-                <img src={ProximoBotao} className="button-img" alt="Botao Proximo" />
+                <img loading="lazy"src={ProximoBotao} className="button-img" alt="Botao Proximo" />
             </Link>
 
             <Link to="/vagas">
                 <p>Procure empregos de nível inicial</p>
-                <img src={ProximoBotao} className="button-img" alt="Botao Proximo" />
+                <img loading="lazy"src={ProximoBotao} className="button-img" alt="Botao Proximo" />
             </Link>
         </section>
 
         <section className="FormarEmpregoImg">
-            <img src={MulherFormada} alt="Mulher Formada"  />
+            <img loading="lazy"src={MulherFormada} alt="Mulher Formada"  />
         </section>
     </div>
    )

@@ -52,7 +52,7 @@ export default function Dashboard() {
             <section className='RecrutadorCandidatosDiv'>
                 <div>
                     <div className='SearchCandidatos'>
-                        <label htmlFor="PesquisarCandidato"><img src={lupa} onClick={handleSearch} /></label>
+                        <label htmlFor="PesquisarCandidato"><img loading="lazy"src={lupa} onClick={handleSearch} /></label>
                         <input type="text" placeholder='Pesquisar Vagas' id='PesquisarCandidato' onChange={(e) => setSearchText(e.target.value)} />
                     </div>
                 </div>
@@ -63,7 +63,7 @@ export default function Dashboard() {
                             {jobs.map((job, index) => (
                                 <div key={index}>
                                     <div>
-                                        <img src={job.companyLogo} alt="Logo da empresa" />
+                                        <img loading="lazy"src={job.companyLogo} alt="Logo da empresa" />
                                         <h2>{job.jobTitle}</h2>
                                     </div>
                                     <p className='EsspecialJob'>{job.location}</p>

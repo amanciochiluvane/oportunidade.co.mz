@@ -250,7 +250,7 @@ const Resume = forwardRef((props, ref) => {
 
         <section className="ResumoCV1Parte1">
 
-            <img src={triangulo} className="Triangulo" />
+            <img loading="lazy"src={triangulo} className="Triangulo" />
             
             <article>
               

@@ -25,68 +25,68 @@ export default function Empregadores(){
             <article className='ArticleNivies' id="ArticleNivies22">
     
                     <div className='BoxEmpregoExperiencia2'>
-                        <img src={Yango}  />
+                        <img loading="lazy"src={Yango}  />
                     
                     </div>
 
                     <div className='BoxEmpregoExperiencia2'> 
-                        <img src={Mpesa}  /> 
+                        <img loading="lazy"src={Mpesa}  /> 
                     </div>
 
                     <div className='BoxEmpregoExperiencia2'>
-                        <img src={Brandview}  />
+                        <img loading="lazy"src={Brandview}  />
                     </div>
 
                     <div className='BoxEmpregoExperiencia2'>
-                    <img src={Moza}  /> 
+                    <img loading="lazy"src={Moza}  /> 
                     </div>
 
                     
                     <div className='BoxEmpregoExperiencia2'>
-                    <img src={Coca}  /> 
+                    <img loading="lazy"src={Coca}  /> 
                     </div>
 
                     <div className='BoxEmpregoExperiencia2'>
-                    <img src={Mpesa}  /> 
+                    <img loading="lazy"src={Mpesa}  /> 
                     </div>
 
                     <div className='BoxEmpregoExperiencia2'>
-                        <img src={Yango}  />
+                        <img loading="lazy"src={Yango}  />
                     
                     </div>
 
                     <div className='BoxEmpregoExperiencia2'> 
-                        <img src={Mpesa}  /> 
+                        <img loading="lazy"src={Mpesa}  /> 
                     </div>
 
                     <div className='BoxEmpregoExperiencia2'>
-                        <img src={Brandview}  />
+                        <img loading="lazy"src={Brandview}  />
                     </div>
 
                     <div className='BoxEmpregoExperiencia2'>
-                    <img src={Moza}  /> 
-                    </div>
-
-                    
-                    <div className='BoxEmpregoExperiencia2'>
-                    <img src={Coca}  /> 
-                    </div>
-
-                    <div className='BoxEmpregoExperiencia2'>
-                    <img src={Mpesa}  /> 
-                    </div>
-
-                    <div className='BoxEmpregoExperiencia2'>
-                    <img src={Moza}  /> 
+                    <img loading="lazy"src={Moza}  /> 
                     </div>
 
                     
                     <div className='BoxEmpregoExperiencia2'>
-                    <img src={Coca}  /> 
+                    <img loading="lazy"src={Coca}  /> 
                     </div>
 
                     <div className='BoxEmpregoExperiencia2'>
-                    <img src={Mpesa}  /> 
+                    <img loading="lazy"src={Mpesa}  /> 
+                    </div>
+
+                    <div className='BoxEmpregoExperiencia2'>
+                    <img loading="lazy"src={Moza}  /> 
+                    </div>
+
+                    
+                    <div className='BoxEmpregoExperiencia2'>
+                    <img loading="lazy"src={Coca}  /> 
+                    </div>
+
+                    <div className='BoxEmpregoExperiencia2'>
+                    <img loading="lazy"src={Mpesa}  /> 
                     </div>
        
             </article>

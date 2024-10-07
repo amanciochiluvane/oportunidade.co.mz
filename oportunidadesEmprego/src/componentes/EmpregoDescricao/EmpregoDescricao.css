@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 .EmpregoDescricao{
-    font-family: 'Montserrat', sans-serif;
-    width: max-content;
+    font-family: 'Grandis', sans-serif;
+    width: 100%;
     height: max-content;
    position: fixed;
    left: 50%;
@@ -11,20 +11,57 @@
 }
 
 .VagaExplicacao2{
-    width: 300px;
+
     margin: auto;
-    
+    width:90%;
     position: relative;
   
-    background-color: rgb(255, 255, 255);
-    font-family: 'Montserrat', sans-serif;
-    padding: 60px 20px;
+    background-color: #f4f4f4;
+    font-family: 'Grandis', sans-serif;
+    
     overflow-y: auto;
-   height: 360px;
-   border-radius: 10px;
+   height: 460px;
+   border-radius: 30px;
+   padding-bottom: 40px;
+   
 
     
   
+}
+.IntroVagaEmpregoDescricao{
+    height:150px;
+    background-image: url(../../assets/cover.jpg);
+    background-size:cover;
+    border-radius: 30px;
+}
+.IntroVagaEmpregoDescricaoCompanyLogo{
+    
+    position: absolute;
+    margin-top: -38px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-left: 20px;
+
+}
+.JOBSDetalhes{
+    margin-top:60px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.JOBSDetalhes>h2{
+    font-size:18px;
+  
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+
+.JOBSDetalhes>p{
+   
+    color: #6E46AE;
+    font-size: 17px;
+    font-weight: 500;
 }
 
 .VagaExplicacao2::-webkit-scrollbar{
@@ -58,26 +95,108 @@
     font-weight: 600;
 }
 
+.DetalhesVaga2{
+    display: grid;
+    grid-template-columns: auto ;
+    row-gap: 20px;
+}
 
-.DescricaoVaga2>h2{
-    margin-top: 20px;
+.DetalhesVaga2>article>div{
+    display: flex;
+    gap: 5px;
+
+}
+.DetalhesVaga2{
+    padding-left: 30px;
+}
+.DetalhesVaga2>article>div>img{
+    width: 25px;
+    height: max-content;
+}
+.DetalhesVaga2>article>div>p{
+    font-size: 15px;
+    margin-top: 2px;
+    font-weight: 600;
+    color: #202020;
+}
+.DetalhesVaga2>article>p{
+    margin-left: 30px;
+    color: #5a5a5a;
     font-size: 14px;
 }
+
+.CandidatarVaga2>button{
+    background-color: #6E46AE;
+    border: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 15px;
+    padding: 14px 16px;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 14px;
+    
+    
+}
+.DescricaoVaga2{
+    margin-top: 40px;
+    border-top: 2px solid #c9c9c9;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+.DescricaoVaga2>h2{
+    margin-top: 25px;
+    font-size: 18px;
+    
+    
+}
 .DescricaoVaga2>p{
-    font-size: 13px;
-    margin-top: 3px;
+    font-size: 14px;
+   
     color:#4E4E4E ;
     font-weight: 500;
     margin-bottom: 10px;
-    padding-top: 20px;
+    padding-top: 10px;
+    
+    margin-right: 30px;
+    
 }
-.DescricaoVaga2>ul>li{
-    font-size: 13px;
-    margin-top: 3px;
+
+.DescricaoVaga22{
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+   
+}
+
+
+.DescricaoVaga22>h2{
+    margin-top: 25px;
+    font-size: 18px;
+   
+    
+}
+.DescricaoVaga22>p{
+    font-size: 14px;
+   
+    color:#4E4E4E ;
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    
+   
+    
+}
+
+.DescricaoVaga22>p>ul>li{
+    font-size: 14px;
+    margin-top: 10px;
     color:#4E4E4E ;
     font-weight: 500;
 
-    padding-top: 20px;
+  
  
 }
 .DescricaoVaga2>ul{
@@ -95,43 +214,14 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 11px;
 }
-.DetalhesVermelho2{
-    background-color: #FFE9E2;
-    color: #FF4206;
-}
-.DetalhesAzulEscuro2{
-    background-color: #E0EBFF;
-    color: #0A4CCB;
-}
-.DetalhesVerde2{
-    background-color: #B0FFCB;
-    color: #0CBB47;
-}
-.DetalhesAzulClaro2{
-    background-color: #ADF5FF;
-    color: #0DC4DD;
-}
+
 .OverwiewVaga22{
  display: flex;
  gap: 10px;    
  justify-content: center;
 }
-.OverwiewVaga2>a>button{
-    padding: 9px 8px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 11px;
-}
-.CandidatarVaga2>button{
-    background-color: #6E46AE;
-    border: none;
-    color: white;
-    font-weight: 700;
-    border-radius: 5px;
-    padding: 11px 8px;
-    position: absolute;
-    top: 30px;
-    right: 30px;
-}
+
+
 .CandidatarVaga2>button:hover{
     background-color: #7e3fe4;
     cursor: pointer;
@@ -164,8 +254,13 @@
     font-weight: 700;
     font-size: 14px;
     width: max-content;
-    margin: auto;
-    margin-top: 40px;
+    position: fixed;
+    top: 20px;
+    background-color: white;
+    padding: 10px 15px;
+    right: 50px;
+    border-radius: 20px;
+    
 }
 .VoltarEmprego>img{
     height: 15px;
@@ -180,19 +275,64 @@
     }
     .VagaExplicacao2{
         width: 500px;
-   
-        border-radius: 5px;
-
+        
+    }
+    .VoltarEmprego{
+        right: 130px;
+        top: 70px;
     }
 
+}
+@media(min-width:800px){
+    .VoltarEmprego{
+        right: 210px;
+    }
 }
 @media (min-width:1024px) {
    
     .VagaExplicacao2{
         width: 800px;
-        padding-left: 60px;
-        padding-right: 60px;
+        
         height: 460px;
+    }
+    .VoltarEmprego{
+        right: 25%;
+        top: 90px;
+        
+    }
+    .CandidatarVaga2>button{
+        margin-left: 60px;
+    }
+    
+    .IntroVagaEmpregoDescricaoCompanyLogo{
+    
+        position: absolute;
+        margin-top: -50px;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        margin-left: 60px;
+    
+    }
+    .IntroVagaEmpregoDescricao{
+        height: 190px;
+       background-position: 10% 20%;
+        
+    }
+    .JOBSDetalhes{
+        margin-top:60px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    
+
+    .DetalhesVaga2{
+        display: grid;
+        grid-template-columns: auto auto auto ;
+        row-gap: 30px;
+        margin-left: 20px;
+        margin-right: 60px;
+        column-gap: 40px;
     }
     .DetalhesVaga2>button{
         padding: 4px 20px;
@@ -207,4 +347,33 @@
         font-size: 20px;
         margin-bottom: 10px;
     }
+    .DescricaoVaga22{
+        margin-left: 60px;
+        margin-right: 60px;
+
+    }
+    .DescricaoVaga2{
+        margin-left: 60px;
+        margin-right: 60px;
+
+    }
 }
+@media(min-width:1550px){
+    .VoltarEmprego{
+        right: 30%;
+        top: 90px;
+        
+    }
+
+}
+
+@media(min-width:2000px){
+    .VoltarEmprego{
+        right: 35%;
+        top: 90px;
+        
+    }
+
+}
+
+

@@ -11,6 +11,11 @@ import EmpregoDescricao from '../../EmpregoDescricao/EmpregoDescricao'
 import Lupa from '../../../assets/LupaBlack.png'
 import InscritoSucesso from '../../InscritoSucesso/InscritoSucesso'
 import { useSelector} from 'react-redux';
+import filtros from "../../../assets/Filtros.png"
+import f1 from "../../../assets/f1.png"
+import f2 from "../../../assets/f2.png"
+import f3 from "../../../assets/f3.png"
+import f4 from "../../../assets/f4.png"
 
 export default function VagasSeccao({query,handleInputChange,result,handleChange,handleClick,resultLength,mensagemAparecer}){
     const [menuFiltro,setMenuFiltro]=useState(false);
@@ -156,16 +161,12 @@ export default function VagasSeccao({query,handleInputChange,result,handleChange
         <div className="VagasSeccao">
             <section className='VagasSeccaoSection'>
 
-            <aside className={menuFiltro?"VagasSeccaoMostrarFiltros sombra":"VagasSeccaoMostrarFiltros normal"} onClick={mostrarFiltros}>
-                <p>Filtros de Pesquisa</p>
-            </aside>
+           
+            
             
             <aside className={menuFiltro?"VagasSeccaoFiltros visivel":"VagasSeccaoFiltros invisivel"}>
 
-            <section className='PesquisaDaVaga'>
-                <label className='PesquisarVagasLabel' htmlFor="PesquisarVagas"><img src={Lupa} alt="Lupa Pesquisar"/></label>
-                <input type="text" placeholder='pesquise por vagas' id='PesquisarVagas' onChange={handleInputChange} value={query}/>
-            </section>
+           
 
                <div className='TituloFiltroVagas'>
                     <h2>Filtro de Vagas</h2> 
@@ -174,11 +175,12 @@ export default function VagasSeccao({query,handleInputChange,result,handleChange
 
                <div>
     <article className='FiltroTipo'>
-        <h3 onClick={mostrarItem1}>Tipo de Companhia</h3>
-        <img src={menuItem1 ? Ver : Ver2} onClick={mostrarItem1}  />
+        <img loading="lazy"src={f1} />
+        <h3 >Tipo de Companhia</h3>
+        
     </article>
     
-    <article className={menuItem1 ? "FiltroTipoDetalhes" : "invisivelItem"}>
+    <article className={"FiltroTipoDetalhes"} id='FiltroTipoDetalhesEspecial'>
         <div className='FiltroTipoDetalhesCheck' >
             <input type="radio" name="tipoCompanhia" value="Startup" onChange={handleChange} id="Startup" />
             <p>Startup</p>
@@ -207,11 +209,12 @@ export default function VagasSeccao({query,handleInputChange,result,handleChange
 
 <div>
     <article className='FiltroTipo'>
-        <h3 onClick={mostrarItem2}>Localização</h3>
-        <img src={menuItem2 ? Ver : Ver2} onClick={mostrarItem2}  />
+        <img loading="lazy"src={f2} />
+        <h3 >Localização</h3>
+       
     </article>
     
-    <article className={menuItem2 ? "FiltroTipoDetalhes" : "invisivelItem"}>
+    <article className={"FiltroTipoDetalhes" } id="FiltroTipoDetalhesEspecial">
         <div className='FiltroTipoDetalhesCheck' >
             <input type="radio" name="localizacao" value="Maputo" onChange={handleChange} id="Maputo" />
             <p>Maputo</p>
@@ -267,11 +270,13 @@ export default function VagasSeccao({query,handleInputChange,result,handleChange
 
 <div>
     <article className='FiltroTipo'>
-        <h3 onClick={mostrarItem3}>Indústria</h3>
-        <img src={menuItem3 ? Ver : Ver2} onClick={mostrarItem3}  />
+        <img loading="lazy"src={f3}/>
+        <h3 >Indústria</h3>
+        
+       
     </article>
     
-    <article className={menuItem3 ? "FiltroTipoDetalhes" : "invisivelItem"}>
+    <article className={"FiltroTipoDetalhes"} id="FiltroTipoDetalhesEspecial">
         <div className='FiltroTipoDetalhesCheck' >
             <input type="radio" name="industria" value="Agricultura" onChange={handleChange} id="Agricultura" />
             <p>Agricultura</p>
@@ -323,11 +328,12 @@ export default function VagasSeccao({query,handleInputChange,result,handleChange
   
 <div>
     <article className='FiltroTipo'>
+        <img loading="lazy"src={f4}  />
         <h3 onClick={mostrarItem5}>Nível de Experiência</h3>
-        <img src={menuItem5 ? Ver : Ver2} onClick={mostrarItem5}  />
+       
     </article>
     
-    <article className={menuItem5 ? "FiltroTipoDetalhes" : "invisivelItem"}>
+    <article className="FiltroTipoDetalhes" >
         <div className='FiltroTipoDetalhesCheck' >
             <input type="radio" name="experiencia" value="SemExperiência" onChange={handleChange} id="SemExperiência" />
             <p>Sem Experiência</p>
@@ -358,83 +364,28 @@ export default function VagasSeccao({query,handleInputChange,result,handleChange
 
             </section>
                 
-
+        
             <section className='SubMain'>
                     <section className='SubMain1'>
-                    {mensagemAparecer == "Procurando Vagas ..."  ? (
-        <section className='SubMain1Vagas'> <h3>{mensagemAparecer}</h3> </section>
-      ) : (
-        mensagemAparecer == "" ?(
-            <section className='SubMain1Vagas'>
-            {result.slice(0, 6).map((job, index) => (
-                <div key={index} className={mostrarDiv ? 'VagaExplicacao' : 'VagaExplicacao22224'}>
-                    <article className='IntroVaga' onClick={() => abrirPopup(index)}>
-                        <img src={job.companyLogo} alt={job.companyName} />
-                        <div>
-                            <h2>{job.companyName}</h2>
-                            <p>{mostrarDiv ? job.location : job.jobTitle}</p>
-                        </div>
-                    </article>
+                    
+            <aside className={"VagasSeccaoFiltros visivel"}>
 
-                    <article className='DescricaoVaga'>
-                               <h2>{job.jobTitle}</h2>
-                               <p>{job.description}</p>
-                           </article>
-   
-                           <article className='OverwiewVaga'>
-                               <Link className='CandidatarVaga' onClick={() => candidatarSe(job._id)} >
-                                   <button>Candidatar-me</button>
-                               </Link>
-                               <Link className='VerDetalhesVaga'>
-                               <button  onClick={() => abrirPopup(index)}>
-                                   Ver Detalhes
-                               </button>
-                               </Link>
-                              
-                           </article>
 
-                    {mostrarPopup === index && (
-                        <div className={controlarPoup ? 'visible' : 'invisible'}>
-                            <EmpregoDescricao
-                                onClose={fecharPopup}
-                                vagaIdd={job._id}
-                                jobTitle={job.jobTitle}
-                                description={job.description}
-                                companyLogo={job.companyLogo}
-                                companyName={job.companyName}
-                                location={job.location}
-                                responsabilities={job.responsabilities}
-                                positions={job.positions}
-                                employmentType={job.employmentType}
-                                experiencelevel={job.experiencelevel}
-                                requirements={job.requirements}
-                            />
-                        </div>
-                    )}
-                </div>
-            ))}
-        </section>):(<section className='SubMain1Vagas'> <h3>{mensagemAparecer}</h3> </section>)
-)}               
 
-                            <aside className={"VagasSeccaoFiltros visivel"}>
+<div className='TituloFiltroVagas'>
+     <h2>Filtro de Vagas</h2> 
+     
+</div> 
 
-<section className='PesquisaDaVaga'>
-    <label className='PesquisarVagasLabel' htmlFor="PesquisarVagas"><img src={Lupa} alt="Lupa Pesquisar"/></label>
-    <input type="text" placeholder='pesquise por vagas' id='PesquisarVagas' onChange={handleInputChange} value={query}/>
-</section>
 
-   <div className='TituloFiltroVagas'>
-        <h2>Filtro de Vagas</h2> 
-        
-   </div> 
-
-   <div>
+<div>
     <article className='FiltroTipo'>
-        <h3 onClick={mostrarItem1}>Tipo de Companhia</h3>
-        <img src={menuItem1 ? Ver : Ver2} onClick={mostrarItem1}  />
+        <img loading="lazy"src={f1} />
+        <h3 >Tipo de Companhia</h3>
+        
     </article>
     
-    <article className={menuItem1 ? "FiltroTipoDetalhes" : "invisivelItem"}>
+    <article className={"FiltroTipoDetalhes"} id='FiltroTipoDetalhesEspecial'>
         <div className='FiltroTipoDetalhesCheck' >
             <input type="radio" name="tipoCompanhia" value="Startup" onChange={handleChange} id="Startup" />
             <p>Startup</p>
@@ -463,11 +414,12 @@ export default function VagasSeccao({query,handleInputChange,result,handleChange
 
 <div>
     <article className='FiltroTipo'>
-        <h3 onClick={mostrarItem2}>Localização</h3>
-        <img src={menuItem2 ? Ver : Ver2} onClick={mostrarItem2}  />
+        <img loading="lazy"src={f2} />
+        <h3 >Localização</h3>
+       
     </article>
     
-    <article className={menuItem2 ? "FiltroTipoDetalhes" : "invisivelItem"}>
+    <article className={"FiltroTipoDetalhes" } id="FiltroTipoDetalhesEspecial">
         <div className='FiltroTipoDetalhesCheck' >
             <input type="radio" name="localizacao" value="Maputo" onChange={handleChange} id="Maputo" />
             <p>Maputo</p>
@@ -523,11 +475,13 @@ export default function VagasSeccao({query,handleInputChange,result,handleChange
 
 <div>
     <article className='FiltroTipo'>
-        <h3 onClick={mostrarItem3}>Indústria</h3>
-        <img src={menuItem3 ? Ver : Ver2} onClick={mostrarItem3}  />
+        <img loading="lazy"src={f3}/>
+        <h3 >Indústria</h3>
+        
+       
     </article>
     
-    <article className={menuItem3 ? "FiltroTipoDetalhes" : "invisivelItem"}>
+    <article className={"FiltroTipoDetalhes"} id="FiltroTipoDetalhesEspecial">
         <div className='FiltroTipoDetalhesCheck' >
             <input type="radio" name="industria" value="Agricultura" onChange={handleChange} id="Agricultura" />
             <p>Agricultura</p>
@@ -579,11 +533,12 @@ export default function VagasSeccao({query,handleInputChange,result,handleChange
   
 <div>
     <article className='FiltroTipo'>
+        <img loading="lazy"src={f4}  />
         <h3 onClick={mostrarItem5}>Nível de Experiência</h3>
-        <img src={menuItem5 ? Ver : Ver2} onClick={mostrarItem5}  />
+       
     </article>
     
-    <article className={menuItem5 ? "FiltroTipoDetalhes" : "invisivelItem"}>
+    <article className="FiltroTipoDetalhes" >
         <div className='FiltroTipoDetalhesCheck' >
             <input type="radio" name="experiencia" value="SemExperiência" onChange={handleChange} id="SemExperiência" />
             <p>Sem Experiência</p>
@@ -611,74 +566,86 @@ export default function VagasSeccao({query,handleInputChange,result,handleChange
     </article>
 </div>
 
-                            </aside>
+                         </aside>
 
-                            
+           
+            <section>
+            <section className='PesquisaDaVaga'>
+                <h2>Descubra aqui a sua carreira ideal</h2>
+                <p>Explore oportunidades que atendam aos seus interesses para alcançar a carreira que deseja</p>
+                <div>
+                    <label className='PesquisarVagasLabel' htmlFor="PesquisarVagas"><img loading="lazy"src={Lupa} alt="Lupa Pesquisar"/></label>
+                    <input type="text" placeholder='Pesquise por vagas' id='PesquisarVagas' onChange={handleInputChange} value={query}/>
 
-                    </section>
-                   
+                    <div className={menuFiltro?"VagasSeccaoMostrarFiltros sombra":"VagasSeccaoMostrarFiltros normal"} onClick={mostrarFiltros}>
+                    <img loading="lazy"src={filtros} />
+                <p>Filtros</p>
+            </div>
+                </div>
+                
 
-                    <article className='BannerPublicidade'>
-                        <img src={BannerVodacom} />
+            </section> 
+            <p className='VagasEncontradasText'>Exibindo <span>{resultLength}</span> vagas encontradas</p>
+
+            {mensagemAparecer == "Procurando Vagas ..."  ? (
+        <section className='SubMain1Vagas'> <h3 className='MensagemAparecer'>{mensagemAparecer}</h3> </section>
+      ):(
+        mensagemAparecer == "" ?(
+            <section className='SubMain1Vagas'>
+            {result.slice(0, 15).reverse().map((job, index) => (
+                <div key={index} className={mostrarDiv ? 'VagaExplicacao' : 'VagaExplicacao22224'}>
+                    <article className='IntroVaga' onClick={() => abrirPopup(index)}>
+                        <img loading="lazy"src={job.companyLogo} alt={job.companyName} />
+                        <div>
+                            <h2>{job.companyName}</h2>
+                            <p>{mostrarDiv ? job.location : job.jobTitle}</p>
+                        </div>
                     </article>
 
-                    <section className='SubMain2'>
-                            <section className='SubMain1Vagas' id='SubMain1Vagas'>
-                            {result.slice(6, 14).map((job, index) => (
-                       <div className='VagaExplicacao' key={index}>
-                           <article className='IntroVaga'>
-                               <img src={job.companyLogo} alt={job.companyName} />
-                               <div>
-                                   <h2>{job.companyName}</h2>
-                                   <p>{job.location}</p>
-                               </div>
-                           </article>
-   
-                           
-   
-                           <article className='DescricaoVaga'>
+                    <article className='DescricaoVaga'>
                                <h2>{job.jobTitle}</h2>
-                               <p>{job.description}</p>
+                            {/*<p>{job.description}</p> */ } 
                            </article>
    
                            <article className='OverwiewVaga'>
-                               <Link className='CandidatarVaga'>
-                                   <button>Candidatar-me</button>
-                               </Link>
+                               
                                <Link className='VerDetalhesVaga'>
                                <button  onClick={() => abrirPopup(index)}>
                                    Ver Detalhes
                                </button>
                                </Link>
-                               
+                              
                            </article>
-   
-                           {/* Renderizar o pop-up apenas se o índice da vaga corresponder ao estado mostrarPopup */}
-                           {mostrarPopup === index && (
-                               <div className={mostrarPopup ? 'visible' : 'invisible'}>
-                                   <EmpregoDescricao
-                                       onClose={fecharPopup}
-                                       jobTitle={job.jobTitle}
-                                       description={job.description}
-                                       companyLogo={job.companyLogo}
-                                       companyName={job.companyName}
-                                       location={job.location}
-                                       responsabilities={job.responsabilities}
-                                       positions={job.positions}
-                                       employmentType={job.employmentType}
-                                       experiencelevel={job.experiencelevel}
-                                       requirements={job.requirements}
-                                   />
-                               </div>
-                           )}
-                       </div>
-                   ))}
 
-                            </section>
-                           
-                    </section>
-            </section>
-         
+                    {mostrarPopup === index && (
+                        <div className={controlarPoup ? 'visible' : 'invisible'}>
+                            <EmpregoDescricao
+                                onClose={fecharPopup}
+                                vagaIdd={job._id}
+                                jobTitle={job.jobTitle}
+                                description={job.description}
+                                companyLogo={job.companyLogo}
+                                companyName={job.companyName}
+                                location={job.location}
+                                responsabilities={job.responsabilities}
+                                positions={job.positions}
+                                employmentType={job.employmentType}
+                                experiencelevel={job.experiencelevel}
+                                requirements={job.requirements}
+                            />
+                        </div>
+                    )}
+                </div>
+           ) )}
+        </section>
+      ):(<section className='SubMain1Vagas'> <h3 className='MensagemAparecer'>{mensagemAparecer}</h3> </section>))}
+
+      </section>
+
+     
+     
+         </section>   
+         </section>  
 
             <div className={mostrarPopup2?'visible':'invisible'}>
                 <InscritoSucesso onCloseSucesss={togglePopup2}/>
@@ -686,4 +653,4 @@ export default function VagasSeccao({query,handleInputChange,result,handleChange
         
         </div>
     )
-}
+            }

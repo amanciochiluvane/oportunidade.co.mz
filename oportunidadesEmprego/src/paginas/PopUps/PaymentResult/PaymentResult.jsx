@@ -10,7 +10,7 @@ export default function PaymentResult({ success, onClose, onProceed }) {
     return (
         <div className="PaymentResult">
             <article>
-                <img 
+                <img loading="lazy"
                     src={isSuccessful ? emogifeliz : emogitriste} 
                     alt={isSuccessful ? 'Emoji feliz' : 'Emoji triste'} 
                 />

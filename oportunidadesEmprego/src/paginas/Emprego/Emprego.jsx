@@ -83,7 +83,7 @@ export default function Emprego(){
             <HeaderEmprego/>
             <EmpregoIntroducao query={query} handleInputChange={handleInputChange}/>
             <section className='SiteLink'>
-                <img src={SiteLink} alt="LINK DO SITE" />
+                <img loading="lazy"src={SiteLink} alt="LINK DO SITE" />
             </section>
             <OportunidadesEmprego/>
             <CarreiraEmprego/>

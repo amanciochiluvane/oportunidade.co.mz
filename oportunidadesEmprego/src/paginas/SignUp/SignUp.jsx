@@ -132,7 +132,7 @@ export default function SignUp(){
              </Helmet> 
 
 
-        <Link to="/escolherConta" className='VoltarSign'><img src={SetaVoltar}/></Link>
+        <Link to="/escolherConta" className='VoltarSign'><img loading="lazy"src={SetaVoltar}/></Link>
         <div className='IntroSignUp'>
             <h1>Criar Conta</h1>
             <p>Crie uma conta e seja visto pelas empresas</p>
@@ -167,7 +167,7 @@ export default function SignUp(){
                         <p>Criar Password</p>
                         <div>
                             <input type={showPassword ? "text" : "password"} {...register("candidatoPassword")} required  />
-                            <img  src={showPassword?hide:show} onClick={trocarpassword}/>
+                            <img loading="lazy" src={showPassword?hide:show} onClick={trocarpassword}/>
                         </div>
                         
                     </div>
@@ -439,6 +439,7 @@ export default function SignUp(){
                         <div>
                             <p>Formação académica</p>
                              <select {...register("candidatoFormacaoAcademica")} required  >
+                                <option value="Nenhuma">Nenhuma</option>
                                 <option value="Médio">Médio</option>
                                 <option value="Técnico">Técnico</option>
                                 <option value="Licenciatura">Licenciatura </option>

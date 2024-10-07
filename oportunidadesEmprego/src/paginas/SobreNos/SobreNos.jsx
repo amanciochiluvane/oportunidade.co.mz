@@ -103,7 +103,7 @@ export default function SobreNos(){
                         <h3>Criação de CV</h3>
                         <p> Oferecemos um design profissional e personalizado que destaca suas habilidades e experiências de forma clara e impactante.</p>
 
-                        <Link to="/cv">Ver mais</Link>
+                        <Link to="/criacao-de-cv">Ver mais</Link>
                     </article>
 
                     <article>

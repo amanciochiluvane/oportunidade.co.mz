@@ -19,25 +19,25 @@ export default function EscolherTipo(){
 
             <section>
                 <Link to="/criarcontaCandidato" className="CandidatoEscolhaConta">
-                        <img src={candidatofoto} />
+                        <img loading="lazy"src={candidatofoto} />
 
                         <h2>Candidato</h2>
                         <p>Está a procura da sua vaga dos sonhos?</p>
                         <p>Crie uma conta com a oportunidades.co.mz</p>
 
-                        <Link>
+                        <Link to="/criarcontaCandidato">
                             <button>Sign up como Candidato</button>
                         </Link>
                 </Link>
 
                 <Link to="/criarcontaRecrutador" className="EmpregadorEscolhaConta">
-                <img src={empregadorfoto} />
+                <img loading="lazy"src={empregadorfoto} />
 
                         <h2>Recrutador</h2>
                         <p>Está a procura de talentos qualificados?</p>
                         <p>Crie uma conta com a oportunidades.co.mz</p>
 
-                        <Link>
+                        <Link to="/criarcontaRecrutador">
                             <button>Sign up como Recrutador</button>
                         </Link>
                 </Link>

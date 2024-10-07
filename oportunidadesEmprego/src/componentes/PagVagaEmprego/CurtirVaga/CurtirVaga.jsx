@@ -13,7 +13,7 @@ const CurtirVaga = () => {
 
   return (
     <div className='CurtirVaga' onClick={handleClickCoracao}>
-      <img src={imagemCoracao} alt="Ícone de coração" />
+      <img loading="lazy"src={imagemCoracao} alt="Ícone de coração" />
     </div>
   );
 };
